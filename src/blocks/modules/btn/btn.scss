@@ -1,0 +1,24 @@
+.btn {
+	display: inline-flex;
+	height: rem(60);
+	align-items: center;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 50px;
+	padding: 19px 56px;
+	&:hover {
+		opacity: 0.7;
+	}
+	&--head {
+		height: rem(50);
+		font-size: rem(18);
+	}
+	&--light {
+		background-color: $light;
+		color: $dark;
+	}
+	&--orange {
+		background-color: $orange;
+		color: $light;
+	}
+}

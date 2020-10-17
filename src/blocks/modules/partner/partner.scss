@@ -1,0 +1,14 @@
+.partner {
+	border: 1px solid #E0E0E0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	height: 100%;
+	&__ill {
+		display: block;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+}

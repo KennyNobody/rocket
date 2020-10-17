@@ -1,34 +1,471 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        
-        
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
-    </body>
+<head>
+    <title>Ракета</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#fff">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="body">
+    <header class="header">
+	<section class="section section--header-top">
+		<div class="container">
+			<div class="header-top">
+	<div class="header-top__block">
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-topline-clock"></use>
+		</svg>
+		<span>
+			Пн-Пт с 10 до 19
+		</span>
+	</div>
+	<a href="mailto:info@39rpk.ru" class="header-top__block header-top__block--link">
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-topline-mail"></use>
+		</svg>
+		<span>
+			info@39rpk.ru
+		</span>
+	</a>
+	<a href="tel:+74012750155" class="header-top__block header-top__block--link">
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-topline-call"></use>
+		</svg>
+		<span>
+			+7 (4012) 75-01-55
+		</span>
+	</a>
+	<a href="tel:+79814750155" class="header-top__block header-top__block--link">
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-telegram"></use>
+		</svg>
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-viber"></use>
+		</svg>
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-whatsapp"></use>
+		</svg>
+		<span>
+			+7 981-475-01-55
+		</span>
+	</a>
+	<a href="" class="btn btn--head btn--orange">
+		<span>
+			Заказать звонок
+		</span>
+	</a>
+</div>
+		</div>
+	</section>
+	<section class="section section--header-bottom">
+		<div class="container">
+			<div class="header-bottom">
+	<a href="" class="header-bottom__logo">
+		<img src="img/logo-color.png" alt="Логотип">
+	</a>
+	<nav class="header-bottom__nav">
+		<a href="" class="header-bottom__link header-bottom__link--active">
+			<span>
+				Главная
+			</span>
+		</a>
+		<a href="" class="header-bottom__link">
+			<span>
+				Услуги
+			</span>
+			<svg>
+				<use xlink:href="img/sprites/sprite.svg#icon-menu-arrow"></use>
+			</svg>
+		</a>
+		<a href="" class="header-bottom__link">
+			<span>
+				Наши работы
+			</span>
+			<svg>
+				<use xlink:href="img/sprites/sprite.svg#icon-menu-arrow"></use>
+			</svg>
+		</a>
+		<a href="" class="header-bottom__link">
+			<span>
+				Отдел технического контроля
+			</span>
+		</a>
+		<a href="" class="header-bottom__link">
+			<span>
+				Акции
+			</span>
+		</a>
+		<a href="" class="header-bottom__link">
+			<span>
+				Контакты
+			</span>
+		</a>
+	</nav>
+	<button class="header-bottom__burger">
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
+		</svg>
+	</button>
+</div>
+		</div>
+	</section>
+</header>
+    <main class="main">
+        <section class="section section--intro">
+            <div class="swiper-container intro-slider">
+	<div class="swiper-wrapper intro-slider__wrapper">
+		<div class="swiper-slide intro-slider__slide" style="background-image: url('img/slide-bg.jpg')">
+			<div class="intro-slider__slide-content">
+				<div class="container">
+					<h2 class="title mb-40">
+						Изготовление <br> интерьерной рекламы
+					</h2>
+					<a href="" class="btn btn--light">
+						<span>
+							Подробнее
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-slide intro-slider__slide" style="background-image: url('img/slide-bg.jpg')">
+			<div class="intro-slider__slide-content">
+				<div class="container">
+					<h2 class="title mb-40">
+						Короткий заголовок
+					</h2>
+					<a href="" class="btn btn--light">
+						<span>
+							Подробнее
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-slide intro-slider__slide" style="background-image: url('img/slide-bg.jpg')">
+			<div class="intro-slider__slide-content">
+				<div class="container">
+					<h2 class="title mb-40">
+						Длинный заголовок <br> в две строки
+					</h2>
+					<a href="" class="btn btn--light">
+						<span>
+							Подробнее
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="intro-slider__pagintaion"></div>
+</div>
+        </section>
+        <section class="section section--light">
+            <div class="container">
+                <div class="columns">
+                    <div class="columns__column columns__column--6">
+                        <h2 class="title mb-40">
+                            О нас
+                        </h2>
+                        <div class="text">
+                            <p>
+                                Рекламно производственная компания “Ракета” располагает обширными рекламно-производственными возможностями. Над вашими проектами трудится команда молодых, амбициозных, нацеленных на результат специалистов своего дела.
+                            </p>
+                            <p>
+                                Большой опыт работы, высокий уровень контроля качества, ответственность, креативный подход, гибкость в ценовой политике - это те факторы, по которым для реализации своих планов стоит выбрать именно нас.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columns__column columns__column--6">
+                        <img class="img img--center" src="img/front-about.svg" alt="О нас">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gray section--decor">
+            <div class="container">
+                <h2 class="title mb-60">
+                    Почему мы?
+                </h2>
+                <div class="articles">
+                    <div class="articles__content">
+                        <div class="articles__item articles__item--33">
+                            <div class="front-fact">
+                                <svg class="front-fact__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-why-speed"></use>
+                                </svg>
+                                <div class="front-fact__content">
+                                    <div class="text">
+                                        <h2>
+                                            Скорость
+                                        </h2>
+                                        <ul>
+                                            <li>
+                                                Отвечаем на письма за <strong>10</strong> минут
+                                            </li>
+                                            <li>
+                                                 Берем трубку в течение <strong>5</strong> гудков
+                                            </li>
+                                            <li>
+                                                 Выезжаем на встречу в течение дня
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="articles__item articles__item--33">
+                            <div class="front-fact">
+                                <svg class="front-fact__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-why-time"></use>
+                                </svg>
+                                <div class="front-fact__content">
+                                    <div class="text">
+                                        <h2>
+                                            Сроки
+                                        </h2>
+                                        <ul>
+                                            <li>
+                                                Дизайн и смету делаем до <strong>2-х</strong> дней
+                                            </li>
+                                            <li>
+                                                 Изготавливаем вывеску от <strong>5</strong> до <strong>10</strong> рабочих дней
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item articles__item--33">
+                            <div class="front-fact">
+                                <svg class="front-fact__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-why-quality"></use>
+                                </svg>
+                                <div class="front-fact__content">
+                                    <div class="text">
+                                        <h2>
+                                            Качество
+                                        </h2>
+                                        <ul>
+                                            <li>
+                                                Собственное производство
+                                            </li>
+                                            <li>
+                                                Есть свой независимый отдел технического контроля
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--light">
+            <div class="container">
+                <h2 class="title">
+                    Основные услуги
+                </h2>
+            </div>
+        </section>
+        <section class="section section--decor section--orange">
+            <div class="container">
+                <div class="columns">
+                    <div class="columns__column columns__column--6">
+                        <h2 class="title mb-40">
+                            Производство рекламы
+                        </h2>
+                        <div class="text">
+                            <p>
+                                Мы работаем в производстве рекламы больше 10 лет и знаем обо всех нюансах этой сферы.
+                                Мы все делаем собственными силами, поэтому отвечаем за разумность цен, качество изделий и сроки исполнения заказов.
+                            </p>
+                            <p>
+                                <strong>
+                                    Если мы с вами о чем-то договорились, можете быть уверены: так и будет.
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columns__column columns__column--6">
+                        <img class="img img--center" src="img/front-add.svg" alt="Производство рекламы">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--light section--decor">
+            <div class="container">
+                <h2 class="title mb-40">
+                    Акции
+                </h2>
+                <div class="text mb-60">
+                    <p>
+                        Мы регулярно проводим различные акции для наших клиентов. <br>
+                        Заказывайте рекламу выгодно!
+                    </p>
+                    <p>
+                        <strong>
+                            Подробности и условия Акции уточняйте у менеджера!
+                        </strong>
+                    </p>
+                </div>
+                <div class="articles">
+                    <div class="articles__content">
+                        <div class="articles__item articles__item--50">
+
+                        </div>
+                        <div class="articles__item articles__item--25">
+
+                        </div>
+                        <div class="articles__item articles__item--25">
+
+                        </div>
+                        <div class="articles__item articles__item--25">
+
+                        </div>
+                        <div class="articles__item articles__item--25">
+
+                        </div>
+                        <div class="articles__item articles__item--50">
+
+                        </div>
+                    </div>
+                    <div class="articles__toolbar">
+                        <a href="" class="btn btn--orange">
+                            <span>
+                                Все акции
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--light section--decor">
+            <div class="container">
+                <h2 class="title mb-80">
+                    Нам доверяют
+                </h2>
+                <div class="articles">
+                    <div class="articles__content">
+                        <div class="articles__item articles__item--25">
+                            <a href="" class="partner">
+                                <img src="img/partner-1.png" alt="Название фирмы" class="partner__img">
+                            </a>
+                        </div>
+                        <div class="articles__item articles__item--25">
+                            <a href="" class="partner">
+                                <img src="img/partner-2.png" alt="Название фирмы" class="partner__img">
+                            </a>
+                        </div>
+                        <div class="articles__item articles__item--25">
+                            <a href="" class="partner">
+                                <img src="img/partner-3.png" alt="Название фирмы" class="partner__img">
+                            </a>
+                        </div>
+                        <div class="articles__item articles__item--25">
+                            <a href="" class="partner">
+                                <img src="img/partner-4.png" alt="Название фирмы" class="partner__img">
+                            </a>
+                        </div>
+                        <div class="articles__item articles__item--25">
+                            <a href="" class="partner">
+                                <img src="img/partner-5.png" alt="Название фирмы" class="partner__img">
+                            </a>
+                        </div>
+                        <div class="articles__item articles__item--25">
+                            <a href="" class="partner">
+                                <img src="img/partner-6.png" alt="Название фирмы" class="partner__img">
+                            </a>
+                        </div>
+                        <div class="articles__item articles__item--25">
+                            <a href="" class="partner">
+                                <img src="img/partner-7.png" alt="Название фирмы" class="partner__img">
+                            </a>
+                        </div>
+                        <div class="articles__item articles__item--25">
+                            <a href="" class="partner">
+                                <img src="img/partner-8.png" alt="Название фирмы" class="partner__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="articles__toolbar">
+                        <a href="" class="btn btn--orange">
+                            <span>
+                                Смотреть еще
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gray section--decor-top">
+            <div class="container">
+
+            </div>
+        </section>
+    </main>
+    
+    <div class="container">
+	<div class="demo">
+		<a href="index.html" class="demo__link">
+			1. Главная
+		</a>
+		<a href="2_services.html" class="demo__link">
+			2. Все услуги
+		</a>
+		<a href="3_service-type.html" class="demo__link">
+			3. Услуги категория
+		</a>
+		<a href="4_service-post.html" class="demo__link">
+			4. Одна услуга
+		</a>
+		<a href="5_product.html" class="demo__link">
+			5. Продукт
+		</a>
+		<a href="6_promo.html" class="demo__link">
+			6. Акции
+		</a>
+		<a href="7_contacts.html" class="demo__link">
+			7. Контакты
+		</a>
+		<a href="8_control.html" class="demo__link">
+			8. Отдел технического контроля
+		</a>
+		<a href="9_singlet.html" class="demo__link">
+			9. Статья
+		</a>
+		<a href="10_grid.html" class="demo__link">
+			10. Плитка
+		</a>
+		<a href="11_makets.html" class="demo__link">
+			11. Требования к макетам
+		</a>
+	</div>
+</div>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+</body>
 </html>

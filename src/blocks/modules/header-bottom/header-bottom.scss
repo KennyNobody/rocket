@@ -1,0 +1,66 @@
+.header-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__logo {
+		display: block;
+		&:hover {
+			opacity: 0.7;
+		}
+		img {
+			height: rem(52);
+		}
+	}
+	&__nav {
+		display: flex;
+	}
+	&__link {
+		margin-right: rem(40);
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		height: rem(90);
+		position: relative;
+		border-bottom: rem(4) solid $light;
+		span {
+			display: block;
+		}
+		svg {
+			display: block;
+			height: rem(4);
+			width: rem(8);
+			fill: $orange;
+			margin-left: rem(4);
+		}
+		&:last-of-type {
+			margin-right: 0;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+		&--active {
+			border-bottom: rem(4) solid $orange;
+			color: $orange;
+		}
+	}
+	&__burger {
+		height: rem(40);
+		width: rem(40);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.3s all;
+		background: none;
+		border: none;
+		display: none;
+		&:hover {
+			opacity: 0.7;
+		}
+		svg {
+			display: block;
+			width: rem(22);
+			height: rem(22);
+		}
+	}
+}

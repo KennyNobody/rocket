@@ -1,0 +1,25 @@
+.articles {
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__toolbar {
+		margin-top: rem(40);
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+		margin-bottom: rem(20);
+		min-height: 30px;
+		&--25  {
+			width: calc(25% - 15px);
+		}
+		&--33  {
+			width: calc(25% - 10px);
+		}
+		&--50  {
+			width: calc(50% - 10px);
+		}
+	}
+}

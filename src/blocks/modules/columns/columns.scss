@@ -1,0 +1,15 @@
+.columns {
+	display: flex;
+	justify-content: space-between;
+	&__column {
+		&--6 {
+			width: calc(50% - 10px);
+		}
+		&--8 {
+			width: calc(100% / 12 * 8 - 10px);
+		}
+		&--4 {
+			width: calc(100% / 12 * 4 - 10px);
+		}
+	}
+}

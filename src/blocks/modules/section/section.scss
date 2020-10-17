@@ -1,0 +1,54 @@
+.section {
+	position: relative;
+	padding-bottom: 120px;
+	padding-top: 120px;
+	&--light {
+		background-color: $light;
+	}
+	&--dark {
+		background-color: $dark;
+	}
+	&--orange {
+		background-color: $orange;
+		color: $light;
+	}
+	&--gray {
+		background-color: $gray;
+	}
+	&--decor {
+		background-image: url('../img/decor-top.svg'), url('../img/decor-bottom.svg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top right, bottom left;
+		padding-top: 264px;
+		padding-bottom: 264px;
+	}
+	&--decor-top {
+		background-image: url('../img/decor-top.svg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top right;
+		padding-top: 264px;
+	}
+	&--decor-bottom {
+		background-image: url('../img/decor-bottom.svg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: bottom left;
+		padding-bottom: 264px;
+	}
+	&--header-top {
+		padding-top: rem(10);
+		padding-bottom: rem(10);
+		background-color: $dark;
+		color: $light;
+	}
+	&--header-bottom {
+		padding-top: rem(0);
+		padding-bottom: rem(0);
+		background-color: $light;
+	}
+	&--intro {
+		padding: 0;
+	}
+}
