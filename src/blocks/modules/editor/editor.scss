@@ -1,0 +1,126 @@
+.editor {
+	line-height: 1.5;
+	font-size: 16px;
+	& :last-child {
+		margin-bottom: 0;
+	}
+	@include r(1200) {
+		font-size: 14px;
+	}
+	&--center {
+		text-align: center;
+		img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	p {
+		margin-bottom: 1em;
+	}
+	h2 {
+		font-weight: bold;
+		font-size: rem(24);
+		// font-family: $font-title;
+		margin-bottom: 1rem;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: rem(22);
+		// font-family: $font-title;
+		margin-bottom: 1rem;
+	}
+	h4 {
+		font-weight: bold;
+		font-size: rem(18);
+		// font-family: $font-title;
+		margin-bottom: 1rem;
+	}
+	h5 {
+		font-weight: bold;
+		font-size: 16px;
+		// font-family: $font-title;
+		margin-bottom: 1rem;
+	}
+	strong, b {
+		font-weight: bold;
+	}
+	a {
+		font-style: normal;
+		color: $orange;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	i {
+		font-style: italic;
+	}
+	iframe {
+		display: block;
+		max-width: 948px;
+		width: 100%;
+		margin-bottom: 2rem;
+		height: 570px;
+		margin-top: 2rem;
+		@include r(1200) {
+			height: 480px;
+		}
+	}
+	figure {
+		display: block;
+		color: #4F5F5A;
+		margin-bottom: 1.5rem;
+		@include r(1200) {
+			margin-bottom: 1rem;
+		}
+		picture {
+			display: block;
+		}
+		img {
+			display: block;
+			margin-bottom: 0px;
+		}
+	}
+	figcaption {
+		font-style: italic;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		width: auto;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+	ul {
+		margin-bottom: 1em;
+		font-size: inherit;
+		li {
+			position: relative;
+			padding-left: rem(20);
+			&:before {
+				content: "";
+				width: 12px;
+				height: 12px;
+				background-image: url('../img/li-check.svg');
+				display: block;
+				position: absolute;
+				left: 0;
+				background-size: contain;
+				top: 0.5rem;
+				transform: translateY(-25%);
+			}
+		}
+	}
+	ol {
+		list-style-type: decimal;
+		margin-bottom: 1em;
+		font-size: inherit;
+		padding-left: 40px;
+		@include r(1200) {
+			list-style-position: inside;
+			padding-left: 0px;
+		}
+	}
+	li {
+		margin-bottom: 0.5rem;
+	}
+}

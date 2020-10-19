@@ -47,8 +47,26 @@
 		padding-top: rem(0);
 		padding-bottom: rem(0);
 		background-color: $light;
+		box-shadow: 0 rem(4) rem(15) rgba(0, 0, 0, 0.05);
+	}
+	&--breadcrumbs {
+		padding-top: rem(40);
+		padding-bottom: rem(40);
+	}
+	&--top {
+		padding-top: rem(40);
 	}
 	&--intro {
 		padding: 0;
+	}
+	&--ad {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	&--footer {
+		background-color: $dark;
+		color: $light;
+		padding-bottom: rem(60);
+		padding-top: rem(60);
 	}
 }

@@ -4,4 +4,8 @@
 	font-weight: 700;
 	font-size: rem(48);
 	font-family: $font-title;
+	&--small {
+		font-size: rem(24);
+		font-family: $font-main;
+	}
 }
