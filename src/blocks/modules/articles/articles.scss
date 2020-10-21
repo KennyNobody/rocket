@@ -1,8 +1,23 @@
 .articles {
+	&__nav {
+		margin-bottom: rem(60);
+		.btn {
+			margin-right: rem(20);
+			margin-bottom: rem(20);
+		}
+		.select {
+			display: none;
+			visibility: hidden;
+		}
+	}
 	&__content {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		&--isotope {
+			margin-left: rem(-15);
+			margin-right: rem(-15);
+		}
 	}
 	&__toolbar {
 		margin-top: rem(40);
@@ -11,7 +26,10 @@
 	}
 	&__item {
 		margin-bottom: rem(20);
-		min-height: 30px;
+		min-height: rem(30);
+		&--isotope {
+			padding: rem(10);
+		}
 		&--25  {
 			width: calc(25% - 15px);
 		}

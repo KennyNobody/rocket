@@ -3776,10 +3776,29 @@ a {
   padding-top: 3.75rem;
 }
 
+.articles__nav {
+  margin-bottom: 3.75rem;
+}
+
+.articles__nav .btn {
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.articles__nav .select {
+  display: none;
+  visibility: hidden;
+}
+
 .articles__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.articles__content--isotope {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
 }
 
 .articles__toolbar {
@@ -3790,7 +3809,11 @@ a {
 
 .articles__item {
   margin-bottom: 1.25rem;
-  min-height: 30px;
+  min-height: 1.875rem;
+}
+
+.articles__item--isotope {
+  padding: 0.625rem;
 }
 
 .articles__item--25 {
@@ -4210,12 +4233,18 @@ a {
   align-items: center;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 50px;
-  padding: 19px 56px;
+  border-radius: 3.125rem;
+  padding: 1.1875rem 3.5rem;
+  cursor: pointer;
+  transition: 0.3s all;
 }
 
 .btn:hover {
   opacity: 0.7;
+}
+
+.btn--small {
+  height: 3.125rem;
 }
 
 .btn--head {
@@ -4238,10 +4267,41 @@ a {
   color: #E25D23;
 }
 
+.btn--tab {
+  border: 2px solid #E25D23;
+  background: none;
+}
+
+.btn--tab-active {
+  background-color: #E25D23;
+  color: #FFFFFF;
+}
+
 .btn__icon-download {
   width: 3rem;
   height: 3rem;
   margin-right: 0.5rem;
+}
+
+.btn__icon-load {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-left: 0.625rem;
+}
+
+.select {
+  display: inline-flex;
+  height: 3.125rem;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 3.125rem;
+  border: 2px solid #E25D23;
+  background: none;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  transition: 0.3s all;
+  box-sizing: border-box;
 }
 
 .text {

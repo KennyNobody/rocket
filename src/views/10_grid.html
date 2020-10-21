@@ -1,258 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Ракета</title>
+    <title>10. Наши работы</title>
     @@include("../blocks/modules/head/head.html")
 </head>
 <body class="body">
     @@include("../blocks/modules/header/header.html")
     <main class="main">
-        <section class="section section--intro">
-            @@include("../blocks/modules/intro-slider/intro-slider.html")
-        </section>
-        <section class="section section--light">
+        <section class="section section--breadcrumbs">
             <div class="container">
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <h2 class="title mb-40">
-                            О нас
-                        </h2>
-                        <div class="text">
-                            <p>
-                                Рекламно производственная компания “Ракета” располагает обширными рекламно-производственными возможностями. Над вашими проектами трудится команда молодых, амбициозных, нацеленных на результат специалистов своего дела.
-                            </p>
-                            <p>
-                                Большой опыт работы, высокий уровень контроля качества, ответственность, креативный подход, гибкость в ценовой политике - это те факторы, по которым для реализации своих планов стоит выбрать именно нас.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <img class="img img--center" src="img/front-about.svg" alt="О нас">
-                    </div>
-                </div>
+                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
             </div>
         </section>
-        <section class="section section--gray section--decor">
-            <div class="container">
-                <h2 class="title mb-60">
-                    Почему мы?
-                </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-speed"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Скорость
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Отвечаем на письма за <strong>10</strong> минут
-                                            </li>
-                                            <li>
-                                                 Берем трубку в течение <strong>5</strong> гудков
-                                            </li>
-                                            <li>
-                                                 Выезжаем на встречу в течение дня
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-time"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Сроки
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Дизайн и смету делаем до <strong>2-х</strong> дней
-                                            </li>
-                                            <li>
-                                                 Изготавливаем вывеску от <strong>5</strong> до <strong>10</strong> рабочих дней
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-quality"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Качество
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Собственное производство
-                                            </li>
-                                            <li>
-                                                Есть свой независимый отдел технического контроля
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light">
-            <div class="container">
-                <h2 class="title">
-                    Основные услуги
-                </h2>
-            </div>
-        </section>
-        <section class="section section--decor section--orange">
-            <div class="container">
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <h2 class="title mb-40">
-                            Производство рекламы
-                        </h2>
-                        <div class="text">
-                            <p>
-                                Мы работаем в производстве рекламы больше 10 лет и знаем обо всех нюансах этой сферы.
-                                Мы все делаем собственными силами, поэтому отвечаем за разумность цен, качество изделий и сроки исполнения заказов.
-                            </p>
-                            <p>
-                                <strong>
-                                    Если мы с вами о чем-то договорились, можете быть уверены: так и будет.
-                                </strong>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <img class="img img--center" src="img/front-add.svg" alt="Производство рекламы">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light section--decor">
-            <div class="container">
-                <h2 class="title mb-40">
-                    Акции
-                </h2>
-                <div class="text mb-60">
-                    <p>
-                        Мы регулярно проводим различные акции для наших клиентов. <br>
-                        Заказывайте рекламу выгодно!
-                    </p>
-                    <p>
-                        <strong>
-                            Подробности и условия Акции уточняйте у менеджера!
-                        </strong>
-                    </p>
-                </div>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--50">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--50">
-
-                        </div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Все акции
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light section--decor">
+        <section class="section section--top">
             <div class="container">
                 <h2 class="title mb-80">
-                    Нам доверяют
+                    Полиграфия
                 </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-1.png" alt="Название фирмы" class="partner__img">
-                            </a>
+                <div class="articles isotope">
+                    <div class="articles__nav">
+                        <button data-filter=".type-1" class="btn btn--small btn--tab btn--tab-active">
+                            <span>
+                                Визитки
+                            </span>
+                        </button>
+                        <button data-filter=".type-2" class="btn btn--small btn--tab">
+                            <span>
+                                Конверты
+                            </span>
+                        </button>
+                        <button data-filter=".type-3" class="btn btn--small btn--tab">
+                            <span>
+                                Буклеты
+                            </span>
+                        </button>
+                        <button data-filter=".type-4" class="btn btn--small btn--tab">
+                            <span>
+                                Каталоги
+                            </span>
+                        </button>
+                        <button data-filter=".type-5" class="btn btn--small btn--tab">
+                            <span>
+                                Листовки
+                            </span>
+                        </button>
+                        <button data-filter=".type-6" class="btn btn--small btn--tab">
+                            <span>
+                                Меню
+                            </span>
+                        </button>
+                        <button data-filter=".type-7" class="btn btn--small btn--tab">
+                            <span>
+                                Пластиковые карты
+                            </span>
+                        </button>
+                        <button data-filter=".type-8" class="btn btn--small btn--tab">
+                            <span>
+                                Сертификаты
+                            </span>
+                        </button>
+                        <button data-filter=".type-9" class="btn btn--small btn--tab">
+                            <span>
+                                Шелкография
+                            </span>
+                        </button>
+                        <select class="select">
+                            <option value=".type-1">Визитки</option>
+                            <option value=".type-2">Конверты</option>
+                            <option value=".type-3">Буклеты</option>
+                            <option value=".type-4">Каталоги</option>
+                            <option value=".type-5">Листовки</option>
+                            <option value=".type-6">Меню</option>
+                            <option value=".type-7">Пластиковые карты</option>
+                            <option value=".type-8">Сертификаты</option>
+                            <option value=".type-9">Шелкография</option>
+                        </select>
+                    </div>
+                    <div class="articles__content articles__content--isotope">
+                        <div class="articles__item articles__item--isotope articles__item--25 type-1">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
                         </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-2.png" alt="Название фирмы" class="partner__img">
-                            </a>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-5">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
                         </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-3.png" alt="Название фирмы" class="partner__img">
-                            </a>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-6">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
                         </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-4.png" alt="Название фирмы" class="partner__img">
-                            </a>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-9">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
                         </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-5.png" alt="Название фирмы" class="partner__img">
-                            </a>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-1">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
                         </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-6.png" alt="Название фирмы" class="partner__img">
-                            </a>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-5">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
                         </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-7.png" alt="Название фирмы" class="partner__img">
-                            </a>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-7">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
                         </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-8.png" alt="Название фирмы" class="partner__img">
-                            </a>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-3">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
                         </div>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-4">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
+                        </div>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-9">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
+                        </div>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-5">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
+                        </div>
+                        <div class="articles__item articles__item--isotope articles__item--25 type-1">
+                            @@include("../blocks/modules/preview-work/preview-work.html")
+                        </div>
+                        <div class="articles__item articles__item--25 articles__item--clear"></div>
+                        <div class="articles__item articles__item--25 articles__item--clear"></div>
+                        <div class="articles__item articles__item--25 articles__item--clear"></div>
                     </div>
                     <div class="articles__toolbar">
                         <a href="" class="btn btn--orange">
                             <span>
-                                Смотреть еще
+                                Больше фото
                             </span>
                         </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section section--gray section--decor-top">
-            <div class="container">
-
             </div>
         </section>
     </main>
