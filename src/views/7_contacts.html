@@ -1,258 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Ракета</title>
+    <title>7. Контакты</title>
     @@include("../blocks/modules/head/head.html")
 </head>
 <body class="body">
     @@include("../blocks/modules/header/header.html")
     <main class="main">
-        <section class="section section--intro">
-            @@include("../blocks/modules/intro-slider/intro-slider.html")
-        </section>
-        <section class="section section--light">
+        <section class="section section--breadcrumbs">
             <div class="container">
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <h2 class="title mb-40">
-                            О нас
-                        </h2>
-                        <div class="text">
-                            <p>
-                                Рекламно производственная компания “Ракета” располагает обширными рекламно-производственными возможностями. Над вашими проектами трудится команда молодых, амбициозных, нацеленных на результат специалистов своего дела.
-                            </p>
-                            <p>
-                                Большой опыт работы, высокий уровень контроля качества, ответственность, креативный подход, гибкость в ценовой политике - это те факторы, по которым для реализации своих планов стоит выбрать именно нас.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <img class="img img--center" src="img/front-about.svg" alt="О нас">
-                    </div>
-                </div>
+                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
             </div>
         </section>
-        <section class="section section--gray section--decor">
-            <div class="container">
-                <h2 class="title mb-60">
-                    Почему мы?
-                </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-speed"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Скорость
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Отвечаем на письма за <strong>10</strong> минут
-                                            </li>
-                                            <li>
-                                                 Берем трубку в течение <strong>5</strong> гудков
-                                            </li>
-                                            <li>
-                                                 Выезжаем на встречу в течение дня
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-time"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Сроки
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Дизайн и смету делаем до <strong>2-х</strong> дней
-                                            </li>
-                                            <li>
-                                                 Изготавливаем вывеску от <strong>5</strong> до <strong>10</strong> рабочих дней
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-quality"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Качество
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Собственное производство
-                                            </li>
-                                            <li>
-                                                Есть свой независимый отдел технического контроля
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light">
-            <div class="container">
-                <h2 class="title">
-                    Основные услуги
-                </h2>
-            </div>
-        </section>
-        <section class="section section--decor section--orange">
-            <div class="container">
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <h2 class="title mb-40">
-                            Производство рекламы
-                        </h2>
-                        <div class="text">
-                            <p>
-                                Мы работаем в производстве рекламы больше 10 лет и знаем обо всех нюансах этой сферы.
-                                Мы все делаем собственными силами, поэтому отвечаем за разумность цен, качество изделий и сроки исполнения заказов.
-                            </p>
-                            <p>
-                                <strong>
-                                    Если мы с вами о чем-то договорились, можете быть уверены: так и будет.
-                                </strong>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <img class="img img--center" src="img/front-add.svg" alt="Производство рекламы">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light section--decor">
+        <section class="section section--light section--top">
             <div class="container">
                 <h2 class="title mb-40">
                     Акции
                 </h2>
-                <div class="text mb-60">
+                <div class="editor mb-60">
                     <p>
                         Мы регулярно проводим различные акции для наших клиентов. <br>
                         Заказывайте рекламу выгодно!
                     </p>
                     <p>
-                        <strong>
-                            Подробности и условия Акции уточняйте у менеджера!
-                        </strong>
+                        Подробности и условия Акции уточняйте у менеджера по телефону <strong><a href="tel:+79814750155">+7 981-475-01-55</a></strong>
                     </p>
                 </div>
-                <div class="articles">
+                <div class="articles mb-40">
                     <div class="articles__content">
-                        <div class="articles__item articles__item--50">
-
+                        <div class="articles__item articles__item--66">
+                            <div class="contact-card">
+                                <svg class="contact-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-contacts-adress"></use>
+                                </svg>
+                                <p class="contact-card__text">
+                                    Калининград, Старшего лейтенанта Сибирякова, 23Б ("Твин")
+                                </p>
+                            </div>
                         </div>
-                        <div class="articles__item articles__item--25">
-
+                        <div class="articles__item articles__item--33">
+                            <div class="contact-card">
+                                <svg class="contact-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-contacts-clock"></use>
+                                </svg>
+                                <p class="contact-card__text">
+                                    Пн-Пт с 10 до 19
+                                </p>
+                            </div>
                         </div>
-                        <div class="articles__item articles__item--25">
-
+                        <div class="articles__item articles__item--33">
+                            <a href="mailto:info@39rpk.ru" class="contact-card">
+                                <svg class="contact-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-contacts-mail"></use>
+                                </svg>
+                                <p class="contact-card__text">
+                                    info@39rpk.ru
+                                </p>
+                            </a>
                         </div>
-                        <div class="articles__item articles__item--25">
-
+                        <div class="articles__item articles__item--33">
+                            <a href="+74012750155" class="contact-card">
+                                <svg class="contact-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-contacts-call"></use>
+                                </svg>
+                                <p class="contact-card__text">
+                                    +7 (4012) 75-01-55
+                                </p>
+                            </a>
                         </div>
-                        <div class="articles__item articles__item--25">
-
+                        <div class="articles__item articles__item--33">
+                            <a href="tel:+79814750155" class="contact-card">
+                                <svg class="contact-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-contacts-call"></use>
+                                </svg>
+                                <svg class="contact-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-telegram"></use>
+                                </svg>
+                                <svg class="contact-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-viber"></use>
+                                </svg>
+                                <svg class="contact-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-whatsapp"></use>
+                                </svg>
+                                <p class="contact-card__text">
+                                    +7 981-475-01-55
+                                </p>
+                            </a>
                         </div>
-                        <div class="articles__item articles__item--50">
-
-                        </div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Все акции
-                            </span>
-                        </a>
+                        <div class="articles__item articles__item--25 articles__item--clear"></div>
+                        <div class="articles__item articles__item--25 articles__item--clear"></div>
+                        <div class="articles__item articles__item--25 articles__item--clear"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section section--light section--decor">
-            <div class="container">
-                <h2 class="title mb-80">
-                    Нам доверяют
-                </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-1.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-2.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-3.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-4.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-5.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-6.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-7.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-8.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Смотреть еще
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--gray section--decor-top">
-            <div class="container">
-
+                @@include("../blocks/modules/map-block/map-block.html")
             </div>
         </section>
     </main>

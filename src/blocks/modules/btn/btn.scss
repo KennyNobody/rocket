@@ -30,6 +30,14 @@
 		padding: 0;
 		color: $orange;
 	}
+	&--back {
+		border: 2px solid $orange;
+		background: none;
+		color: $orange;
+		background-image: url('../img/arrow-back.svg');
+		background-position: rem(20) center;
+		background-repeat: no-repeat;
+	}
 	&--tab {
 		border: 2px solid $orange;
 		background: none; 

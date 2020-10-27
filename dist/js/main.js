@@ -177,38 +177,43 @@ __webpack_require__.r(__webpack_exports__);
 
 window.addEventListener('load', function () {
   var parentElem = document.querySelector('.isotope');
-  var tabs = parentElem.querySelectorAll('.btn--tab');
-  var elem = parentElem.querySelector('.articles__content');
-  var iso = new isotope_layout__WEBPACK_IMPORTED_MODULE_0___default.a(elem, {
-    itemSelector: '.articles__item',
-    percentPosition: true,
-    filter: '.type-1'
-  });
-  $('.isotope').on('click', '.btn--tab', function () {
-    var filterValue = $(this).attr('data-filter');
-    iso.arrange({
-      filter: filterValue
-    });
-  });
-  $('.isotope').on('change', '.select', function () {
-    console.log('Да');
-    var filterValue = $(this).val();
-    iso.arrange({
-      filter: filterValue
-    });
-  });
 
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener('click', function () {
-      removeActiveClasses();
-      this.classList.add('btn--tab-active');
-    });
-  }
+  if (parentElem) {
+    (function () {
+      var removeActiveClasses = function removeActiveClasses() {
+        for (var n = 0; n < tabs.length; n++) {
+          tabs[n].classList.remove('btn--tab-active');
+        }
+      };
 
-  function removeActiveClasses() {
-    for (var n = 0; n < tabs.length; n++) {
-      tabs[n].classList.remove('btn--tab-active');
-    }
+      var tabs = parentElem.querySelectorAll('.btn--tab');
+      var elem = parentElem.querySelector('.articles__content');
+      var iso = new isotope_layout__WEBPACK_IMPORTED_MODULE_0___default.a(elem, {
+        itemSelector: '.articles__item',
+        percentPosition: true,
+        filter: '.type-1'
+      });
+      $('.isotope').on('click', '.btn--tab', function () {
+        var filterValue = $(this).attr('data-filter');
+        iso.arrange({
+          filter: filterValue
+        });
+      });
+      $('.isotope').on('change', '.select', function () {
+        console.log('Да');
+        var filterValue = $(this).val();
+        iso.arrange({
+          filter: filterValue
+        });
+      });
+
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', function () {
+          removeActiveClasses();
+          this.classList.add('btn--tab-active');
+        });
+      }
+    })();
   }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))

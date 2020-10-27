@@ -7,252 +7,54 @@
 <body class="body">
     @@include("../blocks/modules/header/header.html")
     <main class="main">
-        <section class="section section--intro">
-            @@include("../blocks/modules/intro-slider/intro-slider.html")
-        </section>
-        <section class="section section--light">
+        <section class="section section--breadcrumbs">
             <div class="container">
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <h2 class="title mb-40">
-                            О нас
-                        </h2>
-                        <div class="text">
-                            <p>
-                                Рекламно производственная компания “Ракета” располагает обширными рекламно-производственными возможностями. Над вашими проектами трудится команда молодых, амбициозных, нацеленных на результат специалистов своего дела.
-                            </p>
-                            <p>
-                                Большой опыт работы, высокий уровень контроля качества, ответственность, креативный подход, гибкость в ценовой политике - это те факторы, по которым для реализации своих планов стоит выбрать именно нас.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <img class="img img--center" src="img/front-about.svg" alt="О нас">
-                    </div>
-                </div>
+                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
             </div>
         </section>
-        <section class="section section--gray section--decor">
-            <div class="container">
-                <h2 class="title mb-60">
-                    Почему мы?
-                </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-speed"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Скорость
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Отвечаем на письма за <strong>10</strong> минут
-                                            </li>
-                                            <li>
-                                                 Берем трубку в течение <strong>5</strong> гудков
-                                            </li>
-                                            <li>
-                                                 Выезжаем на встречу в течение дня
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-time"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Сроки
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Дизайн и смету делаем до <strong>2-х</strong> дней
-                                            </li>
-                                            <li>
-                                                 Изготавливаем вывеску от <strong>5</strong> до <strong>10</strong> рабочих дней
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-quality"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Качество
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Собственное производство
-                                            </li>
-                                            <li>
-                                                Есть свой независимый отдел технического контроля
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light">
-            <div class="container">
-                <h2 class="title">
-                    Основные услуги
-                </h2>
-            </div>
-        </section>
-        <section class="section section--decor section--orange">
-            <div class="container">
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <h2 class="title mb-40">
-                            Производство рекламы
-                        </h2>
-                        <div class="text">
-                            <p>
-                                Мы работаем в производстве рекламы больше 10 лет и знаем обо всех нюансах этой сферы.
-                                Мы все делаем собственными силами, поэтому отвечаем за разумность цен, качество изделий и сроки исполнения заказов.
-                            </p>
-                            <p>
-                                <strong>
-                                    Если мы с вами о чем-то договорились, можете быть уверены: так и будет.
-                                </strong>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <img class="img img--center" src="img/front-add.svg" alt="Производство рекламы">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light section--decor">
+        <section class="section section--top">
             <div class="container">
                 <h2 class="title mb-40">
-                    Акции
+                    Какой цвет вывески выбрать?
                 </h2>
-                <div class="text mb-60">
+                <div class="editor mb-60">
                     <p>
-                        Мы регулярно проводим различные акции для наших клиентов. <br>
-                        Заказывайте рекламу выгодно!
+                        Прошел месяц после монтажа Вашей вывески? Отлично! К Вам выезжает наш специалист отдела технического контроля! Этот человек подчиняется исключительно директору нашей компании, что обеспечивает независимость контроля качества изготовления и монтажа Вашей рекламной конструкции. Если все же вдруг выявляется какая-то проблема, мы прикладываем все усилия, чтобы оперативно ее решить. 
+                    </p>
+                    <img src="https://placehold.it/1800x530" alt="">
+                    <p>
+                        Итак, вывеска несет следующую нагрузку: информационную и имиджевую. Информационная нагрузка заключается в том, что на вывеске указывается не только название фирмы, но и чем она занимается. Имиджевая- с этим уже сложнее. Многие предприятия не слишком обращают внимание на эту деталь и не думают о соответствии вывески стилю предприятия. Конечно, когда корпоративный стиль уже выверен и разработан, то изготовление вывесок идет в той же цветовой гамме, а иногда и соответствует фирменный шрифт, не говоря уж о логотипе предприятия.
                     </p>
                     <p>
-                        <strong>
-                            Подробности и условия Акции уточняйте у менеджера!
-                        </strong>
+                        Что касается дизайна вывески, то тут главное- не переборщить, обилие красок, странных изображений и готических шрифтов, может вызвать отторжение и неприязнь у посетителя. Чувство меры и вкуса все же предпочтительнее и в этом лучше положиться на дизайнера, если у вас не имеется своих идей. А если идеи имеются (особенно не стандартные), то все же прислушаться к советам профессионала.
+                    </p>
+                    <p>
+                        Что еще влияет на имиджевый аспект, кроме цвета и дизайна? Материал. То из чего изготовлена вывеска. Собираясь сэкономить и, заказывая вывеску из дешевого материала, вы тем самым подчеркиваете свой статус, вернее его отсутствие. Никто не говорит о том, чтобы вывеска была вся расфуфырено-вычурная, но качество, понятный , но при этом яркий дизайн и шрифт- это обязательные составляющие любой удачной вывески. То есть вывеска не должна быть блеклой и незаметной. Исключение составляют лишь сдержанные вывески для официальных учреждений.
+                    </p>
+                    <p>
+                        Вывески бывают интерьерные и наружные. Интерьерные вывески, как уже понятно, располагаются внутри здания и представляют собой различные небольшие таблички рядом с офисами, либо это вывески магазинов внутри торговых центров. Такие вывески не обязательно нуждаются в подсветке, но зато их исполнение должно быть безупречно, так как они находятся на близком расстоянии от глаз.
+                    </p>
+                    <p>
+                        Наружные вывески обязательно должны быть заметными и яркими. А чтобы такая вывеска работала и в темное время суток, а зимой темнеет уже в четвертом часу дня, им не обойтись без освещения.
+                    </p>
+                    <p>
+                        Чаще всего наружные вывески изготавливают в виде световых коробов, крышных установок, объемных букв и т.д. Все эти виды вывесок обязательно имеют источник освещения и их нельзя не заметить даже ночью. А если еще подсветка меняет цвет или переливается, то она невольно приковывает внимание. Тут главное, не превратиться в елочную гирлянду.
+                    </p>
+                    <p>
+                        Подсветка вывески может быть как снаружи в виде направленных лучей света, так и освещать вывеску, располагаясь изнутри.
+                    </p>
+                    <p>
+                        Функции подсветки выполняют светодиодные установки, галогенные лампы, а иногда и их сочетание.
+                    </p>
+                    <p>
+                        Но то, что световые вывески гораздо привлекательнее, хотя и дороже, никто и не отрицает. Дорогая вывеска- это еще и вложение денег в будущее фирмы. Это поддержка имиджа, статуса, да и красивую вывеску без хороших расходных материалов изготовить весьма проблематично. Так что сначала вы тратитесь на изготовление вывесок, потом вывеска приглашает клиентов и окупает себя.
                     </p>
                 </div>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--50">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--50">
-
-                        </div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Все акции
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light section--decor">
-            <div class="container">
-                <h2 class="title mb-80">
-                    Нам доверяют
-                </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-1.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-2.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-3.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-4.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-5.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-6.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-7.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-8.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Смотреть еще
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--gray section--decor-top">
-            <div class="container">
-
+                <a href="" class="btn btn--back">
+                    <span>
+                        Назад
+                    </span>
+                </a>
             </div>
         </section>
     </main>

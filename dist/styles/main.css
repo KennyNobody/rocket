@@ -3767,6 +3767,8 @@ a {
 .section--ad {
   padding-top: 0;
   padding-bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section--footer {
@@ -3774,6 +3776,10 @@ a {
   color: #FFFFFF;
   padding-bottom: 3.75rem;
   padding-top: 3.75rem;
+}
+
+.articles {
+  clear: both;
 }
 
 .articles__nav {
@@ -3809,7 +3815,7 @@ a {
 
 .articles__item {
   margin-bottom: 1.25rem;
-  min-height: 1.875rem;
+  width: 100%;
 }
 
 .articles__item--isotope {
@@ -3821,11 +3827,19 @@ a {
 }
 
 .articles__item--33 {
-  width: calc(25% - 10px);
+  width: calc(100% / 3 - 15px);
 }
 
 .articles__item--50 {
   width: calc(50% - 10px);
+}
+
+.articles__item--66 {
+  width: calc(100% / 12 * 8 - 7px);
+}
+
+.articles__item--clear {
+  margin-bottom: 0;
 }
 
 .columns {
@@ -4079,6 +4093,7 @@ a {
 .editor h3 {
   font-weight: bold;
   font-size: 1.375rem;
+  clear: both;
   margin-bottom: 1rem;
 }
 
@@ -4086,12 +4101,14 @@ a {
   font-weight: bold;
   font-size: 1.125rem;
   margin-bottom: 1rem;
+  clear: both;
 }
 
 .editor h5 {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 1rem;
+  clear: both;
 }
 
 .editor strong,
@@ -4267,6 +4284,15 @@ a {
   color: #E25D23;
 }
 
+.btn--back {
+  border: 2px solid #E25D23;
+  background: none;
+  color: #E25D23;
+  background-image: url("../img/arrow-back.svg");
+  background-position: 1.25rem center;
+  background-repeat: no-repeat;
+}
+
 .btn--tab {
   border: 2px solid #E25D23;
   background: none;
@@ -4337,6 +4363,16 @@ a {
   height: auto;
 }
 
+.img--preview {
+  width: calc(100% / 3 - 10px);
+  float: left;
+  display: block;
+  height: auto;
+  margin-right: 1.25rem;
+  margin-bottom: 5rem;
+  flex-shrink: 0;
+}
+
 .preview-work {
   display: block;
   position: relative;
@@ -4384,6 +4420,150 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: self-start;
+}
+
+.link-card {
+  background-color: #F2F2F2;
+  display: block;
+  min-height: 18.75rem;
+  width: 100%;
+  position: relative;
+  padding: 1.875rem;
+  text-decoration: none;
+}
+
+.link-card:hover {
+  opacity: 0.7;
+}
+
+.link-card--invert {
+  color: #FFFFFF;
+}
+
+.link-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: block;
+}
+
+.link-card__text {
+  font-weight: 500;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  min-height: 4.6875rem;
+  background-color: #F2F2F2;
+  padding: 1.5625rem 1.875rem;
+}
+
+.contact-card__icon {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+}
+
+.contact-card__icon:last-of-type {
+  margin-right: 0.9375rem;
+}
+
+a.contact-card {
+  text-decoration: none;
+}
+
+a.contact-card:hover {
+  opacity: 0.7;
+}
+
+.map-block {
+  display: flex;
+  height: 31.25rem;
+  align-items: center;
+}
+
+.news-card {
+  display: block;
+  text-decoration: none;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+
+.news-card:hover {
+  opacity: 0.7;
+}
+
+.news-card__thumb {
+  display: block;
+  margin-bottom: 1.5625rem;
+}
+
+.news-card__thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.news-card__title {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.person-card {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 16.25rem;
+}
+
+.person-card__thumb {
+  border-radius: 12.5rem;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  width: 13.75rem;
+  height: 13.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person-card__thumb img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.person-card__name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+}
+
+.person-card__name strong {
+  display: block;
+}
+
+.person-card__discript {
+  margin-bottom: 0.625rem;
+}
+
+.person-card__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.person-card__link:hover {
+  opacity: 0.7;
+}
+
+.person-card__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.875rem;
 }
 
 .intro-slider {

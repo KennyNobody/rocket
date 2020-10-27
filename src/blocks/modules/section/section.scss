@@ -62,6 +62,8 @@
 	&--ad {
 		padding-top: 0;
 		padding-bottom: 0;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 	&--footer {
 		background-color: $dark;

@@ -1,0 +1,28 @@
+.contact-card {
+	display: flex;
+	align-items: center;
+	min-height: rem(75);
+	background-color: #F2F2F2;
+	padding: rem(25) rem(30);
+	&__icon {
+		display: block;
+		width: rem(20);
+		height: rem(20);
+		margin-right: rem(10);
+		&:last-of-type {
+			margin-right: rem(15);
+		}
+	}
+	&__text {
+
+	}
+}
+
+a {
+	&.contact-card {
+		text-decoration: none;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
