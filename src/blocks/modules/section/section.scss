@@ -7,6 +7,7 @@
 	}
 	&--dark {
 		background-color: $dark;
+		color: $light;
 	}
 	&--orange {
 		background-color: $orange;
@@ -17,6 +18,14 @@
 	}
 	&--decor {
 		background-image: url('../img/decor-top.svg'), url('../img/decor-bottom.svg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top right, bottom left;
+		padding-top: 264px;
+		padding-bottom: 264px;
+	}
+	&--decor-invert {
+		background-image: url('../img/decor-top-invert.svg'), url('../img/decor-bottom.svg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: top right, bottom left;

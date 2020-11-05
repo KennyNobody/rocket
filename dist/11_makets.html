@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Ракета</title>
+    <title>11. Требования к макетам</title>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="theme-color" content="#fff">
@@ -90,7 +90,7 @@
 				Главная
 			</span>
 		</a>
-		<a href="" class="header-bottom__link">
+		<a href="#modal-menu" class="header-bottom__link" data-fancybox>
 			<span>
 				Услуги
 			</span>
@@ -102,9 +102,9 @@
 			<span>
 				Наши работы
 			</span>
-			<svg>
+			<!-- <svg>
 				<use xlink:href="img/sprites/sprite.svg#icon-menu-arrow"></use>
-			</svg>
+			</svg> -->
 		</a>
 		<a href="" class="header-bottom__link">
 			<span>
@@ -132,298 +132,149 @@
 	</section>
 </header>
     <main class="main">
-        <section class="section section--intro">
-            <div class="swiper-container intro-slider">
-	<div class="swiper-wrapper intro-slider__wrapper">
-		<div class="swiper-slide intro-slider__slide" style="background-image: url('img/slide-bg.jpg')">
-			<div class="intro-slider__slide-content">
-				<div class="container">
-					<h2 class="title mb-40">
-						Изготовление <br> интерьерной рекламы
-					</h2>
-					<a href="" class="btn btn--light">
-						<span>
-							Подробнее
-						</span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide intro-slider__slide" style="background-image: url('img/slide-bg.jpg')">
-			<div class="intro-slider__slide-content">
-				<div class="container">
-					<h2 class="title mb-40">
-						Короткий заголовок
-					</h2>
-					<a href="" class="btn btn--light">
-						<span>
-							Подробнее
-						</span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide intro-slider__slide" style="background-image: url('img/slide-bg.jpg')">
-			<div class="intro-slider__slide-content">
-				<div class="container">
-					<h2 class="title mb-40">
-						Длинный заголовок <br> в две строки
-					</h2>
-					<a href="" class="btn btn--light">
-						<span>
-							Подробнее
-						</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="intro-slider__pagintaion"></div>
-</div>
-        </section>
-        <section class="section section--light">
+        <section class="section section--breadcrumbs">
             <div class="container">
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <h2 class="title mb-40">
-                            О нас
-                        </h2>
-                        <div class="text">
-                            <p>
-                                Рекламно производственная компания “Ракета” располагает обширными рекламно-производственными возможностями. Над вашими проектами трудится команда молодых, амбициозных, нацеленных на результат специалистов своего дела.
-                            </p>
-                            <p>
-                                Большой опыт работы, высокий уровень контроля качества, ответственность, креативный подход, гибкость в ценовой политике - это те факторы, по которым для реализации своих планов стоит выбрать именно нас.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <img class="img img--center" src="img/front-about.svg" alt="О нас">
-                    </div>
-                </div>
+                <nav class="breadcrumbs">
+	<a href="" class="breadcrumbs__link">
+		Главная
+	</a>
+	<svg class="breadcrumbs__icon">
+		<use xlink:href="img/sprites/sprite.svg#icon-breadcrumbs-arrow"></use>
+	</svg>
+	<a href="" class="breadcrumbs__link">
+		Предыдущая страница
+	</a>
+	<svg class="breadcrumbs__icon">
+		<use xlink:href="img/sprites/sprite.svg#icon-breadcrumbs-arrow"></use>
+	</svg>
+	<span class="breadcrumbs__link breadcrumbs__link--static">
+		Текущая страница
+	</span>
+</nav>
             </div>
         </section>
-        <section class="section section--gray section--decor">
-            <div class="container">
-                <h2 class="title mb-60">
-                    Почему мы?
-                </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-speed"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Скорость
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Отвечаем на письма за <strong>10</strong> минут
-                                            </li>
-                                            <li>
-                                                 Берем трубку в течение <strong>5</strong> гудков
-                                            </li>
-                                            <li>
-                                                 Выезжаем на встречу в течение дня
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-time"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Сроки
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Дизайн и смету делаем до <strong>2-х</strong> дней
-                                            </li>
-                                            <li>
-                                                 Изготавливаем вывеску от <strong>5</strong> до <strong>10</strong> рабочих дней
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <div class="front-fact">
-                                <svg class="front-fact__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-why-quality"></use>
-                                </svg>
-                                <div class="front-fact__content">
-                                    <div class="text">
-                                        <h2>
-                                            Качество
-                                        </h2>
-                                        <ul>
-                                            <li>
-                                                Собственное производство
-                                            </li>
-                                            <li>
-                                                Есть свой независимый отдел технического контроля
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light">
-            <div class="container">
-                <h2 class="title">
-                    Основные услуги
-                </h2>
-            </div>
-        </section>
-        <section class="section section--decor section--orange">
-            <div class="container">
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <h2 class="title mb-40">
-                            Производство рекламы
-                        </h2>
-                        <div class="text">
-                            <p>
-                                Мы работаем в производстве рекламы больше 10 лет и знаем обо всех нюансах этой сферы.
-                                Мы все делаем собственными силами, поэтому отвечаем за разумность цен, качество изделий и сроки исполнения заказов.
-                            </p>
-                            <p>
-                                <strong>
-                                    Если мы с вами о чем-то договорились, можете быть уверены: так и будет.
-                                </strong>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <img class="img img--center" src="img/front-add.svg" alt="Производство рекламы">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light section--decor">
-            <div class="container">
-                <h2 class="title mb-40">
-                    Акции
-                </h2>
-                <div class="text mb-60">
-                    <p>
-                        Мы регулярно проводим различные акции для наших клиентов. <br>
-                        Заказывайте рекламу выгодно!
-                    </p>
-                    <p>
-                        <strong>
-                            Подробности и условия Акции уточняйте у менеджера!
-                        </strong>
-                    </p>
-                </div>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--50">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--25">
-
-                        </div>
-                        <div class="articles__item articles__item--50">
-
-                        </div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Все акции
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section--light section--decor">
+        <section class="section section--top">
             <div class="container">
                 <h2 class="title mb-80">
-                    Нам доверяют
+                    Требования к макетам
                 </h2>
+                <h3 class="title title--small title--underline-orange mb-40">
+                    Общие требования
+                </h3>
                 <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-1.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-2.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-3.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-4.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-5.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-6.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-7.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                        <div class="articles__item articles__item--25">
-                            <a href="" class="partner">
-                                <img src="img/partner-8.png" alt="Название фирмы" class="partner__img">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
+                    <div class="articles__content articles__content--left">
+                        <a href="" class="btn btn--file btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-1"></use>
+                            </svg>
                             <span>
-                                Смотреть еще
+                                Общие требования к макетам
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--file btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-2"></use>
+                            </svg>
+                            <span>
+                                Требования для широкоформатной печати
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--file btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-3"></use>
+                            </svg>
+                            <span>
+                                Требования к макетам для резки
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--file btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-4"></use>
+                            </svg>
+                            <span>
+                                Подробные требования для различных файлов
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--file btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-5"></use>
+                            </svg>
+                            <span>
+                                Частые ошибки
                             </span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section section--gray section--decor-top">
+        <section class="section section--orange section--decor">
             <div class="container">
-
+                <h3 class="title title--small title--underline-light mb-40">
+                    Полиграфия
+                </h3>
+                <div class="articles">
+                    <div class="articles__content articles__content--left">
+                        <a href="" class="btn btn--white btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-6"></use>
+                            </svg>
+                            <span>
+                                Визитки
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--white btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-7"></use>
+                            </svg>
+                            <span>
+                                Многостраничная продукция
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--white btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-8"></use>
+                            </svg>
+                            <span>
+                                Буклеты (лифлеты)
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--white btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-9"></use>
+                            </svg>
+                            <span>
+                                Листовки
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h3 class="title title--small title--underline-orange mb-40">
+                    Другая продукция
+                </h3>
+                <div class="articles">
+                    <div class="articles__content articles__content--left">
+                        <a href="" class="btn btn--file btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-10"></use>
+                            </svg>
+                            <span>
+                                Сувениры
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--file btn--inline">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-btn-11"></use>
+                            </svg>
+                            <span>
+                                Одежда
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -540,6 +391,710 @@
 		</div>
 	</div>
 </div>
+<div class="hidden">
+	<section class="modal-menu" id="modal-menu" style="display: none;">
+	<sidebar class="modal-menu__side">
+		<div class="modal-menu__head">
+			<p class="modal-menu__title">
+				Услуги
+			</p>
+		</div>
+		<!-- modal-menu__nav-link--active -->
+		<a href="#menu-block-1" class="modal-menu__nav-link">
+			Строительство выставочных стендов
+		</a>
+		<a href="#menu-block-2" class="modal-menu__nav-link">
+			Оформление деловых мероприятий 
+		</a>
+		<a href="#menu-block-3" class="modal-menu__nav-link">
+			Наружная и интерьерная реклама
+		</a>
+		<a href="#menu-block-4" class="modal-menu__nav-link">
+			Брендирование автотранспорта
+		</a>
+		<a href="#menu-block-5" class="modal-menu__nav-link">
+			Фирменная сувенирная продукция
+		</a>
+		<a href="#menu-block-6" class="modal-menu__nav-link">
+			Широкоформатная печать
+		</a>
+		<a href="#menu-block-7" class="modal-menu__nav-link">
+			Полиграфия
+		</a>
+		<a href="#menu-block-8" class="modal-menu__nav-link">
+			UV-Печать
+		</a>
+		<a href="menu-block-9" class="modal-menu__nav-link">
+			Плоттерная резка 
+		</a>
+		<a href="menu-block-10" class="modal-menu__nav-link">
+			Лазерная/фрезерная резка и гравировка
+		</a>
+		<a href="menu-block-11" class="modal-menu__nav-link">
+			POS материалы
+		</a>
+		<a href="menu-block-12" class="modal-menu__nav-link">
+			Аренда фотозон и выставочного оборудования
+		</a>
+		<a href="menu-block-13" class="modal-menu__nav-link">
+			Разработка дизайна
+		</a>
+	</sidebar>
+	<main class="modal-menu__main">
+		<div class="modal-menu__head"></div>
+		<div class="modal-menu__content" id="menu-block-1">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-2">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-3">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-4">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-5">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-6">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-7">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-8">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-9">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-10">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-11">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-12">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+		<div class="modal-menu__content" id="menu-block-13">
+			<a href="" class="modal-menu__link">
+				Вывески по «Дизайн коду» города
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские вывески Световые короба (Лайтбокс, касетон)
+			</a>
+			<a href="" class="modal-menu__link">
+				Плоские буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Обьемные буквы
+			</a>
+			<a href="" class="modal-menu__link">
+				Торцевые касетоны
+			</a>
+			<a href="" class="modal-menu__link">
+				Входные группы и козырьки
+			</a>
+			<a href="" class="modal-menu__link">
+				Таблички
+			</a>
+			<a href="" class="modal-menu__link">
+				Штендеры
+			</a>
+			<a href="" class="modal-menu__link">
+				Уличные стенды
+			</a>
+			<a href="" class="modal-menu__link">
+				Металлоконструкции любой сложности
+			</a>
+			<a href="" class="modal-menu__link">
+				Ростовые фигуры
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Мойка вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Демонтаж/монтаж вывесок
+			</a>
+			<a href="" class="modal-menu__link">
+				Ремонт и постгарантийное обслуживание
+			</a>
+			<a href="" class="modal-menu__link">
+				Оформление помещений под ключ
+			</a>
+		</div>
+	</main>
+</section>
+</div>
         </div>
     </footer>
     <div class="container">
@@ -576,6 +1131,39 @@
 		</a>
 		<a href="11_makets.html" class="demo__link">
 			11. Требования к макетам
+		</a>
+		<a href="12_rules.html" class="demo__link">
+			12. Требования к макетам 1
+		</a>
+		<a href="13_rules.html" class="demo__link">
+			13. Требования к макетам 2
+		</a>
+		<a href="14_rules.html" class="demo__link">
+			14. Требования к макетам 3
+		</a>
+		<a href="15_rules.html" class="demo__link">
+			15. Требования к макетам 4
+		</a>
+		<a href="16_rules.html" class="demo__link">
+			16. Требования к макетам 5
+		</a>
+		<a href="17_rules.html" class="demo__link">
+			17. Требования к макетам 6
+		</a>
+		<a href="18_rules.html" class="demo__link">
+			18. Требования к макетам 7
+		</a>
+		<a href="19_rules.html" class="demo__link">
+			19. Требования к макетам 8
+		</a>
+		<a href="20_rules.html" class="demo__link">
+			20. Требования к макетам 9
+		</a>
+		<a href="21_rules.html" class="demo__link">
+			21. Требования к макетам 10
+		</a>
+		<a href="22_rules.html" class="demo__link">
+			22. Требования к макетам 11
 		</a>
 	</div>
 </div>

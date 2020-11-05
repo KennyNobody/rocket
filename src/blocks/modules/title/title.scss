@@ -8,4 +8,12 @@
 		font-size: rem(24);
 		font-family: $font-main;
 	}
+	&--underline-light {
+		padding-bottom: rem(20);
+		border-bottom: 2px solid $light;
+	}
+	&--underline-orange {
+		padding-bottom: rem(20);
+		border-bottom: 2px solid $orange;
+	}
 }

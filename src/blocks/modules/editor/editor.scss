@@ -39,13 +39,16 @@
 	}
 	h5 {
 		font-weight: bold;
-		font-size: 16px;
+		font-size: rem(16);
 		// font-family: $font-title;
 		margin-bottom: 1rem;
 		clear: both;
 	}
 	strong, b {
 		font-weight: bold;
+	}
+	strong {
+		color: $orange;
 	}
 	a {
 		font-style: normal;
@@ -125,5 +128,18 @@
 	}
 	li {
 		margin-bottom: 0.5rem;
+	}
+
+}
+
+.section {
+	&--orange {
+		ul {
+			li {
+				&:before {
+					background-image: url('../img/li-check-light.svg');
+				}
+			}
+		}
 	}
 }

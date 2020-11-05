@@ -15,6 +15,12 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		&--left {
+			justify-content: start;
+		}
+		&--center {
+			justify-content: center;
+		}
 		&--isotope {
 			margin-left: rem(-15);
 			margin-right: rem(-15);
@@ -30,6 +36,9 @@
 		width: 100%;
 		&--isotope {
 			padding: rem(10);
+		}
+		&--20  {
+			width: calc(20% - 15px);
 		}
 		&--25  {
 			width: calc(25% - 15px);

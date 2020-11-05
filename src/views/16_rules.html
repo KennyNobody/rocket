@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>16. Требования к макетам 5</title>
+    @@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+    @@include("../blocks/modules/header/header.html")
+    <main class="main">
+        <section class="section section--breadcrumbs">
+            <div class="container">
+                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+            </div>
+        </section>
+        <section class="section section--top">
+            <div class="container">
+                <h2 class="title mb-80">
+                    Частые ошибки
+                </h2>
+                <h3 class="title title--small mb-60">
+                    Размер продукции
+                </h3>
+                <div class="editor">
+                    <ul>
+                        <li>
+                            Размер продукции должен быть задан форматом листа в программе верстки
+                        </li>
+                        <li>
+                            Разные макеты продукции создавайте в отдельных файлах, лицо - на одном листе файла, оборот- на другом листе файла
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gray section--decor">
+            <div class="container">
+                <h3 class="title title--small mb-60">
+                    Отсутствие вылетов:
+                </h3>
+                <div class="editor mb-60">
+                    <ul>
+                        <li>
+                            Вылеты (припуски с обрезному формату) обязательны, когда часть изображения уходят под обрез (линия реза проходит по каринке)
+                        </li>
+                        <li>
+                            Размер вылетов - по 3 мм. с каждой стороны
+                        </li>
+                        <li>
+                            При отсутствии вылетов после резки по краям продукции могут быть белые поля разных размеров
+                        </li>
+                        <li>
+                            Расстояние от значимых элементов макета (слов, номеров телефонов, линий и пр.) до линии реза должно быть не менее 3 мм., иначе элементы могут «зарезаться»
+                        </li>
+                    </ul>
+                </div>
+                <div class="editor">
+                    <ul>
+                        <li>
+                            Задайте вылеты при создании документа
+                        </li>
+                        <li>
+                            Проставьте вылеты при сохранении макета
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h3 class="title title--small mb-60">
+                    Рамки:
+                </h3>
+                <div class="editor mb-60">
+                    <ul>
+                        <li>
+                            Не делайте рамки вокруг макета
+                        </li>
+                        <li>
+                            Не создавайте рамки близко к краю макета (старайтесь вообще не использовать рамок в макете)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark section--decor">
+            <div class="container">
+                <h3 class="title title--small mb-60">
+                    Неверная цветовая модель:
+                </h3>
+                <div class="editor mb-60">
+                    <ul>
+                        <li>
+                            Все элементы макета должны быть в цветовой модели CMYK, т.к. печать производится только в этой модели
+                        </li>
+                        <li>
+                            Переведите все элементы из RGB в CMYK. Вы увидите изменения цветов макета и получите более ясное представление, как будет выглядеть макет при печати ( при условии, что у Вас откалиброванный монитор)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h3 class="title title--small mb-60">
+                    Низкое разрешение:
+                </h3>
+                <div class="editor mb-80">
+                    <ul>
+                        <li>
+                            Для печати листовой продукции необходимо разрешение не менее 220-300 dpi в масштабе 1:1;
+                        </li>
+                        <li>
+                            Низкое разрешение приводит к потере качества изображения.
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="title title--small mb-60">
+                    Качество изображения:
+                </h3>
+                <div class="editor mb-80">
+                    <ul>
+                        <li>
+                            Использование изображения в формате JPEG приводит к потере качества изображения (на границах цветов и на плавных переходах оттенков могут быть JPEG-артефакты – посторонний шум);
+                        </li>
+                        <li>
+                            По возможности используйте в макете изображения в форматах: TIFF без компрессии, TIFF с компрессией LZW или ZIP;
+                        </li>
+                        <li>
+                            На иллюстрации можно увидеть разницу между хорошей картинкой и картинкой, испорченной JPEG-сжатием.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section section--orange section--decor-top">
+            <div class="container">
+                <h3 class="title title--small mb-60">
+                    Потерянные линки:
+                </h3>
+                <div class="editor mb-80">
+                    <ul>
+                        <li>
+                            Все изображения, вставленные в макет, должны быть высланы в типографию вместе с файлом верстки во избежание ошибки "потерянные линки"
+                        </li>
+                        <li>
+                            Соберите файлы с изображением в единый архив и вышлите нам
+                        </li>
+                        <li>
+                            Если вёрстка производится в Adobe InDesign, используйте для сборки команду Package (File ->Package)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="section section--footer">
+        <div class="container">
+            @@include("../blocks/modules/footer/footer.html")
+        </div>
+    </footer>
+    @@include("../blocks/modules/demo/demo.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+</body>
+</html>

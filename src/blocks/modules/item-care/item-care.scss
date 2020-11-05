@@ -1,0 +1,21 @@
+.item-care {
+	text-align: center;
+	&__thumb {
+		height: rem(35);
+		width: rem(45);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: rem(20)
+	}
+	&__icon {
+		height: 100%;
+		width: 100%;
+		display: block;
+	}
+	&__discript {
+
+	}
+}

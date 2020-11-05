@@ -30,6 +30,10 @@
 		padding: 0;
 		color: $orange;
 	}
+	&--white {
+		color: $light;
+		border: 2px solid $light;
+	}
 	&--back {
 		border: 2px solid $orange;
 		background: none;
@@ -45,6 +49,20 @@
 	&--tab-active {
 		background-color: $orange;
 		color: $light;
+	}
+	&--file {
+		color: $dark;
+		border: 2px solid $orange;
+		padding: rem(19) rem(30);
+	}
+	&--inline {
+		margin-right: rem(10);
+		margin-bottom: rem(10);
+	}
+	&__icon {
+		width: rem(24);
+		height: rem(24);
+		margin-right: rem(10);
 	}
 	&__icon-download {
 		width: rem(48);

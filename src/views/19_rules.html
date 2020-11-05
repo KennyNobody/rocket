@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>19. Требования к макетам 8</title>
+    @@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+    @@include("../blocks/modules/header/header.html")
+    <main class="main">
+        <section class="section section--breadcrumbs">
+            <div class="container">
+                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+            </div>
+        </section>
+        <section class="section section--top">
+            <div class="container">
+                <h2 class="title mb-80">
+                    Буклеты (лифлеты)
+                </h2>
+                <div class="articles mb-60">
+                    <div class="articles__content articles__content--center">
+                        <div class="articles__item articles__item--20">
+                            <article class="item-rule">
+                                <div class="item-rule__thumb">
+                                    <svg class="item-rule__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#icon-rule-1"></use>
+                                    </svg>
+                                </div>
+                                <p class="item-rule__text">
+                                    разрешение - <br>
+                                    300 dpi
+                                </p>
+                            </article>
+                        </div>
+                        <div class="articles__item articles__item--20">
+                            <article class="item-rule">
+                                <div class="item-rule__thumb">
+                                    <svg class="item-rule__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#icon-rule-2"></use>
+                                    </svg>
+                                </div>
+                                <p class="item-rule__text">
+                                    шрифты <br>
+                                    в кривых
+                                </p>
+                            </article>
+                        </div>
+                        <div class="articles__item articles__item--20">
+                            <article class="item-rule">
+                                <div class="item-rule__thumb">
+                                    <svg class="item-rule__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#icon-rule-3"></use>
+                                    </svg>
+                                </div>
+                                <p class="item-rule__text">
+                                    цветовая гамма <br> CMYK 
+                                </p>
+                            </article>
+                        </div>
+                        <div class="articles__item articles__item--20">
+                            <article class="item-rule">
+                                <div class="item-rule__thumb">
+                                    <svg class="item-rule__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#icon-rule-4"></use>
+                                    </svg>
+                                </div>
+                                <p class="item-rule__text">
+                                    эффекты <br>
+                                    перевести в растровые<br> изображения
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="title title--small mb-60">
+                    Формат файла
+                </h3>
+                <div class="articles">
+                    <div class="articles__content articles__content--center">
+                        <article class="item-format">
+                            <div class="item-format__thumb">
+                                <svg class="item-format__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-1"></use>
+                                </svg>
+                                <svg class="item-format__discript">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-1"></use>
+                                </svg>
+                            </div>
+                            <p class="item-format__text">
+                                Adobe <br> Acrobat
+                            </p>
+                        </article>
+                        <article class="item-format">
+                            <div class="item-format__thumb">
+                                <svg class="item-format__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-2"></use>
+                                </svg>
+                                <svg class="item-format__discript">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-2"></use>
+                                </svg>
+                            </div>
+                            <p class="item-format__text">
+                                Версии 20 <br>и ниже
+                            </p>
+                        </article>
+                        <article class="item-format">
+                            <div class="item-format__thumb">
+                                <svg class="item-format__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-3"></use>
+                                </svg>
+                                <svg class="item-format__discript">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-3"></use>
+                                </svg>
+                            </div>
+                            <p class="item-format__text">
+                                Версии CC 2018 <br>
+                                и ниже
+                            </p>
+                        </article>
+                        <article class="item-format">
+                            <div class="item-format__thumb">
+                                <svg class="item-format__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-4"></use>
+                                </svg>
+                                <svg class="item-format__discript">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-4"></use>
+                                </svg>
+                            </div>
+                            <p class="item-format__text">
+                                EPS
+                            </p>
+                        </article>
+                        <article class="item-format">
+                            <div class="item-format__thumb">
+                                <svg class="item-format__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-5"></use>
+                                </svg>
+                                <svg class="item-format__discript">
+                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-5"></use>
+                                </svg>
+                            </div>
+                            <p class="item-format__text">
+                                TIFF
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gray section--decor">
+            <div class="container">
+                <h3 class="title title--small mb-60">
+                    Вылеты
+                </h3>
+                <div class="columns mb-60">
+                    <div class="columns__column columns__column--6">
+                        <div class="editor">
+                            <p>
+                                <b>Вылеты</b> - это припуски к обрезному формату, которые необходимо создавать, когда часть изображения уходит «под обрез» (то есть линия реза проходит по картинке). При отсутствии вылетов после резки по краям продукции могут образоваться белые поля разных размеров.
+                            </p>
+                            <p>
+                                <strong>3 мм (со всех сторон)</strong><br>
+                                для листовой продукции
+                            </p>
+                            <p>
+                                <strong>5 мм (со всех сторон)</strong><br>
+                                для многополосной продукции
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columns__column columns__column--6">
+                        <div class="editor">
+                            <p>
+                                <b>Влёты</b> - отступы от линии реза и/или сгиба до содержимого ( для учета погрешности печати и реза). При отсутствии необходимого размера влёта, может происходить «зарезание» значимых элементов макета ( слова, номера телефонов, логотип и пр.)
+                            </p>
+                            <p>
+                                <strong>не менее 3 мм (со всех сторон)</strong><br>
+                                для листовой продукции
+                            </p>
+                            <p>
+                                <strong>не менее 5 мм (со всех сторон)</strong><br>
+                                для многополосной продукции
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor mb-40">
+                    <ul>
+                        <li>
+                            Не используйте в дизайне рамки по периметру. Отступ для рамки , от края реза, не менее 5-7 мм. ( Но и в этом случае при печати и резке будет отклонение, а значит допустимые отклонения становятся визуально очень заметны).
+                        </li>
+                        <li>
+                            Не надо отображать в макете линии скругления, биговки и прочих вспомогательных элементов (Необходимо размещать данные элементы в отдельном слое или прикладывать привью файл).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h3 class="title title--small mb-60">
+                    Виды фальцовок
+                </h3>
+                <div class="editor mb-60">
+                    <p>
+                        Если предполагается, что макет потребует редактирования, то ко всем форматам дополнительно потребуются обработанные фотографии максимального размера, шрифты и логотипы (желательно в векторном виде), используемые в макете. <br>
+                        <strong>
+                            Услуга по доработке макета для соотвтствия техническим требованиям является дополнительной и оплачивается отдельно. 
+                        </strong>
+                    </p>
+                    <p>
+                        Типография не несет ответственности за брак, из-за неверно подготовленного к печати макета заказчика. 
+                    </p>
+                </div>
+                <div class="columns">
+                    <div class="columns__column columns__column--4">
+                        <img class="img img--center" src="img/alarm-template.png" alt="Внимание!">
+                    </div>
+                    <div class="columns__column columns__column--8">
+                        <div class="editor">
+                            <ul>
+                                <li>
+                                    Файлы линейки Microsoft office (Word, Exel, Power Point) не являются макетами, подготовленными к печати;
+                                </li>
+                                <li>
+                                    При возникновении брака ввиду несоблюдения технических требований, вся ответственность ложиться на сторону предоставившую некорректный макет;
+                                </li>
+                                <li>
+                                    Макеты, не соответствующие данным требованиям, могут быть автоматически доработаны типографией без согласования с заказчиком;
+                                </li>
+                                <li>
+                                    Цвет при печати может отличаться от экранного из-за особенностей монитора. В связи с этим мы рекомендуем делать цветопробу. Без цветопробы претензии по цвету не принимаются.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="section section--footer">
+        <div class="container">
+            @@include("../blocks/modules/footer/footer.html")
+        </div>
+    </footer>
+    @@include("../blocks/modules/demo/demo.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+</body>
+</html>
