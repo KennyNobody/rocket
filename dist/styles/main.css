@@ -3650,6 +3650,10 @@ a {
   margin-bottom: 1.5625rem;
 }
 
+.mb-30 {
+  margin-bottom: 1.875rem;
+}
+
 .mb-40 {
   margin-bottom: 2.5rem;
 }
@@ -3826,6 +3830,10 @@ a {
   margin-right: -0.9375rem;
 }
 
+.articles__content--align {
+  align-items: center;
+}
+
 .articles__toolbar {
   margin-top: 2.5rem;
   display: flex;
@@ -3839,6 +3847,10 @@ a {
 
 .articles__item--isotope {
   padding: 0.625rem;
+}
+
+.articles__item--15 {
+  width: calc(100% / 12 * 2 - 15px);
 }
 
 .articles__item--20 {

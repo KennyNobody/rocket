@@ -25,6 +25,9 @@
 			margin-left: rem(-15);
 			margin-right: rem(-15);
 		}
+		&--align {
+			align-items: center;
+		}
 	}
 	&__toolbar {
 		margin-top: rem(40);
@@ -36,6 +39,9 @@
 		width: 100%;
 		&--isotope {
 			padding: rem(10);
+		}
+		&--15 {
+			width: calc(100% / 12 * 2 - 15px);
 		}
 		&--20  {
 			width: calc(20% - 15px);
