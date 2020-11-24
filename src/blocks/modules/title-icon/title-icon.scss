@@ -1,0 +1,15 @@
+.title-icon {
+	display: flex;
+	align-items: center;
+	&__icon {
+		display: block;
+		width: rem(78);
+		height: rem(78);
+		margin-right: rem(20);
+	}
+	&__text {
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: rem(24);
+	}
+}

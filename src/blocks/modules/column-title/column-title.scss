@@ -1,0 +1,16 @@
+.column-title {
+	color: $light;
+	background-color: $orange;
+	text-align: center;
+	padding: rem(13);
+	font-size: rem(18);
+	font-weight: 700;
+	&--light {
+		color: $dark;
+		background: none;
+		border: 1px solid $orange;
+		font-weight: 500;
+		font-size: rem(16);
+		padding: rem(7);
+	}
+}

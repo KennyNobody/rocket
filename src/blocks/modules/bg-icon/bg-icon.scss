@@ -1,0 +1,8 @@
+.bg-icon {
+	position: absolute;
+	pointer-events: none;
+	right: calc(100% + 115px);
+	transform: translateY(-50%);
+	top: 50%;
+	max-height: 100%;
+}

@@ -3,6 +3,9 @@ a {
 }
 
 .mb {
+	&-16 {
+		margin-bottom: rem(16);
+	}
 	&-20 {
 		margin-bottom: rem(20);
 	}
@@ -15,12 +18,25 @@ a {
 	&-40 {
 		margin-bottom: rem(40);
 	}
+	&-50 {
+		margin-bottom: rem(50);
+	}
 	&-60 {
 		margin-bottom: rem(60);
 	}
 	&-80 {
 		margin-bottom: rem(80);
 	}
+	&-115 {
+		margin-bottom: rem(115);
+	}
+	&-120 {
+		margin-bottom: rem(120);
+	}
+}
+
+.mob-hidden {
+	
 }
 
 .hidden {

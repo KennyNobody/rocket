@@ -1,0 +1,19 @@
+.example {
+	&__ill {
+		max-width: 100%;
+		&--desktop {
+			display: block;
+			@include r(1200) {
+				display: none;
+			}
+		}
+		&--mobile {
+			display: none;
+			@include r(1200) {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}

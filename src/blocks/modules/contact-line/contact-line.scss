@@ -1,0 +1,23 @@
+.contact-line {
+	display: flex;
+	text-decoration: none;
+	&__icon {
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 14px;
+		flex-shrink: 0;
+	}
+	&__messenger {
+		width: 20px;
+		height: 20px;
+		display: block;
+		margin-left: 10px;
+	}
+}
+
+a.contact-line {
+	&:hover {
+		opacity: 0.7;
+	}
+}

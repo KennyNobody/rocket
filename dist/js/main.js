@@ -345,31 +345,19 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// modules.define('table', ['i-bem-dom'], function(provide, bemDom) {
-// provide(bemDom.declBlock(this.name, {
-//     onSetMod: {
-//         js: {
-//             inited: function() {
-//             }
-//         }
-//     }
-// }));
-// });
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
   (function toggleTable() {
-    var table = document.querySelectorAll('.table');
+    var table = document.querySelectorAll('.table-btn');
 
     for (var i = 0; i < table.length; i++) {
       toggle(table[i]);
     }
 
     function toggle(block) {
-      if (block.querySelector('.table__caption')) {
-        var btn = block.querySelector('.table__caption');
-        btn.addEventListener('click', function () {
-          block.classList.toggle('table--hidden');
-        });
-      }
+      block.addEventListener('click', function () {
+        var table = document.getElementById(block.getAttribute('data-for'));
+        table.classList.toggle('table--hidden');
+      });
     }
   })();
 });

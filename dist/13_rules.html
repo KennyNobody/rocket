@@ -161,8 +161,8 @@
                 <h3 class="title title--small mb-40">
                     Формат файла
                 </h3>
-                <div class="articles mb-40">
-                    <div class="articles__content articles__content--center">
+                <div class="columns mb-40">
+                    <div class="columns__column columns__column--2">
                         <article class="item-format">
                             <div class="item-format__thumb">
                                 <svg class="item-format__icon">
@@ -176,6 +176,8 @@
                                 Adobe <br> Acrobat
                             </p>
                         </article>
+                    </div>
+                    <div class="columns__column columns__column--2">
                         <article class="item-format">
                             <div class="item-format__thumb">
                                 <svg class="item-format__icon">
@@ -189,205 +191,230 @@
                                 Версии 20 <br>и ниже
                             </p>
                         </article>
-                        <article class="item-format">
-                            <div class="item-format__thumb">
-                                <svg class="item-format__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-3"></use>
-                                </svg>
-                                <svg class="item-format__discript">
-                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-3"></use>
-                                </svg>
-                            </div>
-                            <p class="item-format__text">
-                                Версии CC 2018 <br>
-                                и ниже
-                            </p>
-                        </article>
-                        <article class="item-format">
-                            <div class="item-format__thumb">
-                                <svg class="item-format__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-4"></use>
-                                </svg>
-                                <svg class="item-format__discript">
-                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-4"></use>
-                                </svg>
-                            </div>
-                            <p class="item-format__text">
-                                EPS
-                            </p>
-                        </article>
-                        <article class="item-format">
-                            <div class="item-format__thumb">
-                                <svg class="item-format__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-5"></use>
-                                </svg>
-                                <svg class="item-format__discript">
-                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-5"></use>
-                                </svg>
-                            </div>
-                            <p class="item-format__text">
-                                TIFF
-                            </p>
-                        </article>
-                        <article class="item-format">
-                            <div class="item-format__thumb">
-                                <svg class="item-format__icon">
-                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-6"></use>
-                                </svg>
-                                <svg class="item-format__discript">
-                                    <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-6"></use>
-                                </svg>
-                            </div>
-                            <p class="item-format__text">
-                                Adobe <br> Photoshop
-                            </p>
-                        </article>
                     </div>
-                </div>
-                <div class="editor">
-                    <p>
-                        <b>Одно изображение – один файл ( или одна страница в файле). <br>
-                        При сохранении файла из Photoshop указывать тип сжатия - “Без сжатия”.</b>
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="section section--gray section--decor">
-            <div class="container">
-                <h3 class="title title--small mb-60">
-                    Разрешение
-                </h3>
-                <div class="editor mb-60">
-                    <p>
-                        <b>Разрешение изображения: </b> <br>
-                        Следует учитывать, что разрешение макета и разрешение печати – разные вещи. <br>
-                        При сохранении файла из Photoshop указывать тип сжатия - “без сжатия”
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <h3 class="title title--small mb-60">
-                    Подготовка файлов к печати
-                </h3>
-                <div class="columns">
-                    <div class="columns__column columns__column--6">
-                        <div class="editor">
-                            <h4>
-                                При подготовке <strong>растровых</strong> файлов:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Необходимо свести все слои в один фоновый слой (Background);
-                                </li>
-                                <li>
-                                    Не должно быть альфа-каналов (Channels) и путей (Paths);
-                                </li>
-                                <li>
-                                    Эффекты и тени должны быть прорастрированы;
-                                </li>
-                                <li>
-                                    Макет должен быть подготовлен в цветовом пространстве CMYK, 8 bits;
-                                </li>
-                                <li>
-                                    Цветовой профиль: Coated FOGRA39 или без внедрения цветового профиля;
-                                </li>
-                                <li>
-                                    Размер 1:1 ( масштаб 1:1).
-                                </li>
-                            </ul>
+                    <div class="columns__column columns__column--2">
+                       <article class="item-format">
+                        <div class="item-format__thumb">
+                            <svg class="item-format__icon">
+                                <use xlink:href="img/sprites/sprite.svg#fact-icon-3"></use>
+                            </svg>
+                            <svg class="item-format__discript">
+                                <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-3"></use>
+                            </svg>
                         </div>
-                    </div>
-                    <div class="columns__column columns__column--6">
-                        <div class="editor">
-                            <h4>
-                                При подготовке <strong>векторных</strong> файлов:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Растровые изображения должны быть внедрены в файл;
-                                </li>
-                                <li>
-                                    Все шрифты должны быть переведены в кривые;
-                                </li>
-                                <li>
-                                    Эффекты и тени должны быть прорастрированы ( т.к. не растрированные эффекты и тени могут привести к некорректной печати и искажению изображения);
-                                </li>
-                                <li>
-                                    Элементы макета должны быть сгруппированы и находится внутри макета для печати;
-                                </li>
-                                <li>
-                                    В случае предоставления макета в уменьшенном формате ( например, 1:10) обязательно проверьте, что бы в контурах была установлена опция – Scale with image ( масштабировать с изображением);
-                                </li>
-                                <li>
-                                    Векторный файл НЕ СЛЕДУЕТ готовить в натуральную величину. При масштабировании качество векторного файла никак не меняется и не производится каких-либо изменений с включенными в файл растровыми изображениями, однако если Вы попытаетесь сохранить векторный макет плаката 6х3 на диск в формате EPS, процесс сохранения займет значительное время, и размер файла на диске будет неоправданно велик.
-                                </li>
-                            </ul>
+                        <p class="item-format__text">
+                            Версии CC 2018 <br>
+                            и ниже
+                        </p>
+                    </article>
+                </div>
+                <div class="columns__column columns__column--2">
+                    <article class="item-format">
+                        <div class="item-format__thumb">
+                            <svg class="item-format__icon">
+                                <use xlink:href="img/sprites/sprite.svg#fact-icon-4"></use>
+                            </svg>
+                            <svg class="item-format__discript">
+                                <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-4"></use>
+                            </svg>
                         </div>
-                    </div>
+                        <p class="item-format__text">
+                            EPS
+                        </p>
+                    </article>
+                </div>
+                <div class="columns__column columns__column--2">
+                    <article class="item-format">
+                        <div class="item-format__thumb">
+                            <svg class="item-format__icon">
+                                <use xlink:href="img/sprites/sprite.svg#fact-icon-5"></use>
+                            </svg>
+                            <svg class="item-format__discript">
+                                <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-5"></use>
+                            </svg>
+                        </div>
+                        <p class="item-format__text">
+                            TIFF
+                        </p>
+                    </article>
+                </div>
+                <div class="columns__column columns__column--2">
+                    <article class="item-format">
+                        <div class="item-format__thumb">
+                            <svg class="item-format__icon">
+                                <use xlink:href="img/sprites/sprite.svg#fact-icon-6"></use>
+                            </svg>
+                            <svg class="item-format__discript">
+                                <use xlink:href="img/sprites/sprite.svg#fact-icon-discript-6"></use>
+                            </svg>
+                        </div>
+                        <p class="item-format__text">
+                            Adobe <br> Photoshop
+                        </p>
+                    </article>
                 </div>
             </div>
-        </section>
-        <section class="section section--orange section--decor">
-            <div class="container">
-                <h3 class="title title--small mb-60">
-                    Цвет
-                </h3>
-                <div class="editor">
-                    <ul>
-                        <li>
-                            <b>
-                                Цветовая модель СМYK
-                            </b>
-                        </li>
-                        <li>
-                            Жёстко-заданные цвета: понимаются пантонные и корпоративные цвета. При использовании данных цветов, необходимо учитывать, что оборудование для широкоформатной печати не дает 100% передачу и попадания в нудный цвет. Речь может идти только о высокой степени совпадения.
-                        </li>
-                        <li>
-                            При наличии в макетах фирменных цветов модели Panton и RGB, необходимо перевести их в CMYK самостоятельно. Или это будет сделано автоматически перед печатью, что может привести к искажению цветов;
-                        </li>
-                        <li>
-                            Черный цвет должен быть составным ( например : C75, M68, Y67, K90 ), в противном случае цвет получится не черным, а темно-серым с заметными горизонтальными полосками. В несоставном сером так же будет «полосить»;
-                        </li>
-                        <li>
-                            При печати Ч.Б. ( черно-белого) изображение, требуется подготовить файл в палитре CMYK с рабочим только чёрным каналом. Все остальные каналы должны быть по нулям! В случае если черно- белый цвет составной ( состоит из 4-х цветов CMYK), то при печати возможен уход цвета в синеву, красноту или желтизну;
-                        </li>
-                        <li>
-                            Если по краям файла есть светлые поля – сделать рамку черного цвета толщиной в 1 мм.;
-                        </li>
-                        <li>
-                            Для корректной цветопередачи мы рекомендуем делать цветопробу <br>
-                            <b>Цветопроба</b> – это образец печати, изготовленный на том же самом материале и оборудовании, на котором планируется выполнить в будущем весь тираж.
-                        </li>
-                    </ul>
-                    <p>
-                        <b>
-                            Без вывода цветопробы претензии по цветопередаче не принимаются!
-                        </b>
-                    </p>
-                </div>
+            <div class="editor">
+                <p>
+                    <b>Одно изображение – один файл ( или одна страница в файле). <br>
+                    При сохранении файла из Photoshop указывать тип сжатия - “Без сжатия”.</b>
+                </p>
             </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <h3 class="title title--small mb-60">
-                    Примечание:
-                </h3>
-                <div class="editor">
-                    <p>
-                        Прикладывайте к макеты просмотровый файл ( в формате jpeg), а так же сопроводительное письмо с указанием точных параметров заказа – размер, материал, кол-во экземпляров и описание послепечатной обработки ( если таковая предусмотрена).
-                    </p>
-                    <p>
-                        Наилучшее решение – предоставлять макеты для широкоформатной печати в растровом формате TIFF, соблюдая указанные выше требования. В TIFF файле должны быть сведены все слои в один слой Background и должны быть удалены все дополнительные каналы и пути. В этом случае, Вы будете застрахованы от неожиданностей в процессе печати. Хотя понятна трудность, возникающая в данном случае – передача файла (большой объем файла).
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="section section--footer">
+        </div>
+    </section>
+    <section class="section section--gray section--decor">
         <div class="container">
-            <div class="footer">
+            <h3 class="title title--small mb-60">
+                Разрешение
+            </h3>
+            <div class="editor mb-60">
+                <p>
+                    <b>Разрешение изображения: </b> <br>
+                    Следует учитывать, что разрешение макета и разрешение печати – разные вещи. <br>
+                    При сохранении файла из Photoshop указывать тип сжатия - “без сжатия”
+                </p>
+                <p>
+                    <strong>Оптимальный объем файла от 200-400 Мб.</strong>
+                </p>
+            </div>
+            <div class="columns mb-60">
+                <div class="columns__column columns__column--6">
+                    <img class="img img--full" src="img/template-format-1.svg" alt="Разрешение файла">
+                    <h5 class="column-title">
+                        Разрешение файла
+                    </h5>
+                </div>
+                <div class="columns__column columns__column--6">
+                    <img class="img img--full" src="img/template-format-2.svg" alt="Разрешение печати">
+                    <h5 class="column-title">
+                        Разрешение печати
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h3 class="title title--small mb-60">
+                Подготовка файлов к печати
+            </h3>
+            <div class="columns">
+                <div class="columns__column columns__column--6">
+                    <div class="editor">
+                        <h4>
+                            При подготовке <strong>растровых</strong> файлов:
+                        </h4>
+                        <ul>
+                            <li>
+                                Необходимо свести все слои в один фоновый слой (Background);
+                            </li>
+                            <li>
+                                Не должно быть альфа-каналов (Channels) и путей (Paths);
+                            </li>
+                            <li>
+                                Эффекты и тени должны быть прорастрированы;
+                            </li>
+                            <li>
+                                Макет должен быть подготовлен в цветовом пространстве CMYK, 8 bits;
+                            </li>
+                            <li>
+                                Цветовой профиль: Coated FOGRA39 или без внедрения цветового профиля;
+                            </li>
+                            <li>
+                                Размер 1:1 ( масштаб 1:1).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="columns__column columns__column--6">
+                    <div class="editor">
+                        <h4>
+                            При подготовке <strong>векторных</strong> файлов:
+                        </h4>
+                        <ul>
+                            <li>
+                                Растровые изображения должны быть внедрены в файл;
+                            </li>
+                            <li>
+                                Все шрифты должны быть переведены в кривые;
+                            </li>
+                            <li>
+                                Эффекты и тени должны быть прорастрированы ( т.к. не растрированные эффекты и тени могут привести к некорректной печати и искажению изображения);
+                            </li>
+                            <li>
+                                Элементы макета должны быть сгруппированы и находится внутри макета для печати;
+                            </li>
+                            <li>
+                                В случае предоставления макета в уменьшенном формате ( например, 1:10) обязательно проверьте, что бы в контурах была установлена опция – Scale with image ( масштабировать с изображением);
+                            </li>
+                            <li>
+                                Векторный файл НЕ СЛЕДУЕТ готовить в натуральную величину. При масштабировании качество векторного файла никак не меняется и не производится каких-либо изменений с включенными в файл растровыми изображениями, однако если Вы попытаетесь сохранить векторный макет плаката 6х3 на диск в формате EPS, процесс сохранения займет значительное время, и размер файла на диске будет неоправданно велик.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--orange section--decor">
+        <div class="container">
+            <h3 class="title title--small mb-60">
+                Цвет
+            </h3>
+            <div class="editor">
+                <ul>
+                    <li>
+                        <b>
+                            Цветовая модель СМYK
+                        </b>
+                    </li>
+                    <li>
+                        Жёстко-заданные цвета: понимаются пантонные и корпоративные цвета. При использовании данных цветов, необходимо учитывать, что оборудование для широкоформатной печати не дает 100% передачу и попадания в нудный цвет. Речь может идти только о высокой степени совпадения.
+                    </li>
+                    <li>
+                        При наличии в макетах фирменных цветов модели Panton и RGB, необходимо перевести их в CMYK самостоятельно. Или это будет сделано автоматически перед печатью, что может привести к искажению цветов;
+                    </li>
+                    <li>
+                        Черный цвет должен быть составным ( например : C75, M68, Y67, K90 ), в противном случае цвет получится не черным, а темно-серым с заметными горизонтальными полосками. В несоставном сером так же будет «полосить»;
+                    </li>
+                    <li>
+                        При печати Ч.Б. ( черно-белого) изображение, требуется подготовить файл в палитре CMYK с рабочим только чёрным каналом. Все остальные каналы должны быть по нулям! В случае если черно- белый цвет составной ( состоит из 4-х цветов CMYK), то при печати возможен уход цвета в синеву, красноту или желтизну;
+                    </li>
+                    <li>
+                        Если по краям файла есть светлые поля – сделать рамку черного цвета толщиной в 1 мм.;
+                    </li>
+                    <li>
+                        Для корректной цветопередачи мы рекомендуем делать цветопробу <br>
+                        <b>Цветопроба</b> – это образец печати, изготовленный на том же самом материале и оборудовании, на котором планируется выполнить в будущем весь тираж.
+                    </li>
+                </ul>
+                <p>
+                    <b>
+                        Без вывода цветопробы претензии по цветопередаче не принимаются!
+                    </b>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h3 class="title title--small mb-60">
+                Примечание:
+            </h3>
+            <div class="editor">
+                <p>
+                    Прикладывайте к макеты просмотровый файл ( в формате jpeg), а так же сопроводительное письмо с указанием точных параметров заказа – размер, материал, кол-во экземпляров и описание послепечатной обработки ( если таковая предусмотрена).
+                </p>
+                <p>
+                    Наилучшее решение – предоставлять макеты для широкоформатной печати в растровом формате TIFF, соблюдая указанные выше требования. В TIFF файле должны быть сведены все слои в один слой Background и должны быть удалены все дополнительные каналы и пути. В этом случае, Вы будете застрахованы от неожиданностей в процессе печати. Хотя понятна трудность, возникающая в данном случае – передача файла (большой объем файла).
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="section section--footer">
+    <div class="container">
+        <div class="footer">
 	<div class="footer__columns mb-40">
 		<div class="footer__column footer__column--4">
 			<a href="" class="footer__link">
@@ -1202,9 +1229,9 @@
 	</main>
 </section>
 </div>
-        </div>
-    </footer>
-    <div class="container">
+    </div>
+</footer>
+<div class="container">
 	<div class="demo">
 		<a href="index.html" class="demo__link">
 			1. Главная
@@ -1274,7 +1301,7 @@
 		</a>
 	</div>
 </div>
-    <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+<script src="js/vendor.js"></script>
 </body>
 </html>

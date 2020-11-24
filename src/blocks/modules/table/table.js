@@ -1,34 +1,17 @@
-// modules.define('table', ['i-bem-dom'], function(provide, bemDom) {
-
-// provide(bemDom.declBlock(this.name, {
-//     onSetMod: {
-//         js: {
-//             inited: function() {
-                
-//             }
-//         }
-//     }
-// }));
-
-// });
-
-window.addEventListener('load', function() {
+window.addEventListener('DOMContentLoaded', function() {
 
 	(function toggleTable() {
-		const table = document.querySelectorAll('.table');
+		const table = document.querySelectorAll('.table-btn');
 
 		for (let i = 0; i < table.length; i++) {
 			toggle(table[i]);
 		}
 
 		function toggle(block) {
-			if (block.querySelector('.table__caption')) {
-				let btn = block.querySelector('.table__caption');
-
-				btn.addEventListener('click', function() {
-					block.classList.toggle('table--hidden');
-				})
-			}
+			block.addEventListener('click', function() {
+				let table = document.getElementById(block.getAttribute('data-for'));
+				table.classList.toggle('table--hidden');
+			})
 		}
 	})();
 
