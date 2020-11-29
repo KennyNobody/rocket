@@ -4,16 +4,28 @@
 	font-weight: 700;
 	font-size: rem(48);
 	font-family: $font-title;
+	@include r(1200) {
+		font-size: rem(26)
+	}
 	&--small {
 		font-size: rem(24);
 		font-family: $font-main;
+		@include r(1200) {
+			font-size: rem(18)
+		}
 	}
 	&--underline-light {
 		padding-bottom: rem(20);
 		border-bottom: 2px solid $light;
+		@include r(1200) {
+			padding-bottom: rem(12);
+		}
 	}
 	&--underline-orange {
 		padding-bottom: rem(20);
 		border-bottom: 2px solid $orange;
+		@include r(1200) {
+			padding-bottom: rem(12);
+		}
 	}
 }

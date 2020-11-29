@@ -28,11 +28,12 @@
 <link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-	<header class="header">
+	<div id="page">
+		<header class="header">
 	<section class="section section--header-top">
 		<div class="container">
 			<div class="header-top">
-	<div class="header-top__block">
+	<div class="header-top__block mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-topline-clock"></use>
 		</svg>
@@ -40,7 +41,7 @@
 			Пн-Пт с 10 до 19
 		</span>
 	</div>
-	<a href="mailto:info@39rpk.ru" class="header-top__block header-top__block--link">
+	<a href="mailto:info@39rpk.ru" class="header-top__block header-top__block--link mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-topline-mail"></use>
 		</svg>
@@ -56,7 +57,7 @@
 			+7 (4012) 75-01-55
 		</span>
 	</a>
-	<a href="tel:+79814750155" class="header-top__block header-top__block--link">
+	<a href="tel:+79814750155" class="header-top__block header-top__block--link mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-telegram"></use>
 		</svg>
@@ -70,17 +71,22 @@
 			+7 981-475-01-55
 		</span>
 	</a>
-	<a href="" class="btn btn--head btn--orange">
+	<a href="" class="btn btn--head btn--orange mob-hidden">
 		<span>
 			Заказать звонок
 		</span>
+	</a>
+	<a href="#mmenu" class="header-top__btn-menu desc-hidden">
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
+		</svg>
 	</a>
 </div>
 		</div>
 	</section>
 	<section class="section section--header-bottom">
 		<div class="container">
-			<div class="header-bottom">
+			<div class="header-bottom mob-hidden">
 	<a href="/" class="header-bottom__logo">
 		<img src="img/logo-color.png" alt="Логотип">
 	</a>
@@ -131,10 +137,10 @@
 		</div>
 	</section>
 </header>
-	<main class="main">
-		<section class="section section--breadcrumbs">
-			<div class="container">
-				<nav class="breadcrumbs">
+		<main class="main">
+			<section class="section section--breadcrumbs">
+				<div class="container">
+					<nav class="breadcrumbs">
 	<a href="" class="breadcrumbs__link">
 		Главная
 	</a>
@@ -151,471 +157,471 @@
 		Текущая страница
 	</span>
 </nav>
-			</div>
-		</section>
-		<section class="section section--top">
-			<div class="container">
-				<h2 class="title mb-80">
-					Общие требования к макетам
-				</h2>
-				<div class="articles mb-60">
-                    <div class="articles__content articles__content--center">
-                        <div class="articles__item articles__item--20">
-                            <article class="item-rule">
-                                <div class="item-rule__thumb">
-                                    <svg class="item-rule__icon">
-                                        <use xlink:href="img/sprites/sprite.svg#icon-rule-5"></use>
-                                    </svg>
-                                </div>
-                                <p class="item-rule__text">
-                                    макет в <br>
-                                    печатном размере
-                                </p>
-                            </article>
-                        </div>
-                        <div class="articles__item articles__item--20">
-                            <article class="item-rule">
-                                <div class="item-rule__thumb">
-                                    <svg class="item-rule__icon">
-                                        <use xlink:href="img/sprites/sprite.svg#icon-rule-2"></use>
-                                    </svg>
-                                </div>
-                                <p class="item-rule__text">
-                                    шрифты <br>
-                                    в кривых
-                                </p>
-                            </article>
-                        </div>
-                        <div class="articles__item articles__item--20">
-                            <article class="item-rule">
-                                <div class="item-rule__thumb">
-                                    <svg class="item-rule__icon">
-                                        <use xlink:href="img/sprites/sprite.svg#icon-rule-3"></use>
-                                    </svg>
-                                </div>
-                                <p class="item-rule__text">
-                                    цветовая гамма <br> CMYK 
-                                </p>
-                            </article>
-                        </div>
-                        <div class="articles__item articles__item--20">
-                            <article class="item-rule">
-                                <div class="item-rule__thumb">
-                                    <svg class="item-rule__icon">
-                                        <use xlink:href="img/sprites/sprite.svg#icon-rule-4"></use>
-                                    </svg>
-                                </div>
-                                <p class="item-rule__text">
-                                    эффекты <br>
-                                    перевести в растровые<br> изображения
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-				<div class="editor mb-80">
-					<p>
-						Предполагается, что все оригинал-макеты подготовлены с учетом данных технических требований и не требуют правок. Поэтому, обращаем Ваше внимание, что материалы, не соответсвующие требованиям, могут привести к браку в процессе печати или послепечатной обработки.
-					</p>
-					<p>
-						Отдел допечатной подготовки производит проверку файлов на соответствие техническим требованиям, но не гарантирует обнаружение всех ошибок и несоoтветствий. Дополнительно возможна доработка макета до соответствия техническим требованиям, сроки и стоимость доработки обговариваются отдельно.
-					</p>
 				</div>
-				<h3 class="title title--small mb-60">
-					Формат файла
-				</h3>
-				<div class="articles mb-40">
-					<div class="articles__content articles__content--center">
-						<article class="item-format">
-							<div class="item-format__thumb">
-								<svg class="item-format__icon">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-1"></use>
-								</svg>
-								<svg class="item-format__discript">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-1"></use>
-								</svg>
+			</section>
+			<section class="section section--top">
+				<div class="container">
+					<h2 class="title mb-80">
+						Общие требования к макетам
+					</h2>
+					<div class="articles mb-60">
+						<div class="articles__content articles__content--center">
+							<div class="articles__item articles__item--20">
+								<article class="item-rule">
+									<div class="item-rule__thumb">
+										<svg class="item-rule__icon">
+											<use xlink:href="img/sprites/sprite.svg#icon-rule-5"></use>
+										</svg>
+									</div>
+									<p class="item-rule__text">
+										макет в <br>
+										печатном размере
+									</p>
+								</article>
 							</div>
-							<p class="item-format__text">
-								Adobe <br> Acrobat
-							</p>
-						</article>
-						<article class="item-format">
-							<div class="item-format__thumb">
-								<svg class="item-format__icon">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-2"></use>
-								</svg>
-								<svg class="item-format__discript">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-2"></use>
-								</svg>
+							<div class="articles__item articles__item--20">
+								<article class="item-rule">
+									<div class="item-rule__thumb">
+										<svg class="item-rule__icon">
+											<use xlink:href="img/sprites/sprite.svg#icon-rule-2"></use>
+										</svg>
+									</div>
+									<p class="item-rule__text">
+										шрифты <br>
+										в кривых
+									</p>
+								</article>
 							</div>
-							<p class="item-format__text">
-								Версии 20 <br>и ниже
-							</p>
-						</article>
-						<article class="item-format">
-							<div class="item-format__thumb">
-								<svg class="item-format__icon">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-3"></use>
-								</svg>
-								<svg class="item-format__discript">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-3"></use>
-								</svg>
+							<div class="articles__item articles__item--20">
+								<article class="item-rule">
+									<div class="item-rule__thumb">
+										<svg class="item-rule__icon">
+											<use xlink:href="img/sprites/sprite.svg#icon-rule-3"></use>
+										</svg>
+									</div>
+									<p class="item-rule__text">
+										цветовая гамма <br> CMYK 
+									</p>
+								</article>
 							</div>
-							<p class="item-format__text">
-								Версии CC 2018 <br>
-								и ниже
-							</p>
-						</article>
-						<article class="item-format">
-							<div class="item-format__thumb">
-								<svg class="item-format__icon">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-4"></use>
-								</svg>
-								<svg class="item-format__discript">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-4"></use>
-								</svg>
+							<div class="articles__item articles__item--20">
+								<article class="item-rule">
+									<div class="item-rule__thumb">
+										<svg class="item-rule__icon">
+											<use xlink:href="img/sprites/sprite.svg#icon-rule-4"></use>
+										</svg>
+									</div>
+									<p class="item-rule__text">
+										эффекты <br>
+										перевести в растровые<br> изображения
+									</p>
+								</article>
 							</div>
-							<p class="item-format__text">
-								EPS
-							</p>
-						</article>
-						<article class="item-format">
-							<div class="item-format__thumb">
-								<svg class="item-format__icon">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-5"></use>
-								</svg>
-								<svg class="item-format__discript">
-									<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-5"></use>
-								</svg>
-							</div>
-							<p class="item-format__text">
-								TIFF
-							</p>
-						</article>
+						</div>
 					</div>
-				</div>
-				<div class="editor mb-80">
-					<p>
-						<b>
-							К отправляемым файлам должны быть приложены превью. 
-						</b>
-					</p>
-					<p>
-						Если предполагается, что макет потребует редактирования, то ко всем форматам дополнительно потребуются обработанные фотографии максимального размера, шрифты и логотипы (желательно в векторном виде), используемые в макете.
-					</p>
-					<p>
-						<strong>
-							Услуга по доработке макета для соотвтствия техническим требованиям является дополнительной и оплачивается отдельно. 
-						</strong>
-					</p>
-					<p>
-						Типография не несет ответственности за брак, из-за неверно подготовленного к печати макета заказчика. 
-					</p>
-				</div>
-				<div class="columns">
-					<div class="columns__column columns__column--4">
-						<img src="img/alarm-template.png" class="img img--center" alt="Внимание!">
+					<div class="editor mb-80">
+						<p>
+							Предполагается, что все оригинал-макеты подготовлены с учетом данных технических требований и не требуют правок. Поэтому, обращаем Ваше внимание, что материалы, не соответсвующие требованиям, могут привести к браку в процессе печати или послепечатной обработки.
+						</p>
+						<p>
+							Отдел допечатной подготовки производит проверку файлов на соответствие техническим требованиям, но не гарантирует обнаружение всех ошибок и несоoтветствий. Дополнительно возможна доработка макета до соответствия техническим требованиям, сроки и стоимость доработки обговариваются отдельно.
+						</p>
 					</div>
-					<div class="columns__column columns__column--8">
-						<div class="editor">
-							<ul>
-								<li>
-									Файлы линейки Microsoft office (Word, Exel, Power Point) не являются макетами, подготовленными к печати;
-								</li>
-								<li>
-									При возникновении брака ввиду несоблюдения технических требований, вся ответственность ложиться на сторону предоставившую некорректный макет;
-								</li>
-								<li>
-									Макеты, не соответствующие данным требованиям, могут быть автоматически доработаны типографией без согласования с заказчиком;
-								</li>
-								<li>
-									Цвет при печати может отличаться от экранного из-за особенностей монитора. В связи с этим мы рекомендуем делать цветопробу. Без цветопробы претензии по цвету не принимаются.
-								</li>
-							</ul>
+					<h3 class="title title--small mb-60">
+						Формат файла
+					</h3>
+					<div class="articles mb-40">
+						<div class="articles__content articles__content--center">
+							<article class="item-format">
+								<div class="item-format__thumb">
+									<svg class="item-format__icon">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-1"></use>
+									</svg>
+									<svg class="item-format__discript">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-1"></use>
+									</svg>
+								</div>
+								<p class="item-format__text">
+									Adobe <br> Acrobat
+								</p>
+							</article>
+							<article class="item-format">
+								<div class="item-format__thumb">
+									<svg class="item-format__icon">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-2"></use>
+									</svg>
+									<svg class="item-format__discript">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-2"></use>
+									</svg>
+								</div>
+								<p class="item-format__text">
+									Версии 20 <br>и ниже
+								</p>
+							</article>
+							<article class="item-format">
+								<div class="item-format__thumb">
+									<svg class="item-format__icon">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-3"></use>
+									</svg>
+									<svg class="item-format__discript">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-3"></use>
+									</svg>
+								</div>
+								<p class="item-format__text">
+									Версии CC 2018 <br>
+									и ниже
+								</p>
+							</article>
+							<article class="item-format">
+								<div class="item-format__thumb">
+									<svg class="item-format__icon">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-4"></use>
+									</svg>
+									<svg class="item-format__discript">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-4"></use>
+									</svg>
+								</div>
+								<p class="item-format__text">
+									EPS
+								</p>
+							</article>
+							<article class="item-format">
+								<div class="item-format__thumb">
+									<svg class="item-format__icon">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-5"></use>
+									</svg>
+									<svg class="item-format__discript">
+										<use xlink:href="img/sprites/sprite.svg#fact-icon-discript-5"></use>
+									</svg>
+								</div>
+								<p class="item-format__text">
+									TIFF
+								</p>
+							</article>
+						</div>
+					</div>
+					<div class="editor mb-80">
+						<p>
+							<b>
+								К отправляемым файлам должны быть приложены превью. 
+							</b>
+						</p>
+						<p>
+							Если предполагается, что макет потребует редактирования, то ко всем форматам дополнительно потребуются обработанные фотографии максимального размера, шрифты и логотипы (желательно в векторном виде), используемые в макете.
+						</p>
+						<p>
+							<strong>
+								Услуга по доработке макета для соотвтствия техническим требованиям является дополнительной и оплачивается отдельно. 
+							</strong>
+						</p>
+						<p>
+							Типография не несет ответственности за брак, из-за неверно подготовленного к печати макета заказчика. 
+						</p>
+					</div>
+					<div class="columns">
+						<div class="columns__column columns__column--4">
+							<img src="img/alarm-template.png" class="img img--center" alt="Внимание!">
+						</div>
+						<div class="columns__column columns__column--8">
+							<div class="editor">
+								<ul>
+									<li>
+										Файлы линейки Microsoft office (Word, Exel, Power Point) не являются макетами, подготовленными к печати;
+									</li>
+									<li>
+										При возникновении брака ввиду несоблюдения технических требований, вся ответственность ложиться на сторону предоставившую некорректный макет;
+									</li>
+									<li>
+										Макеты, не соответствующие данным требованиям, могут быть автоматически доработаны типографией без согласования с заказчиком;
+									</li>
+									<li>
+										Цвет при печати может отличаться от экранного из-за особенностей монитора. В связи с этим мы рекомендуем делать цветопробу. Без цветопробы претензии по цвету не принимаются.
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="section section--gray section--decor">
-			<div class="container">
-				<h3 class="title title--small mb-60">
-					Вылеты
-				</h3>
-				<div class="columns mb-60">
-					<div class="columns__column columns__column--6">
-						<div class="editor">
-							<p>
-								<b>Вылеты</b> - это припуски к обрезному формату, которые необходимо создавать, когда часть изображения уходит «под обрез» (то есть линия реза проходит по картинке). При отсутствии вылетов после резки по краям продукции могут образоваться белые поля разных размеров.
-							</p>
-							<p>
-								<strong>3 мм (со всех сторон)</strong><br>
-								для листовой продукции
-							</p>
-							<p>
-								<strong>5 мм (со всех сторон)</strong><br>
-								для многополосной продукции
-							</p>
+			</section>
+			<section class="section section--gray section--decor">
+				<div class="container">
+					<h3 class="title title--small mb-60">
+						Вылеты
+					</h3>
+					<div class="columns mb-60">
+						<div class="columns__column columns__column--6">
+							<div class="editor">
+								<p>
+									<b>Вылеты</b> - это припуски к обрезному формату, которые необходимо создавать, когда часть изображения уходит «под обрез» (то есть линия реза проходит по картинке). При отсутствии вылетов после резки по краям продукции могут образоваться белые поля разных размеров.
+								</p>
+								<p>
+									<strong>3 мм (со всех сторон)</strong><br>
+									для листовой продукции
+								</p>
+								<p>
+									<strong>5 мм (со всех сторон)</strong><br>
+									для многополосной продукции
+								</p>
+							</div>
+						</div>
+						<div class="columns__column columns__column--6">
+							<div class="editor">
+								<p>
+									<b>Влеты</b> - отступы от линии реза и/или сгиба до содержимого ( для учета погрешности печати и реза). При отсутствии необходимого размера влёта, может происходить «зарезание» значимых элементов макета ( слова, номера телефонов, логотип и пр.)
+								</p>
+								<p>
+									<strong>не менее 3 мм (со всех сторон)</strong><br>
+									для листовой продукции
+								</p>
+								<p>
+									<strong>не менее 5 мм (со всех сторон)</strong><br>
+									для многополосной продукции
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="columns__column columns__column--6">
-						<div class="editor">
-							<p>
-								<b>Влеты</b> - отступы от линии реза и/или сгиба до содержимого ( для учета погрешности печати и реза). При отсутствии необходимого размера влёта, может происходить «зарезание» значимых элементов макета ( слова, номера телефонов, логотип и пр.)
-							</p>
-							<p>
-								<strong>не менее 3 мм (со всех сторон)</strong><br>
-								для листовой продукции
-							</p>
-							<p>
-								<strong>не менее 5 мм (со всех сторон)</strong><br>
-								для многополосной продукции
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="example mb-60">
+					<div class="example mb-60">
 	<img src="../img/example-large.svg" alt="" class="example__ill example__ill--desktop">
 	<img src="../img/example-mobile.svg" alt="" class="example__ill example__ill--mobile">
 </div>
-				<div class="editor">
-					<ul>
-						<li>
-							<b>Не используйте в дизайне рамки по периметру.</b> Отступ для рамки , от края реза, не менее 5-7 мм. ( Но и в этом случае при печати и резке будет отклонение, а значит допустимые отклонения становятся визуально очень заметны).
-						</li>
-						<li>
-							<b>Не надо отображать</b> в макете линии скругления, биговки и прочих вспомогательных элементов (Необходимо размещать данные элементы в отдельном слое или прикладывать привью файл).
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<h3 class="title title--small mb-60">
-					Цвет (красочность)
-				</h3>
-				<div class="editor mb-60">
-					<p>
-						<b>Цветовая модель:</b> <br>
-						CMYK ( Нельзя использовать RGB и другие цветовые модели, это приведет к искажению цвета)
-					</p>
-					<p>
-						<b>Печать Ч.Б или серым цветом:</b>
-					</p>
-					<ul>
-						<li>
-							серые и ч.б. изображения должны быть переведен в режим Grayscale ( иначе при печати будет отклонения в другой оттенок. Например : в голубой или пурпурный.)
-						</li>
-						<li>
-							самый светлый пропечатываемый серый цвет – 12 %
-						</li>
-						<li>
-							черные и серые плашки лучше делать составным цветом (например черный цвет для цифровой печати: С=60 М=60 Y=60 К=100, для офсетной печати: С=50 М=50 Y=50 К=100). Данный «составной» цвет будет выглядеть более насыщенно, но не забывайте, что в этом случае печать будет полноцветная (в 4 краски)
-						</li>
-					</ul>
-					<p>
-						В цифровом способе печати нельзя печать пантонами, а так же в 1,2 или 3 краски. Печать или полноцветная – CMYK (печать в 4 цвета) , или печать в 1 черную краску – Grayscale. Макеты , не соответствующие требованию, переформатируются, что бы с ними могла работать наша типография. В результате оттенки могут измениться.
-					</p>
-				</div>
-				<div class="columns">
-					<div class="columns__column columns__column--5">
-						<figure class="figure">
-							<picture class="figure__picture mb-20">
-								<img src="img/template-rgb.jpg" alt="Пример исходника в RGB">
-							</picture>
-							<figcaption class="figure__caption figure__caption--bold">
-								Исходник в RGB
-							</figcaption>
-						</figure>
-					</div>
-					<div class="columns__column columns__column--5">
-						<figure class="figure">
-							<picture class="figure__picture mb-20">
-								<img src="img/template-cmyk.jpg" alt="Пример исходника в CMYK">
-							</picture>
-							<figcaption class="figure__caption figure__caption--bold">
-								Перевод в CMYK
-							</figcaption>
-						</figure>
-					</div>
-					<div class="columns__column columns__column--2 mob-hidden">
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section section--dark section--decor-top">
-			<div class="container">
-				<h3 class="title title--small mb-60">
-					Разрешение
-				</h3>
-				<div class="editor mb-60">
-					<p>
-						<strong>
-							Растровые форматы и связанные с макетом файлы (линки)
-						</strong>
-					</p>
-					<ul>
-						<li>
-							фон и подложки от 200 dpi
-						</li>
-						<li>
-							логотипы и картинки от 300 dpi
-						</li>
-						<li>
-							мелкий текст и схемы от 400 dpi
-						</li>
-						<li>
-							максимальное разрешение всех объектов не должно превышать 600 dpi
-						</li>
-					</ul>
-				</div>
-				<div class="columns mb-80">
-					<div class="columns__column columns__column--5">
-						<figure class="figure">
-							<picture class="figure__picture mb-20">
-								<img src="img/template-300.jpg" alt="Пример разрешения 300 dpi">
-							</picture>
-							<figcaption class="figure__caption">
-								300 dpi
-							</figcaption>
-						</figure>
-					</div>
-					<div class="columns__column columns__column--5">
-						<figure class="figure">
-							<picture class="figure__picture mb-20">
-								<img src="img/template-72.jpg" alt="Пример разрешения 72 dpi">
-							</picture>
-							<figcaption class="figure__caption">
-								72 dpi
-							</figcaption>
-						</figure>
-					</div>
-					<div class="columns__column columns__column--2 mob-hidden">
-						
-					</div>
-				</div>
-				<h3 class="title title--small mb-40">
-					Размеры
-				</h3>
-				<div class="editor mb-60">
-					<ul>
-						<li>
-							масштаб 1:1
-						</li>
-						<li>
-							должен быть задан послеобрезной формат плюс вылеты
-						</li>
-					</ul>
-					<br>
-					<br>
-					<p>
-						<strong>
-							Развороты и спуски полос: не принимаются (искл. для разворотов: обложки брошюр на термоклее и евробуклетов). Каждое изделие должно быть в отдельном файле (отдельная страница в редакторе).
-						</strong>
-					</p>
-					<ul>
-						<li>
-							Все служебные метки не должны заходить на изображение, в том числе на вылеты
-						</li>
-						<li>
-							Прозрачность, тени, структуры должны быть растрированы
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="section section--gray section--decor-invert">
-			<div class="container">
-				<h3 class="title title--small mb-60">
-					Шрифт
-				</h3>
-				<div class="editor">
-					<ul>
-						<li>
-							весь текст необходимо перевести <b>в кривые</b>
-						</li>
-						<li> 
-							не рекомендуется делать составным черным цветом текст и тонкие линии (используйте К=100). Составной цвет может привести к появлению цветных ореолов вокруг покрашенных им объектов.
-						</li>
-						<li>
-							минимальный размер шрифта (задаваемого в несколько красок): 6 pt - для рубленных гарнитур и полужирных начертаний, 7 pt – для шрифтов с засечками, декоративных и тонких шрифтов.
-						</li>
-						<li>
-							в случае корректировки текста в типографии все используемые в дизайн макете шрифты прикрепите к заказу.
-						</li>
-					</ul>
-					<p>
-						<b>
-							Обращаем Ваше внимание, что чем меньше размер шрифта, тем сложнее его читать. Поэтому при просмотре макета используйте реальное отображение размера файла
-						</b>
-					</p>
-				</div>
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<h3 class="title title--small mb-40">
-					Линии и мелкие объекты
-				</h3>
-				<div class="editor">
-					<p>
+					<div class="editor">
 						<ul>
 							<li>
-								мелкие объекты и тонкие линии выглядят лучше, если они окрашены только одной из четырех составляющих CMYK. Составной цвет может привести к появлению цветных ореолов вокруг покрашенных им объектов.
+								<b>Не используйте в дизайне рамки по периметру.</b> Отступ для рамки , от края реза, не менее 5-7 мм. ( Но и в этом случае при печати и резке будет отклонение, а значит допустимые отклонения становятся визуально очень заметны).
 							</li>
 							<li>
-								не рекомендуется делать мелкие белые объекты, мелкий белый текст и тонкие белые линии на фоне, состоящем из нескольких красок, т.к. они могут не пропечататься или пропечататься частично.
+								<b>Не надо отображать</b> в макете линии скругления, биговки и прочих вспомогательных элементов (Необходимо размещать данные элементы в отдельном слое или прикладывать привью файл).
 							</li>
 						</ul>
-					</p>
-					<p>
-						<b>
-							Минимальные толщины линий:
-						</b>
-					</p>
-					<ul>
-						<li>
-							0,2 pt - для одноцветных линий
-						</li>
-						<li>
-							0,5 pt - толщина многоцветной линии или белой линии на составном фоне
-						</li>
-					</ul>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section class="section section--orange section--decor-top">
+			</section>
+			<section class="section">
+				<div class="container">
+					<h3 class="title title--small mb-60">
+						Цвет (красочность)
+					</h3>
+					<div class="editor mb-60">
+						<p>
+							<b>Цветовая модель:</b> <br>
+							CMYK ( Нельзя использовать RGB и другие цветовые модели, это приведет к искажению цвета)
+						</p>
+						<p>
+							<b>Печать Ч.Б или серым цветом:</b>
+						</p>
+						<ul>
+							<li>
+								серые и ч.б. изображения должны быть переведен в режим Grayscale ( иначе при печати будет отклонения в другой оттенок. Например : в голубой или пурпурный.)
+							</li>
+							<li>
+								самый светлый пропечатываемый серый цвет – 12 %
+							</li>
+							<li>
+								черные и серые плашки лучше делать составным цветом (например черный цвет для цифровой печати: С=60 М=60 Y=60 К=100, для офсетной печати: С=50 М=50 Y=50 К=100). Данный «составной» цвет будет выглядеть более насыщенно, но не забывайте, что в этом случае печать будет полноцветная (в 4 краски)
+							</li>
+						</ul>
+						<p>
+							В цифровом способе печати нельзя печать пантонами, а так же в 1,2 или 3 краски. Печать или полноцветная – CMYK (печать в 4 цвета) , или печать в 1 черную краску – Grayscale. Макеты , не соответствующие требованию, переформатируются, что бы с ними могла работать наша типография. В результате оттенки могут измениться.
+						</p>
+					</div>
+					<div class="columns">
+						<div class="columns__column columns__column--5">
+							<figure class="figure">
+								<picture class="figure__picture mb-20">
+									<img src="img/template-rgb.jpg" alt="Пример исходника в RGB">
+								</picture>
+								<figcaption class="figure__caption figure__caption--bold">
+									Исходник в RGB
+								</figcaption>
+							</figure>
+						</div>
+						<div class="columns__column columns__column--5">
+							<figure class="figure">
+								<picture class="figure__picture mb-20">
+									<img src="img/template-cmyk.jpg" alt="Пример исходника в CMYK">
+								</picture>
+								<figcaption class="figure__caption figure__caption--bold">
+									Перевод в CMYK
+								</figcaption>
+							</figure>
+						</div>
+						<div class="columns__column columns__column--2 mob-hidden">
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark section--decor-top">
+				<div class="container">
+					<h3 class="title title--small mb-60">
+						Разрешение
+					</h3>
+					<div class="editor mb-60">
+						<p>
+							<strong>
+								Растровые форматы и связанные с макетом файлы (линки)
+							</strong>
+						</p>
+						<ul>
+							<li>
+								фон и подложки от 200 dpi
+							</li>
+							<li>
+								логотипы и картинки от 300 dpi
+							</li>
+							<li>
+								мелкий текст и схемы от 400 dpi
+							</li>
+							<li>
+								максимальное разрешение всех объектов не должно превышать 600 dpi
+							</li>
+						</ul>
+					</div>
+					<div class="columns mb-80">
+						<div class="columns__column columns__column--5">
+							<figure class="figure">
+								<picture class="figure__picture mb-20">
+									<img src="img/template-300.jpg" alt="Пример разрешения 300 dpi">
+								</picture>
+								<figcaption class="figure__caption">
+									300 dpi
+								</figcaption>
+							</figure>
+						</div>
+						<div class="columns__column columns__column--5">
+							<figure class="figure">
+								<picture class="figure__picture mb-20">
+									<img src="img/template-72.jpg" alt="Пример разрешения 72 dpi">
+								</picture>
+								<figcaption class="figure__caption">
+									72 dpi
+								</figcaption>
+							</figure>
+						</div>
+						<div class="columns__column columns__column--2 mob-hidden">
+							
+						</div>
+					</div>
+					<h3 class="title title--small mb-40">
+						Размеры
+					</h3>
+					<div class="editor mb-60">
+						<ul>
+							<li>
+								масштаб 1:1
+							</li>
+							<li>
+								должен быть задан послеобрезной формат плюс вылеты
+							</li>
+						</ul>
+						<br>
+						<br>
+						<p>
+							<strong>
+								Развороты и спуски полос: не принимаются (искл. для разворотов: обложки брошюр на термоклее и евробуклетов). Каждое изделие должно быть в отдельном файле (отдельная страница в редакторе).
+							</strong>
+						</p>
+						<ul>
+							<li>
+								Все служебные метки не должны заходить на изображение, в том числе на вылеты
+							</li>
+							<li>
+								Прозрачность, тени, структуры должны быть растрированы
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section section--gray section--decor-invert">
+				<div class="container">
+					<h3 class="title title--small mb-60">
+						Шрифт
+					</h3>
+					<div class="editor">
+						<ul>
+							<li>
+								весь текст необходимо перевести <b>в кривые</b>
+							</li>
+							<li> 
+								не рекомендуется делать составным черным цветом текст и тонкие линии (используйте К=100). Составной цвет может привести к появлению цветных ореолов вокруг покрашенных им объектов.
+							</li>
+							<li>
+								минимальный размер шрифта (задаваемого в несколько красок): 6 pt - для рубленных гарнитур и полужирных начертаний, 7 pt – для шрифтов с засечками, декоративных и тонких шрифтов.
+							</li>
+							<li>
+								в случае корректировки текста в типографии все используемые в дизайн макете шрифты прикрепите к заказу.
+							</li>
+						</ul>
+						<p>
+							<b>
+								Обращаем Ваше внимание, что чем меньше размер шрифта, тем сложнее его читать. Поэтому при просмотре макета используйте реальное отображение размера файла
+							</b>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<h3 class="title title--small mb-40">
+						Линии и мелкие объекты
+					</h3>
+					<div class="editor">
+						<p>
+							<ul>
+								<li>
+									мелкие объекты и тонкие линии выглядят лучше, если они окрашены только одной из четырех составляющих CMYK. Составной цвет может привести к появлению цветных ореолов вокруг покрашенных им объектов.
+								</li>
+								<li>
+									не рекомендуется делать мелкие белые объекты, мелкий белый текст и тонкие белые линии на фоне, состоящем из нескольких красок, т.к. они могут не пропечататься или пропечататься частично.
+								</li>
+							</ul>
+						</p>
+						<p>
+							<b>
+								Минимальные толщины линий:
+							</b>
+						</p>
+						<ul>
+							<li>
+								0,2 pt - для одноцветных линий
+							</li>
+							<li>
+								0,5 pt - толщина многоцветной линии или белой линии на составном фоне
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section section--orange section--decor-top">
+				<div class="container">
+					<img src="img/bg-icon-accent.svg" alt="Иконка внимание" class="bg-icon">
+					<h3 class="title title--small mb-40">
+						Обращаем Ваше внимание!
+					</h3>
+					<div class="editor">
+						<ul>
+							<li>
+								При приемке макетов осуществляется проверка файлов, которая выявляет не все вышеперечисленные ошибки. В связи с этим, мы не гарантируем их стопроцентное отслеживание;
+							</li>
+							<li>
+								При возникновении брака ввиду несоблюдения технических требования, вся ответственность ложится на сторону предоставившую некорректный макет;
+							</li>
+							<li>
+								Макеты, не соответствующие данным требованиям, могут быть автоматически доработаны типографией без согласования с заказчиком.
+							</li>
+							<li>
+								Цвет при печати может отличаться от экранного из-за особенностей монитора. В связи с этим мы рекомендуем делать цветопробу. Без цветопробы претензии по цвету не принимаются
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="section section--footer">
 			<div class="container">
-				<img src="img/bg-icon-accent.svg" alt="Иконка внимание" class="bg-icon">
-				<h3 class="title title--small mb-40">
-					Обращаем Ваше внимание!
-				</h3>
-				<div class="editor">
-					<ul>
-						<li>
-							При приемке макетов осуществляется проверка файлов, которая выявляет не все вышеперечисленные ошибки. В связи с этим, мы не гарантируем их стопроцентное отслеживание;
-						</li>
-						<li>
-							При возникновении брака ввиду несоблюдения технических требования, вся ответственность ложится на сторону предоставившую некорректный макет;
-						</li>
-						<li>
-							Макеты, не соответствующие данным требованиям, могут быть автоматически доработаны типографией без согласования с заказчиком.
-						</li>
-						<li>
-							Цвет при печати может отличаться от экранного из-за особенностей монитора. В связи с этим мы рекомендуем делать цветопробу. Без цветопробы претензии по цвету не принимаются
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer class="section section--footer">
-		<div class="container">
-			<div class="footer">
+				<div class="footer mob-center">
 	<div class="footer__columns mb-40">
-		<div class="footer__column footer__column--4">
+		<div class="footer__column footer__column--4 mob-full">
 			<a href="" class="footer__link">
 				Главная
 			</a>
@@ -701,7 +707,14 @@
 </div>
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
-			2
+			<a href="" class="btn btn--tab">
+				<svg class="btn__icon">
+					<use xlink:href="img/sprites/sprite.svg#icon-btn-accent"></use>
+				</svg>
+				<span>
+					Требования к макетам
+				</span>
+			</a>
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
 			<a href="" class="btn btn--orange">
@@ -724,7 +737,7 @@
 		</div>
 	</div>
 </div>
-<div class="hidden">
+<div class="hidden" style="display: none;">
 	<section class="modal-menu" id="modal-menu" style="display: none;">
 	<sidebar class="modal-menu__side">
 		<div class="modal-menu__head">
@@ -1427,10 +1440,112 @@
 		</div>
 	</main>
 </section>
+	<script>
+    var mmenuContent = {
+        title: 'Ракета',
+        links: [
+        "<a class='fa fa-envelope' href='#/'>1</a>",
+        "<a class='fa fa-twitter' href='#/'>2</a>",
+        "<a class='fa fa-facebook' href='#/'>3</a>"
+        ]
+    };
+</script>
+<nav id="mmenu">
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li><span>Услуги</span>
+            <ul>
+                <li><span>Строительство выставочных стендов</span>
+                    <ul>
+                        <li><a href="">Вывески по «Дизайн коду» города</a></li>
+                        <li><a href="">Плоские вывески Световые короба (Лайтбокс, касетон)</a></li>
+                        <li><a href="">Плоские буквы</a></li>
+                        <li><a href="">Обьемные буквы</a></li>
+                        <li><a href="">Торцевые касетоны</a></li>
+                        <li><a href="">Входные группы и козырьки</a></li>
+                        <li><a href="">Таблички</a></li>
+                        <li><a href="">Штендеры</a></li>
+                        <li><a href="">Уличные стенды</a></li>
+                        <li><a href="">Металлоконструкции любой сложности</a></li>
+                        <li><a href="">Ростовые фигуры</a></li>
+                        <li><a href="">Демонтаж/монтаж вывесок</a></li>
+                        <li><a href="">Мойка вывесок</a></li>
+                        <li><a href="">Ремонт и постгарантийное обслуживание</a></li>
+                        <li><a href="">Оформление помещений под ключ</a></li>
+                    </ul>
+                </li>
+                <li><span>Оформление деловых мероприятий </span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Наружная и интерьерная реклама</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Брендирование автотранспорта</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Фирменная сувенирная продукция</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Широкоформатная печать</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Полиграфия</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>UV-Печать</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Плоттерная резка </span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Лазерная/фрезерная резка и гравировка</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>POS материалы</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Аренда фотозон и выставочного оборудования</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Разработка дизайна</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Наши работы</a></li>
+        <li><a href="/">Отдел технического контроля</a></li>
+        <li><a href="/">Акции</a></li>
+        <li><a href="/">Контакты</a></li>
+    </ul>
+</nav>
 </div>
-		</div>
-	</footer>
-	<div class="container">
+			</div>
+		</footer>
+		<div class="container">
 	<div class="demo">
 		<a href="index.html" class="demo__link">
 			1. Главная
@@ -1500,6 +1615,7 @@
 		</a>
 	</div>
 </div>
+	</div>
 	<script src="js/main.js"></script>
 	<script src="js/vendor.js"></script>
 </body>

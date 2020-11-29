@@ -2,6 +2,10 @@
 	position: relative;
 	padding-bottom: 120px;
 	padding-top: 120px;
+	@include r(1200) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 	&--light {
 		background-color: $light;
 	}
@@ -21,63 +25,104 @@
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: top right, bottom left;
-		padding-top: 264px;
-		padding-bottom: 264px;
+		padding-top: 240px;
+		padding-bottom: 240px;
+		@include r(1200) {
+			padding-top: 160px;
+			padding-bottom: 160px;
+		}
 	}
 	&--decor-invert {
 		background-image: url('../img/decor-top-invert.svg'), url('../img/decor-bottom.svg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: top right, bottom left;
-		padding-top: 264px;
-		padding-bottom: 264px;
+		padding-top: 240px;
+		padding-bottom: 240px;
+		@include r(1200) {
+			padding-top: 160px;
+			padding-bottom: 160px;
+		}
 	}
 	&--decor-top {
 		background-image: url('../img/decor-top.svg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: top right;
-		padding-top: 264px;
+		padding-top: 240px;
+		@include r(1200) {
+			padding-top: 160px;
+		}
 	}
 	&--decor-bottom {
 		background-image: url('../img/decor-bottom.svg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: bottom left;
-		padding-bottom: 264px;
+		padding-bottom: 240px;
+		@include r(1200) {
+			padding-bottom: 160px;
+		}
 	}
 	&--header-top {
 		padding-top: rem(10);
 		padding-bottom: rem(10);
 		background-color: $dark;
 		color: $light;
+		@include r(1200) {
+			padding-top: rem(10);
+			padding-bottom: rem(10);
+		}
 	}
 	&--header-bottom {
 		padding-top: rem(0);
 		padding-bottom: rem(0);
 		background-color: $light;
 		box-shadow: 0 rem(4) rem(15) rgba(0, 0, 0, 0.05);
+		@include r(1200) {
+			padding-top: rem(0);
+			padding-bottom: rem(0);
+		}
 	}
 	&--breadcrumbs {
 		padding-top: rem(40);
 		padding-bottom: rem(40);
+		@include r(1200) {
+			padding-top: rem(30);
+			padding-bottom: rem(30);
+		}
 	}
 	&--top {
 		padding-top: rem(40);
+		@include r(1200) {
+			padding-bottom: rem(30);
+		}
 	}
 	&--intro {
 		padding: 0;
+		@include r(1200) {
+			padding-top: rem(0);
+			padding-bottom: rem(0);
+		}
 	}
 	&--ad {
 		padding-top: 0;
 		padding-bottom: 0;
 		background-repeat: no-repeat;
 		background-position: center;
+		@include r(1200) {
+			padding-top: rem(0);
+			padding-bottom: rem(0);
+		}
 	}
 	&--footer {
 		background-color: $dark;
 		color: $light;
 		padding-bottom: rem(60);
 		padding-top: rem(60);
+		@include r(1200) {
+			padding-top: rem(60);
+			padding-bottom: rem(60);
+		}
 	}
 }

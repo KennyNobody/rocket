@@ -1,6 +1,6 @@
-<div class="footer">
+<div class="footer mob-center">
 	<div class="footer__columns mb-40">
-		<div class="footer__column footer__column--4">
+		<div class="footer__column footer__column--4 mob-full">
 			<a href="" class="footer__link">
 				Главная
 			</a>
@@ -72,7 +72,14 @@
 			@@include("../footer-social/footer-social.html")
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
-			2
+			<a href="" class="btn btn--tab">
+				<svg class="btn__icon">
+					<use xlink:href="img/sprites/sprite.svg#icon-btn-accent"></use>
+				</svg>
+				<span>
+					Требования к макетам
+				</span>
+			</a>
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
 			<a href="" class="btn btn--orange">
@@ -95,6 +102,7 @@
 		</div>
 	</div>
 </div>
-<div class="hidden">
+<div class="hidden" style="display: none;">
 	@@include("../modal-menu/modal-menu.html")
+	@@include("../mmenu/mmenu.html")
 </div>

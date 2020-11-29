@@ -28,11 +28,12 @@
 <link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-    <header class="header">
+    <div id="page">
+        <header class="header">
 	<section class="section section--header-top">
 		<div class="container">
 			<div class="header-top">
-	<div class="header-top__block">
+	<div class="header-top__block mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-topline-clock"></use>
 		</svg>
@@ -40,7 +41,7 @@
 			Пн-Пт с 10 до 19
 		</span>
 	</div>
-	<a href="mailto:info@39rpk.ru" class="header-top__block header-top__block--link">
+	<a href="mailto:info@39rpk.ru" class="header-top__block header-top__block--link mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-topline-mail"></use>
 		</svg>
@@ -56,7 +57,7 @@
 			+7 (4012) 75-01-55
 		</span>
 	</a>
-	<a href="tel:+79814750155" class="header-top__block header-top__block--link">
+	<a href="tel:+79814750155" class="header-top__block header-top__block--link mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-telegram"></use>
 		</svg>
@@ -70,17 +71,22 @@
 			+7 981-475-01-55
 		</span>
 	</a>
-	<a href="" class="btn btn--head btn--orange">
+	<a href="" class="btn btn--head btn--orange mob-hidden">
 		<span>
 			Заказать звонок
 		</span>
+	</a>
+	<a href="#mmenu" class="header-top__btn-menu desc-hidden">
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
+		</svg>
 	</a>
 </div>
 		</div>
 	</section>
 	<section class="section section--header-bottom">
 		<div class="container">
-			<div class="header-bottom">
+			<div class="header-bottom mob-hidden">
 	<a href="/" class="header-bottom__logo">
 		<img src="img/logo-color.png" alt="Логотип">
 	</a>
@@ -131,10 +137,10 @@
 		</div>
 	</section>
 </header>
-    <main class="main">
-        <section class="section section--breadcrumbs">
-            <div class="container">
-                <nav class="breadcrumbs">
+        <main class="main">
+            <section class="section section--breadcrumbs">
+                <div class="container">
+                    <nav class="breadcrumbs">
 	<a href="" class="breadcrumbs__link">
 		Главная
 	</a>
@@ -151,60 +157,60 @@
 		Текущая страница
 	</span>
 </nav>
-            </div>
-        </section>
-        <section class="section section--top">
-            <div class="container">
-                <h2 class="title mb-40">
-                    Отдел технического контроля
-                </h2>
-                <div class="editor mb-80">
-                    <p>
-                        Прошел месяц после монтажа Вашей вывески? Отлично! К Вам выезжает наш специалист отдела технического контроля! Этот человек подчиняется исключительно директору нашей компании, что обеспечивает независимость контроля качества изготовления и монтажа Вашей рекламной конструкции. Если все же вдруг выявляется какая-то проблема, мы прикладываем все усилия, чтобы оперативно ее решить.
-                    </p>
                 </div>
-                <h3 class="title title--small mb-80">
-                    Контакты ОТК
-                </h3>
-                <div class="columns">
-                    <div class="columns__column columns__column--4">
-                        <div class="articles">
-                            <div class="articles__content">
-                                <div class="articles__item">
-                                    <div class="contact-card">
-                                        <svg class="contact-card__icon">
-                                            <use xlink:href="img/sprites/sprite.svg#icon-contacts-clock"></use>
-                                        </svg>
-                                        <p class="contact-card__text">
-                                            Пн-Пт с 10 до 19
-                                        </p>
+            </section>
+            <section class="section section--top">
+                <div class="container">
+                    <h2 class="title mb-40">
+                        Отдел технического контроля
+                    </h2>
+                    <div class="editor mb-80">
+                        <p>
+                            Прошел месяц после монтажа Вашей вывески? Отлично! К Вам выезжает наш специалист отдела технического контроля! Этот человек подчиняется исключительно директору нашей компании, что обеспечивает независимость контроля качества изготовления и монтажа Вашей рекламной конструкции. Если все же вдруг выявляется какая-то проблема, мы прикладываем все усилия, чтобы оперативно ее решить.
+                        </p>
+                    </div>
+                    <h3 class="title title--small mb-80">
+                        Контакты ОТК
+                    </h3>
+                    <div class="columns">
+                        <div class="columns__column columns__column--4">
+                            <div class="articles">
+                                <div class="articles__content">
+                                    <div class="articles__item">
+                                        <div class="contact-card">
+                                            <svg class="contact-card__icon">
+                                                <use xlink:href="img/sprites/sprite.svg#icon-contacts-clock"></use>
+                                            </svg>
+                                            <p class="contact-card__text">
+                                                Пн-Пт с 10 до 19
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="articles__item">
-                                    <a href="mailto:info@39rpk.ru" class="contact-card">
-                                        <svg class="contact-card__icon">
-                                            <use xlink:href="img/sprites/sprite.svg#icon-contacts-mail"></use>
-                                        </svg>
-                                        <p class="contact-card__text">
-                                            info@39rpk.ru
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="articles__item">
-                                    <div class="contact-card">
-                                        <svg class="contact-card__icon">
-                                            <use xlink:href="img/sprites/sprite.svg#icon-contacts-adress"></use>
-                                        </svg>
-                                        <p class="contact-card__text">
-                                            Калининград, Старшего лейтенанта Сибирякова, 23Б ("Твин")
-                                        </p>
+                                    <div class="articles__item">
+                                        <a href="mailto:info@39rpk.ru" class="contact-card">
+                                            <svg class="contact-card__icon">
+                                                <use xlink:href="img/sprites/sprite.svg#icon-contacts-mail"></use>
+                                            </svg>
+                                            <p class="contact-card__text">
+                                                info@39rpk.ru
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="articles__item">
+                                        <div class="contact-card">
+                                            <svg class="contact-card__icon">
+                                                <use xlink:href="img/sprites/sprite.svg#icon-contacts-adress"></use>
+                                            </svg>
+                                            <p class="contact-card__text">
+                                                Калининград, Старшего лейтенанта Сибирякова, 23Б ("Твин")
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="columns__column columns__column--8">
-                        <div class="person-card">
+                        <div class="columns__column columns__column--8">
+                            <div class="person-card">
 	<div class="person-card__thumb">
 		<img src="http://placehold.it/400x400" alt="">
 	</div>
@@ -229,115 +235,118 @@
 		</span>
 	</a>
 </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section section--gray section--decor-top">
+            </section>
+            <section class="section section--gray section--decor-top">
+                <div class="container">
+                    <h2 class="title title--small mb-80">
+                        Как правильно подобрать вывеску
+                    </h2>
+                    <div class="articles">
+                        <div class="articles__content">
+                            <div class="articles__item articles__item--33">
+                                <a href="" class="news-card">
+	<div class="news-card__thumb">
+		<img src="https://placehold.it/378x282" alt="">
+	</div>
+	<h4 class="news-card__title">
+		Какой цвет вывески выбрать?
+	</h4>
+	<p class="news-card__text">
+		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
+	</p>
+</a>
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                <a href="" class="news-card">
+	<div class="news-card__thumb">
+		<img src="https://placehold.it/378x282" alt="">
+	</div>
+	<h4 class="news-card__title">
+		Какой цвет вывески выбрать?
+	</h4>
+	<p class="news-card__text">
+		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
+	</p>
+</a>
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                <a href="" class="news-card">
+	<div class="news-card__thumb">
+		<img src="https://placehold.it/378x282" alt="">
+	</div>
+	<h4 class="news-card__title">
+		Какой цвет вывески выбрать?
+	</h4>
+	<p class="news-card__text">
+		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
+	</p>
+</a>
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                <a href="" class="news-card">
+	<div class="news-card__thumb">
+		<img src="https://placehold.it/378x282" alt="">
+	</div>
+	<h4 class="news-card__title">
+		Какой цвет вывески выбрать?
+	</h4>
+	<p class="news-card__text">
+		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
+	</p>
+</a>
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                <a href="" class="news-card">
+	<div class="news-card__thumb">
+		<img src="https://placehold.it/378x282" alt="">
+	</div>
+	<h4 class="news-card__title">
+		Какой цвет вывески выбрать?
+	</h4>
+	<p class="news-card__text">
+		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
+	</p>
+</a>
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                <a href="" class="news-card">
+	<div class="news-card__thumb">
+		<img src="https://placehold.it/378x282" alt="">
+	</div>
+	<h4 class="news-card__title">
+		Какой цвет вывески выбрать?
+	</h4>
+	<p class="news-card__text">
+		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
+	</p>
+</a>
+                            </div>
+                            <div class="articles__item articles__item--33 articles__item--clear"></div>
+                            <div class="articles__item articles__item--33 articles__item--clear"></div>
+                            <div class="articles__item articles__item--33 articles__item--clear"></div>
+                        </div>
+                        <div class="articles__toolbar">
+                            <a href="" class="btn btn--orange">
+                                <span>
+                                    Еще статьи
+                                </span>
+                                <svg class="btn__icon-load">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-loading"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="section section--footer">
             <div class="container">
-                <h2 class="title title--small mb-80">
-                    Как правильно подобрать вывеску
-                </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--33">
-                            <a href="" class="news-card">
-	<div class="news-card__thumb">
-		<img src="https://placehold.it/378x282" alt="">
-	</div>
-	<h4 class="news-card__title">
-		Какой цвет вывески выбрать?
-	</h4>
-	<p class="news-card__text">
-		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
-	</p>
-</a>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <a href="" class="news-card">
-	<div class="news-card__thumb">
-		<img src="https://placehold.it/378x282" alt="">
-	</div>
-	<h4 class="news-card__title">
-		Какой цвет вывески выбрать?
-	</h4>
-	<p class="news-card__text">
-		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
-	</p>
-</a>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <a href="" class="news-card">
-	<div class="news-card__thumb">
-		<img src="https://placehold.it/378x282" alt="">
-	</div>
-	<h4 class="news-card__title">
-		Какой цвет вывески выбрать?
-	</h4>
-	<p class="news-card__text">
-		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
-	</p>
-</a>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <a href="" class="news-card">
-	<div class="news-card__thumb">
-		<img src="https://placehold.it/378x282" alt="">
-	</div>
-	<h4 class="news-card__title">
-		Какой цвет вывески выбрать?
-	</h4>
-	<p class="news-card__text">
-		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
-	</p>
-</a>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <a href="" class="news-card">
-	<div class="news-card__thumb">
-		<img src="https://placehold.it/378x282" alt="">
-	</div>
-	<h4 class="news-card__title">
-		Какой цвет вывески выбрать?
-	</h4>
-	<p class="news-card__text">
-		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
-	</p>
-</a>
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            <a href="" class="news-card">
-	<div class="news-card__thumb">
-		<img src="https://placehold.it/378x282" alt="">
-	</div>
-	<h4 class="news-card__title">
-		Какой цвет вывески выбрать?
-	</h4>
-	<p class="news-card__text">
-		Статья о том, как правильно выбрать цвет вывески, какие сочетания цветов привлекут больше клиентов, яркость и контраст.
-	</p>
-</a>
-                        </div>
-                        <div class="articles__item articles__item--33 articles__item--clear"></div>
-                        <div class="articles__item articles__item--33 articles__item--clear"></div>
-                        <div class="articles__item articles__item--33 articles__item--clear"></div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Еще статьи
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="section section--footer">
-        <div class="container">
-            <div class="footer">
+                <div class="footer mob-center">
 	<div class="footer__columns mb-40">
-		<div class="footer__column footer__column--4">
+		<div class="footer__column footer__column--4 mob-full">
 			<a href="" class="footer__link">
 				Главная
 			</a>
@@ -423,7 +432,14 @@
 </div>
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
-			2
+			<a href="" class="btn btn--tab">
+				<svg class="btn__icon">
+					<use xlink:href="img/sprites/sprite.svg#icon-btn-accent"></use>
+				</svg>
+				<span>
+					Требования к макетам
+				</span>
+			</a>
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
 			<a href="" class="btn btn--orange">
@@ -446,7 +462,7 @@
 		</div>
 	</div>
 </div>
-<div class="hidden">
+<div class="hidden" style="display: none;">
 	<section class="modal-menu" id="modal-menu" style="display: none;">
 	<sidebar class="modal-menu__side">
 		<div class="modal-menu__head">
@@ -1149,10 +1165,112 @@
 		</div>
 	</main>
 </section>
+	<script>
+    var mmenuContent = {
+        title: 'Ракета',
+        links: [
+        "<a class='fa fa-envelope' href='#/'>1</a>",
+        "<a class='fa fa-twitter' href='#/'>2</a>",
+        "<a class='fa fa-facebook' href='#/'>3</a>"
+        ]
+    };
+</script>
+<nav id="mmenu">
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li><span>Услуги</span>
+            <ul>
+                <li><span>Строительство выставочных стендов</span>
+                    <ul>
+                        <li><a href="">Вывески по «Дизайн коду» города</a></li>
+                        <li><a href="">Плоские вывески Световые короба (Лайтбокс, касетон)</a></li>
+                        <li><a href="">Плоские буквы</a></li>
+                        <li><a href="">Обьемные буквы</a></li>
+                        <li><a href="">Торцевые касетоны</a></li>
+                        <li><a href="">Входные группы и козырьки</a></li>
+                        <li><a href="">Таблички</a></li>
+                        <li><a href="">Штендеры</a></li>
+                        <li><a href="">Уличные стенды</a></li>
+                        <li><a href="">Металлоконструкции любой сложности</a></li>
+                        <li><a href="">Ростовые фигуры</a></li>
+                        <li><a href="">Демонтаж/монтаж вывесок</a></li>
+                        <li><a href="">Мойка вывесок</a></li>
+                        <li><a href="">Ремонт и постгарантийное обслуживание</a></li>
+                        <li><a href="">Оформление помещений под ключ</a></li>
+                    </ul>
+                </li>
+                <li><span>Оформление деловых мероприятий </span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Наружная и интерьерная реклама</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Брендирование автотранспорта</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Фирменная сувенирная продукция</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Широкоформатная печать</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Полиграфия</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>UV-Печать</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Плоттерная резка </span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Лазерная/фрезерная резка и гравировка</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>POS материалы</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Аренда фотозон и выставочного оборудования</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Разработка дизайна</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Наши работы</a></li>
+        <li><a href="/">Отдел технического контроля</a></li>
+        <li><a href="/">Акции</a></li>
+        <li><a href="/">Контакты</a></li>
+    </ul>
+</nav>
 </div>
-        </div>
-    </footer>
-    <div class="container">
+            </div>
+        </footer>
+        <div class="container">
 	<div class="demo">
 		<a href="index.html" class="demo__link">
 			1. Главная
@@ -1222,6 +1340,7 @@
 		</a>
 	</div>
 </div>
+    </div>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>

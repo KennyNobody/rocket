@@ -5,73 +5,75 @@
     @@include("../blocks/modules/head/head.html")
 </head>
 <body class="body">
-    @@include("../blocks/modules/header/header.html")
-    <main class="main">
-        <section class="section section--breadcrumbs">
+    <div id="page">
+        @@include("../blocks/modules/header/header.html")
+        <main class="main">
+            <section class="section section--breadcrumbs">
+                <div class="container">
+                    @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+                </div>
+            </section>
+            <section class="section section--top">
+                <div class="container">
+                    <h2 class="title mb-80">
+                        Требования к макетам для резки
+                    </h2>
+                    <div class="editor mb-60">
+                        <ul>
+                            <li>
+                                Файл с контурами реза должен быть в векторном формате <b>eps</b>, <b>ai</b> или <b>cdr</b>;
+                            </li>
+                            <li>
+                                Шрифты должны быть <b>в кривых</b>; 
+                            </li>
+                            <li>
+                                Масштаб 1:1;
+                            </li>
+                            <li>
+                                У контура должна быть толщина Hairline (волосяная линия) в Corel Draw или 0,216 pt (пункта) в Adobe Illustrator;
+                            </li>
+                            <li>
+                                Контуры должны быть <b>замкнутые</b>. Не должно быть пересекающихся линий, острых углов, градиентов и прочих эффектов;
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="columns mb-60">
+                        <div class="columns__column columns__column--2 mob-hidden">
+                            
+                        </div>
+                        <div class="columns__column columns__column--4">
+                            <img class="img img--full" src="img/template-1.svg" alt="Пример неправильного макета">
+                        </div>
+                        <div class="columns__column columns__column--4">
+                            <img class="img img--full" src="img/template-2.svg" alt="Пример правильного макета">
+                        </div>
+                        <div class="columns__column columns__column--2 mob-hidden">
+                            
+                        </div>
+                    </div>
+                    <div class="editor">
+                        <ul>
+                            <li>
+                                Минимальная высота и ширина элементов в макете <b>5 мм;</b>
+                            </li>
+                            <li>
+                                Минимальное расстояние от контура реза до края изображения или информации 3 мм, размер вылетов 3 мм (если изображение режется на вылет), расстояние между объектами резки 10 мм;
+                            </li>
+                            <li>
+                                Все объекты в файле находятся на одном слое. <b>Никаких объектов, выходящих за пределы области резки, прикрытых или неприкрытых белыми прямоугольниками-масками.</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="section section--footer">
             <div class="container">
-                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+                @@include("../blocks/modules/footer/footer.html")
             </div>
-        </section>
-        <section class="section section--top">
-            <div class="container">
-                <h2 class="title mb-80">
-                    Требования к макетам для резки
-                </h2>
-                <div class="editor mb-60">
-                    <ul>
-                        <li>
-                            Файл с контурами реза должен быть в векторном формате <b>eps</b>, <b>ai</b> или <b>cdr</b>;
-                        </li>
-                        <li>
-                            Шрифты должны быть <b>в кривых</b>; 
-                        </li>
-                        <li>
-                            Масштаб 1:1;
-                        </li>
-                        <li>
-                            У контура должна быть толщина Hairline (волосяная линия) в Corel Draw или 0,216 pt (пункта) в Adobe Illustrator;
-                        </li>
-                        <li>
-                            Контуры должны быть <b>замкнутые</b>. Не должно быть пересекающихся линий, острых углов, градиентов и прочих эффектов;
-                        </li>
-                    </ul>
-                </div>
-                <div class="columns mb-60">
-                    <div class="columns__column columns__column--2 mob-hidden">
-                        
-                    </div>
-                    <div class="columns__column columns__column--4">
-                        <img class="img img--full" src="img/template-1.svg" alt="Пример неправильного макета">
-                    </div>
-                    <div class="columns__column columns__column--4">
-                        <img class="img img--full" src="img/template-2.svg" alt="Пример правильного макета">
-                    </div>
-                    <div class="columns__column columns__column--2 mob-hidden">
-                        
-                    </div>
-                </div>
-                <div class="editor">
-                    <ul>
-                        <li>
-                            Минимальная высота и ширина элементов в макете <b>5 мм;</b>
-                        </li>
-                        <li>
-                            Минимальное расстояние от контура реза до края изображения или информации 3 мм, размер вылетов 3 мм (если изображение режется на вылет), расстояние между объектами резки 10 мм;
-                        </li>
-                        <li>
-                            Все объекты в файле находятся на одном слое. <b>Никаких объектов, выходящих за пределы области резки, прикрытых или неприкрытых белыми прямоугольниками-масками.</b>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="section section--footer">
-        <div class="container">
-            @@include("../blocks/modules/footer/footer.html")
-        </div>
-    </footer>
-    @@include("../blocks/modules/demo/demo.html")
+        </footer>
+        @@include("../blocks/modules/demo/demo.html")
+    </div>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>

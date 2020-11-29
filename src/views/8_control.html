@@ -5,115 +5,120 @@
     @@include("../blocks/modules/head/head.html")
 </head>
 <body class="body">
-    @@include("../blocks/modules/header/header.html")
-    <main class="main">
-        <section class="section section--breadcrumbs">
-            <div class="container">
-                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
-            </div>
-        </section>
-        <section class="section section--top">
-            <div class="container">
-                <h2 class="title mb-40">
-                    Отдел технического контроля
-                </h2>
-                <div class="editor mb-80">
-                    <p>
-                        Прошел месяц после монтажа Вашей вывески? Отлично! К Вам выезжает наш специалист отдела технического контроля! Этот человек подчиняется исключительно директору нашей компании, что обеспечивает независимость контроля качества изготовления и монтажа Вашей рекламной конструкции. Если все же вдруг выявляется какая-то проблема, мы прикладываем все усилия, чтобы оперативно ее решить.
-                    </p>
+    <div id="page">
+        @@include("../blocks/modules/header/header.html")
+        <main class="main">
+            <section class="section section--breadcrumbs">
+                <div class="container">
+                    @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
                 </div>
-                <h3 class="title title--small mb-80">
-                    Контакты ОТК
-                </h3>
-                <div class="columns">
-                    <div class="columns__column columns__column--4">
-                        <div class="articles">
-                            <div class="articles__content">
-                                <div class="articles__item">
-                                    <div class="contact-card">
-                                        <svg class="contact-card__icon">
-                                            <use xlink:href="img/sprites/sprite.svg#icon-contacts-clock"></use>
-                                        </svg>
-                                        <p class="contact-card__text">
-                                            Пн-Пт с 10 до 19
-                                        </p>
+            </section>
+            <section class="section section--top">
+                <div class="container">
+                    <h2 class="title mb-40">
+                        Отдел технического контроля
+                    </h2>
+                    <div class="editor mb-80">
+                        <p>
+                            Прошел месяц после монтажа Вашей вывески? Отлично! К Вам выезжает наш специалист отдела технического контроля! Этот человек подчиняется исключительно директору нашей компании, что обеспечивает независимость контроля качества изготовления и монтажа Вашей рекламной конструкции. Если все же вдруг выявляется какая-то проблема, мы прикладываем все усилия, чтобы оперативно ее решить.
+                        </p>
+                    </div>
+                    <h3 class="title title--small mb-80">
+                        Контакты ОТК
+                    </h3>
+                    <div class="columns">
+                        <div class="columns__column columns__column--4">
+                            <div class="articles">
+                                <div class="articles__content">
+                                    <div class="articles__item">
+                                        <div class="contact-card">
+                                            <svg class="contact-card__icon">
+                                                <use xlink:href="img/sprites/sprite.svg#icon-contacts-clock"></use>
+                                            </svg>
+                                            <p class="contact-card__text">
+                                                Пн-Пт с 10 до 19
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="articles__item">
-                                    <a href="mailto:info@39rpk.ru" class="contact-card">
-                                        <svg class="contact-card__icon">
-                                            <use xlink:href="img/sprites/sprite.svg#icon-contacts-mail"></use>
-                                        </svg>
-                                        <p class="contact-card__text">
-                                            info@39rpk.ru
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="articles__item">
-                                    <div class="contact-card">
-                                        <svg class="contact-card__icon">
-                                            <use xlink:href="img/sprites/sprite.svg#icon-contacts-adress"></use>
-                                        </svg>
-                                        <p class="contact-card__text">
-                                            Калининград, Старшего лейтенанта Сибирякова, 23Б ("Твин")
-                                        </p>
+                                    <div class="articles__item">
+                                        <a href="mailto:info@39rpk.ru" class="contact-card">
+                                            <svg class="contact-card__icon">
+                                                <use xlink:href="img/sprites/sprite.svg#icon-contacts-mail"></use>
+                                            </svg>
+                                            <p class="contact-card__text">
+                                                info@39rpk.ru
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="articles__item">
+                                        <div class="contact-card">
+                                            <svg class="contact-card__icon">
+                                                <use xlink:href="img/sprites/sprite.svg#icon-contacts-adress"></use>
+                                            </svg>
+                                            <p class="contact-card__text">
+                                                Калининград, Старшего лейтенанта Сибирякова, 23Б ("Твин")
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="columns__column columns__column--8">
-                        @@include("../blocks/modules/person-card/person-card.html")
+                        <div class="columns__column columns__column--8">
+                            @@include("../blocks/modules/person-card/person-card.html")
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section section--gray section--decor-top">
+            </section>
+            <section class="section section--gray section--decor-top">
+                <div class="container">
+                    <h2 class="title title--small mb-80">
+                        Как правильно подобрать вывеску
+                    </h2>
+                    <div class="articles">
+                        <div class="articles__content">
+                            <div class="articles__item articles__item--33">
+                                @@include("../blocks/modules/news-card/news-card.html")
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                @@include("../blocks/modules/news-card/news-card.html")
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                @@include("../blocks/modules/news-card/news-card.html")
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                @@include("../blocks/modules/news-card/news-card.html")
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                @@include("../blocks/modules/news-card/news-card.html")
+                            </div>
+                            <div class="articles__item articles__item--33">
+                                @@include("../blocks/modules/news-card/news-card.html")
+                            </div>
+                            <div class="articles__item articles__item--33 articles__item--clear"></div>
+                            <div class="articles__item articles__item--33 articles__item--clear"></div>
+                            <div class="articles__item articles__item--33 articles__item--clear"></div>
+                        </div>
+                        <div class="articles__toolbar">
+                            <a href="" class="btn btn--orange">
+                                <span>
+                                    Еще статьи
+                                </span>
+                                <svg class="btn__icon-load">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-loading"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="section section--footer">
             <div class="container">
-                <h2 class="title title--small mb-80">
-                    Как правильно подобрать вывеску
-                </h2>
-                <div class="articles">
-                    <div class="articles__content">
-                        <div class="articles__item articles__item--33">
-                            @@include("../blocks/modules/news-card/news-card.html")
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            @@include("../blocks/modules/news-card/news-card.html")
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            @@include("../blocks/modules/news-card/news-card.html")
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            @@include("../blocks/modules/news-card/news-card.html")
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            @@include("../blocks/modules/news-card/news-card.html")
-                        </div>
-                        <div class="articles__item articles__item--33">
-                            @@include("../blocks/modules/news-card/news-card.html")
-                        </div>
-                        <div class="articles__item articles__item--33 articles__item--clear"></div>
-                        <div class="articles__item articles__item--33 articles__item--clear"></div>
-                        <div class="articles__item articles__item--33 articles__item--clear"></div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Еще статьи
-                            </span>
-                        </a>
-                    </div>
-                </div>
+                @@include("../blocks/modules/footer/footer.html")
             </div>
-        </section>
-    </main>
-    <footer class="section section--footer">
-        <div class="container">
-            @@include("../blocks/modules/footer/footer.html")
-        </div>
-    </footer>
-    @@include("../blocks/modules/demo/demo.html")
+        </footer>
+        @@include("../blocks/modules/demo/demo.html")
+    </div>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>

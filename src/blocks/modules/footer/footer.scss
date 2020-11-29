@@ -2,6 +2,9 @@
 	&__columns {
 		display: flex;
 		justify-content: space-between;
+		@include r(1200) {
+			display: block;
+		}
 	}
 	&__column {
 		&--4 {
@@ -15,6 +18,9 @@
 		font-weight: 700;
 		margin-bottom: 1em;
 		color: $orange;
+		@include r(1200) {
+			display: none;
+		}
 	}
 	&__logo {
 		display: block;
@@ -23,10 +29,18 @@
 		img {
 			height: rem(52);
 		}
+		@include r(1200) {
+			margin-top: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	&__nav {
 		columns: 2;
 		column-gap: rem(20);
+		@include r(1200) {
+			display: none;
+		}
 	}
 	&__link {
 		display: block;
@@ -34,8 +48,11 @@
 		font-weight: 500;
 		margin-bottom: 1em;
 		text-decoration: none;
+		@include r(1200) {
+			display: none;
+		}
 		&--light {
-			font-weight: 400;
+			font-weight: 300;
 		}
 		&:hover {
 			opacity: 0.7;

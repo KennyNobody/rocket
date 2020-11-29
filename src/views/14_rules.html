@@ -5,168 +5,170 @@
     @@include("../blocks/modules/head/head.html")
 </head>
 <body class="body">
-    @@include("../blocks/modules/header/header.html")
-    <main class="main">
-        <section class="section section--breadcrumbs">
-            <div class="container">
-                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
-            </div>
-        </section>
-        <section class="section section--top">
-            <div class="container">
-                <h2 class="title mb-80">
-                    Подробные требования для различных форматов
-                </h2>
-            </div>
-            <div class="container">
-                <img src="img/bg-icon-ai.svg" alt="Иконка внимание" class="bg-icon">
-                <div class="title-icon mb-40">
-                    <svg class="title-icon__icon">
-                        <use xlink:href="img/sprites/sprite.svg#icon-title-1"></use>
-                    </svg>
-                    <h2 class="title-icon__text">
-                        Adobe Illustrator
+    <div id="page">
+        @@include("../blocks/modules/header/header.html")
+        <main class="main">
+            <section class="section section--breadcrumbs">
+                <div class="container">
+                    @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+                </div>
+            </section>
+            <section class="section section--top">
+                <div class="container">
+                    <h2 class="title mb-80">
+                        Подробные требования для различных форматов
                     </h2>
                 </div>
-                <div class="editor">
-                    <ul>
-                        <li>
-                            Все шрифты переведены в кривые;
-                        </li>
-                        <li>
-                            Макеты расположены на странице обрезного формата. 1 макет – 1 область ( нельзя располагать на 1 области несколько макетов);
-                        </li>
-                        <li>
-                            Указаны вылеты – по 3 мм. с каждой стороны;
-                        </li>
-                        <li>
-                            Вставляя растровые изображения желательно прикладывать все изображения к заказу;
-                        </li>
-                        <li>
-                            Не рекомендуется использовать последние версии программ;
-                        </li>
-                        <li>
-                            Эффекты наложения и прозрачности должны быть растрированы (Object-Rasterize);
-                        </li>
-                        <li>
-                            Количество узлов в кривых не должно быть больше 10 000.
-                        </li>
-                    </ul>
+                <div class="container">
+                    <img src="img/bg-icon-ai.svg" alt="Иконка внимание" class="bg-icon">
+                    <div class="title-icon mb-40">
+                        <svg class="title-icon__icon">
+                            <use xlink:href="img/sprites/sprite.svg#icon-title-1"></use>
+                        </svg>
+                        <h2 class="title-icon__text">
+                            Adobe Illustrator
+                        </h2>
+                    </div>
+                    <div class="editor">
+                        <ul>
+                            <li>
+                                Все шрифты переведены в кривые;
+                            </li>
+                            <li>
+                                Макеты расположены на странице обрезного формата. 1 макет – 1 область ( нельзя располагать на 1 области несколько макетов);
+                            </li>
+                            <li>
+                                Указаны вылеты – по 3 мм. с каждой стороны;
+                            </li>
+                            <li>
+                                Вставляя растровые изображения желательно прикладывать все изображения к заказу;
+                            </li>
+                            <li>
+                                Не рекомендуется использовать последние версии программ;
+                            </li>
+                            <li>
+                                Эффекты наложения и прозрачности должны быть растрированы (Object-Rasterize);
+                            </li>
+                            <li>
+                                Количество узлов в кривых не должно быть больше 10 000.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section section--gray section--decor">
+            </section>
+            <section class="section section--gray section--decor">
+                <div class="container">
+                    <img src="img/bg-icon-pdf.svg" alt="Иконка внимание" class="bg-icon">
+                    <div class="title-icon mb-40">
+                        <svg class="title-icon__icon">
+                            <use xlink:href="img/sprites/sprite.svg#icon-title-2"></use>
+                        </svg>
+                        <h2 class="title-icon__text">
+                            Adobe PDF
+                        </h2>
+                    </div>
+                    <div class="editor">
+                        <ul>
+                            <li>
+                                Разрешение растровых элементов не менее 300 dpi и не более 600 dpi. Штриховых – не менее 600 dpi и не более 1200 dpi;
+                            </li>
+                            <li>
+                                Прозрачности должны быть переведены в битмап до сохранения в PDF;
+                            </li>
+                            <li>
+                                Все картинки в файле должны иметь достаточное разрешение для печати;
+                            </li>
+                            <li>
+                                Все шрифты, использованные в макете, должны быть включены в файл;
+                            </li>
+                            <li>
+                                Файл не должен иметь защит (для возможности нормальной подготовки файла для печати).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--light">
+                <div class="container">
+                    <img src="img/bg-icon-cdr.svg" alt="Иконка внимание" class="bg-icon">
+                    <div class="title-icon mb-40">
+                        <svg class="title-icon__icon">
+                            <use xlink:href="img/sprites/sprite.svg#icon-title-3"></use>
+                        </svg>
+                        <h2 class="title-icon__text">
+                            Corel Draw
+                        </h2>
+                    </div>
+                    <div class="editor">
+                        <ul>
+                            <li>
+                                Шрифты в кривых
+                            </li>
+                            <li>
+                                Прозрачность, тени и текстуры должны быть растрированы
+                            </li>
+                            <li>
+                                Толщина линий не менее 0,13 мм. ( не используйте Hairline)
+                            </li>
+                            <li>
+                                Для заливки объектов используйте палитру CMYK
+                            </li>
+                            <li>
+                                Количество узлов в кривых не должно быть больше 10 000
+                            </li>
+                            <li>
+                                При создании макета не рекомендуется встраивать в него файлы формата PSD, содержащие прозрачные области и файлы TIFF с альфа-каналами
+                            </li>
+                            <li>
+                                Каждый макет должен располагаться на отдельной странице. Не располагайте на одной вкладке листа все макеты – это неверно
+                            </li>
+                            <li>
+                                Заданная область должна соответствовать размеру готового изделия ( послеобрезного), дополнительно сделаны вылеты. При сохранении выставлены настройки «сохранить с вылетами»
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--gray section--decor-top">
+                <div class="container">
+                    <img src="img/bg-icon-psd.svg" alt="Иконка внимание" class="bg-icon">
+                    <div class="title-icon mb-40">
+                        <svg class="title-icon__icon">
+                            <use xlink:href="img/sprites/sprite.svg#icon-title-4"></use>
+                        </svg>
+                        <h2 class="title-icon__text">
+                            Adobe Photoshop
+                        </h2>
+                    </div>
+                    <div class="editor">
+                        <ul>
+                            <li>
+                                Разрешение растрового изображения – не менее 300 dpi (для листовой печати);
+                            </li>
+                            <li>
+                                Разрешение 1:1;
+                            </li>
+                            <li>
+                                Цветовая модель CMYK;
+                            </li>
+                            <li>
+                                Все слои в изображении должны быть слиты;
+                            </li>
+                            <li>
+                                Размер изображения соответствует формату изделия + вылеты ( по 3 мм. с каждой стороны).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="section section--footer">
             <div class="container">
-                <img src="img/bg-icon-pdf.svg" alt="Иконка внимание" class="bg-icon">
-                <div class="title-icon mb-40">
-                    <svg class="title-icon__icon">
-                        <use xlink:href="img/sprites/sprite.svg#icon-title-2"></use>
-                    </svg>
-                    <h2 class="title-icon__text">
-                        Adobe PDF
-                    </h2>
-                </div>
-                <div class="editor">
-                    <ul>
-                        <li>
-                            Разрешение растровых элементов не менее 300 dpi и не более 600 dpi. Штриховых – не менее 600 dpi и не более 1200 dpi;
-                        </li>
-                        <li>
-                            Прозрачности должны быть переведены в битмап до сохранения в PDF;
-                        </li>
-                        <li>
-                            Все картинки в файле должны иметь достаточное разрешение для печати;
-                        </li>
-                        <li>
-                            Все шрифты, использованные в макете, должны быть включены в файл;
-                        </li>
-                        <li>
-                            Файл не должен иметь защит (для возможности нормальной подготовки файла для печати).
-                        </li>
-                    </ul>
-                </div>
+                @@include("../blocks/modules/footer/footer.html")
             </div>
-        </section>
-        <section class="section section--light">
-            <div class="container">
-                <img src="img/bg-icon-cdr.svg" alt="Иконка внимание" class="bg-icon">
-                <div class="title-icon mb-40">
-                    <svg class="title-icon__icon">
-                        <use xlink:href="img/sprites/sprite.svg#icon-title-3"></use>
-                    </svg>
-                    <h2 class="title-icon__text">
-                        Corel Draw
-                    </h2>
-                </div>
-                <div class="editor">
-                    <ul>
-                        <li>
-                            Шрифты в кривых
-                        </li>
-                        <li>
-                            Прозрачность, тени и текстуры должны быть растрированы
-                        </li>
-                        <li>
-                            Толщина линий не менее 0,13 мм. ( не используйте Hairline)
-                        </li>
-                        <li>
-                            Для заливки объектов используйте палитру CMYK
-                        </li>
-                        <li>
-                            Количество узлов в кривых не должно быть больше 10 000
-                        </li>
-                        <li>
-                            При создании макета не рекомендуется встраивать в него файлы формата PSD, содержащие прозрачные области и файлы TIFF с альфа-каналами
-                        </li>
-                        <li>
-                            Каждый макет должен располагаться на отдельной странице. Не располагайте на одной вкладке листа все макеты – это неверно
-                        </li>
-                        <li>
-                            Заданная область должна соответствовать размеру готового изделия ( послеобрезного), дополнительно сделаны вылеты. При сохранении выставлены настройки «сохранить с вылетами»
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="section section--gray section--decor-top">
-            <div class="container">
-                <img src="img/bg-icon-psd.svg" alt="Иконка внимание" class="bg-icon">
-                <div class="title-icon mb-40">
-                    <svg class="title-icon__icon">
-                        <use xlink:href="img/sprites/sprite.svg#icon-title-4"></use>
-                    </svg>
-                    <h2 class="title-icon__text">
-                        Adobe Photoshop
-                    </h2>
-                </div>
-                <div class="editor">
-                    <ul>
-                        <li>
-                            Разрешение растрового изображения – не менее 300 dpi (для листовой печати);
-                        </li>
-                        <li>
-                            Разрешение 1:1;
-                        </li>
-                        <li>
-                            Цветовая модель CMYK;
-                        </li>
-                        <li>
-                            Все слои в изображении должны быть слиты;
-                        </li>
-                        <li>
-                            Размер изображения соответствует формату изделия + вылеты ( по 3 мм. с каждой стороны).
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="section section--footer">
-        <div class="container">
-            @@include("../blocks/modules/footer/footer.html")
-        </div>
-    </footer>
-    @@include("../blocks/modules/demo/demo.html")
+        </footer>
+        @@include("../blocks/modules/demo/demo.html")
+    </div>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>

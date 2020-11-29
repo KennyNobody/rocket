@@ -1,0 +1,18 @@
+.example-line {
+	display: flex;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	&__icon {
+		display: block;
+		flex-shrink: 0;
+		margin-right: rem(10);
+		align-self: flex-start;
+		position: relative;
+		top: 0.6rem;
+	}
+	&__text {
+
+	}
+}

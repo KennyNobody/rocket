@@ -1,8 +1,8 @@
-    <!DOCTYPE html>
-    <html lang="ru">
-    <head>
-        <title>20. Требования к макетам 9</title>
-        <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>20. Требования к макетам 9</title>
+    <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="theme-color" content="#fff">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -26,13 +26,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body class="body">
+</head>
+<body class="body">
+    <div id="page">
         <header class="header">
 	<section class="section section--header-top">
 		<div class="container">
 			<div class="header-top">
-	<div class="header-top__block">
+	<div class="header-top__block mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-topline-clock"></use>
 		</svg>
@@ -40,7 +41,7 @@
 			Пн-Пт с 10 до 19
 		</span>
 	</div>
-	<a href="mailto:info@39rpk.ru" class="header-top__block header-top__block--link">
+	<a href="mailto:info@39rpk.ru" class="header-top__block header-top__block--link mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-topline-mail"></use>
 		</svg>
@@ -56,7 +57,7 @@
 			+7 (4012) 75-01-55
 		</span>
 	</a>
-	<a href="tel:+79814750155" class="header-top__block header-top__block--link">
+	<a href="tel:+79814750155" class="header-top__block header-top__block--link mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-telegram"></use>
 		</svg>
@@ -70,17 +71,22 @@
 			+7 981-475-01-55
 		</span>
 	</a>
-	<a href="" class="btn btn--head btn--orange">
+	<a href="" class="btn btn--head btn--orange mob-hidden">
 		<span>
 			Заказать звонок
 		</span>
+	</a>
+	<a href="#mmenu" class="header-top__btn-menu desc-hidden">
+		<svg>
+			<use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
+		</svg>
 	</a>
 </div>
 		</div>
 	</section>
 	<section class="section section--header-bottom">
 		<div class="container">
-			<div class="header-bottom">
+			<div class="header-bottom mob-hidden">
 	<a href="/" class="header-bottom__logo">
 		<img src="img/logo-color.png" alt="Логотип">
 	</a>
@@ -560,12 +566,12 @@
                         </p>
                     </div>
                     <div class="columns columns--center mb-30">
-                    	<div class="columns__column columns__column--6">
-                    		<img src="img/bolt-1.svg" alt="" class="img img--full">
-                    	</div>
-                    	<div class="columns__column columns__column--6">
-                    		<img src="img/bolt-2.svg" alt="" class="img img--full">
-                    	</div>
+                        <div class="columns__column columns__column--6">
+                            <img src="img/bolt-1.svg" alt="" class="img img--full">
+                        </div>
+                        <div class="columns__column columns__column--6">
+                            <img src="img/bolt-2.svg" alt="" class="img img--full">
+                        </div>
                     </div>
                     <div class="editor mb-40">
                         <h4>
@@ -621,92 +627,91 @@
                             <li>
                                 если используется твердая обложка, то для улучшения эстетичного вида лучше делать блок меньше, чем обложка (чтобы блок был скрыт обложкой в собранном виде)
                             </li>
-                        </li>
-                    </ul>
-                    <h4>
-                        Блок:
-                    </h4>
-                    <ul>
-                        <li>
-                            для блока так же добавляется к макету 20 мм. с корешковой стороны. Это является технологическим полем для скрепления болтами
-                        </li>
-                        <li>
-                            для лучшего раскрытия необходимо делать биговку блока . При большом количестве полос необходимо делать компенсацию биговку для хорошего раскрытия, т.е. немного смещать линию бига ( см. рис.)
-                        </li>
-                    </ul>
-                    <div class="columns mb-30">
-                        <div class="columns__column columns__column--3 mob-hidden"></div>
-                        <div class="columns__column columns__column--6">
-                            <img src="img/ill.svg" class="img img--full" alt="Смещение">
+                        </ul>
+                        <h4>
+                            Блок:
+                        </h4>
+                        <ul>
+                            <li>
+                                для блока так же добавляется к макету 20 мм. с корешковой стороны. Это является технологическим полем для скрепления болтами
+                            </li>
+                            <li>
+                                для лучшего раскрытия необходимо делать биговку блока . При большом количестве полос необходимо делать компенсацию биговку для хорошего раскрытия, т.е. немного смещать линию бига ( см. рис.)
+                            </li>
+                        </ul>
+                        <div class="columns mb-30">
+                            <div class="columns__column columns__column--3 mob-hidden"></div>
+                            <div class="columns__column columns__column--6">
+                                <img src="img/ill.svg" class="img img--full" alt="Смещение">
+                            </div>
+                            <div class="columns__column columns__column--3 mob-hidden"></div>
                         </div>
-                        <div class="columns__column columns__column--3 mob-hidden"></div>
+
+                        <ul>
+                            <li>
+                                вылеты по 3 мм. с каждой стороны
+                            </li>
+                        </ul>
+                        <h4>
+                            Болтовое крепление:
+                        </h4>
+                        <ul>
+                            <li>
+                                минимальная длина болтов – 5 мм. Следовательно толщина скрепляемого блока не должна быть меньше 3-4 мм. ( иначе такая конструкция будет выглядеть непривлекательно)
+                            </li>
+                            <li>
+                                диаметр болта – 5 мм. , шляпка болта – 10 мм.
+                            </li>
+                        </ul>
                     </div>
-                    
-                    <ul>
-                        <li>
-                            вылеты по 3 мм. с каждой стороны
-                        </li>
-                    </ul>
-                    <h4>
-                        Болтовое крепление:
-                    </h4>
-                    <ul>
-                        <li>
-                            минимальная длина болтов – 5 мм. Следовательно толщина скрепляемого блока не должна быть меньше 3-4 мм. ( иначе такая конструкция будет выглядеть непривлекательно)
-                        </li>
-                        <li>
-                            диаметр болта – 5 мм. , шляпка болта – 10 мм.
-                        </li>
-                    </ul>
                 </div>
-            </div>
-        </section>
-        <section class="section">
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="editor mb-60">
+                        <p>
+                            Если предполагается, что макет потребует редактирования, то ко всем форматам дополнительно потребуются обработанные фотографии максимального размера, шрифты и логотипы (желательно в векторном виде), используемые в макете. <br>
+                        </p>
+                        <p>
+                            <strong>
+                                Услуга по доработке макета для соотвтствия техническим требованиям является дополнительной и оплачивается отдельно. 
+                            </strong>
+                        </p>
+                        <p>
+                            Типография не несет ответственности за брак, из-за неверно подготовленного к печати макета заказчика. 
+                        </p>
+                    </div>
+                    <div class="columns">
+                        <div class="columns__column columns__column--4">
+                            <img class="img img--center" src="img/alarm-template.png" alt="Внимание!">
+                        </div>
+                        <div class="columns__column columns__column--8">
+                            <div class="editor">
+                                <ul>
+                                    <li>
+                                        Файлы линейки Microsoft office (Word, Exel, Power Point) не являются макетами, подготовленными к печати;
+                                    </li>
+                                    <li>
+                                        При возникновении брака ввиду несоблюдения технических требований, вся ответственность ложиться на сторону предоставившую некорректный макет;
+                                    </li>
+                                    <li>
+                                        Макеты, не соответствующие данным требованиям, могут быть автоматически доработаны типографией без согласования с заказчиком;
+                                    </li>
+                                    <li>
+                                        Цвет при печати может отличаться от экранного из-за особенностей монитора. В связи с этим мы рекомендуем делать цветопробу. Без цветопробы претензии по цвету не принимаются.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="section section--footer">
             <div class="container">
-                <div class="editor mb-60">
-                    <p>
-                        Если предполагается, что макет потребует редактирования, то ко всем форматам дополнительно потребуются обработанные фотографии максимального размера, шрифты и логотипы (желательно в векторном виде), используемые в макете. <br>
-                    </p>
-                    <p>
-                        <strong>
-                            Услуга по доработке макета для соотвтствия техническим требованиям является дополнительной и оплачивается отдельно. 
-                        </strong>
-                    </p>
-                    <p>
-                        Типография не несет ответственности за брак, из-за неверно подготовленного к печати макета заказчика. 
-                    </p>
-                </div>
-                <div class="columns">
-                    <div class="columns__column columns__column--4">
-                        <img class="img img--center" src="img/alarm-template.png" alt="Внимание!">
-                    </div>
-                    <div class="columns__column columns__column--8">
-                        <div class="editor">
-                            <ul>
-                                <li>
-                                    Файлы линейки Microsoft office (Word, Exel, Power Point) не являются макетами, подготовленными к печати;
-                                </li>
-                                <li>
-                                    При возникновении брака ввиду несоблюдения технических требований, вся ответственность ложиться на сторону предоставившую некорректный макет;
-                                </li>
-                                <li>
-                                    Макеты, не соответствующие данным требованиям, могут быть автоматически доработаны типографией без согласования с заказчиком;
-                                </li>
-                                <li>
-                                    Цвет при печати может отличаться от экранного из-за особенностей монитора. В связи с этим мы рекомендуем делать цветопробу. Без цветопробы претензии по цвету не принимаются.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="section section--footer">
-        <div class="container">
-            <div class="footer">
+                <div class="footer mob-center">
 	<div class="footer__columns mb-40">
-		<div class="footer__column footer__column--4">
+		<div class="footer__column footer__column--4 mob-full">
 			<a href="" class="footer__link">
 				Главная
 			</a>
@@ -792,7 +797,14 @@
 </div>
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
-			2
+			<a href="" class="btn btn--tab">
+				<svg class="btn__icon">
+					<use xlink:href="img/sprites/sprite.svg#icon-btn-accent"></use>
+				</svg>
+				<span>
+					Требования к макетам
+				</span>
+			</a>
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
 			<a href="" class="btn btn--orange">
@@ -815,7 +827,7 @@
 		</div>
 	</div>
 </div>
-<div class="hidden">
+<div class="hidden" style="display: none;">
 	<section class="modal-menu" id="modal-menu" style="display: none;">
 	<sidebar class="modal-menu__side">
 		<div class="modal-menu__head">
@@ -1518,10 +1530,112 @@
 		</div>
 	</main>
 </section>
+	<script>
+    var mmenuContent = {
+        title: 'Ракета',
+        links: [
+        "<a class='fa fa-envelope' href='#/'>1</a>",
+        "<a class='fa fa-twitter' href='#/'>2</a>",
+        "<a class='fa fa-facebook' href='#/'>3</a>"
+        ]
+    };
+</script>
+<nav id="mmenu">
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li><span>Услуги</span>
+            <ul>
+                <li><span>Строительство выставочных стендов</span>
+                    <ul>
+                        <li><a href="">Вывески по «Дизайн коду» города</a></li>
+                        <li><a href="">Плоские вывески Световые короба (Лайтбокс, касетон)</a></li>
+                        <li><a href="">Плоские буквы</a></li>
+                        <li><a href="">Обьемные буквы</a></li>
+                        <li><a href="">Торцевые касетоны</a></li>
+                        <li><a href="">Входные группы и козырьки</a></li>
+                        <li><a href="">Таблички</a></li>
+                        <li><a href="">Штендеры</a></li>
+                        <li><a href="">Уличные стенды</a></li>
+                        <li><a href="">Металлоконструкции любой сложности</a></li>
+                        <li><a href="">Ростовые фигуры</a></li>
+                        <li><a href="">Демонтаж/монтаж вывесок</a></li>
+                        <li><a href="">Мойка вывесок</a></li>
+                        <li><a href="">Ремонт и постгарантийное обслуживание</a></li>
+                        <li><a href="">Оформление помещений под ключ</a></li>
+                    </ul>
+                </li>
+                <li><span>Оформление деловых мероприятий </span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Наружная и интерьерная реклама</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Брендирование автотранспорта</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Фирменная сувенирная продукция</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Широкоформатная печать</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Полиграфия</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>UV-Печать</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Плоттерная резка </span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Лазерная/фрезерная резка и гравировка</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>POS материалы</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Аренда фотозон и выставочного оборудования</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+                <li><span>Разработка дизайна</span>
+                    <ul>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Наши работы</a></li>
+        <li><a href="/">Отдел технического контроля</a></li>
+        <li><a href="/">Акции</a></li>
+        <li><a href="/">Контакты</a></li>
+    </ul>
+</nav>
 </div>
-        </div>
-    </footer>
-    <div class="container">
+            </div>
+        </footer>
+        <div class="container">
 	<div class="demo">
 		<a href="index.html" class="demo__link">
 			1. Главная
@@ -1591,6 +1705,7 @@
 		</a>
 	</div>
 </div>
+    </div>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>

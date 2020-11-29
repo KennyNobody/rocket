@@ -1,8 +1,14 @@
 .footer-social {
 	display: flex;
 	align-items: center;
+	@include r(1200) {
+		justify-content: center;
+	}
 	&__title {
 		margin-right: rem(18);
+		@include r(1200) {
+			margin-right: rem(10);
+		}
 	}
 	&__link {
 		display: flex;
@@ -11,6 +17,9 @@
 		margin-right: rem(18);
 		width: rem(25);
 		height: rem(25);
+		@include r(1200) {
+			margin-right: rem(10);
+		}
 		&:last-of-type {
 			margin-right: 0;
 		}

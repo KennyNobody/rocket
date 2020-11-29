@@ -1,6 +1,10 @@
 .intro-slider {
 	background-color: $dark;
 	height: 690px;
+	@include r(1200) {
+		height: calc(100vh - 48px);
+		// min-height: 690px;
+	}
 	&__wrapper {
 
 	}
@@ -10,6 +14,10 @@
 		color: $light;
 		height: 100%;
 		background-size: auto 100%;
+		@include r(1200) {
+			background-size: cover;
+			text-align: center;
+		}
 	}
 	&__slide-content {
 		height: 100%;
@@ -25,6 +33,13 @@
 		top: 50%;
 		display: flex;
 		flex-direction: column;
+		@include r(1200) {
+			flex-direction: row;
+			top: auto !important;
+			bottom: rem(20) !important;
+			right: 50% !important;
+			transform: translateX(50%) !important;
+		}
 	}
 	&__bullet {
 		display: block;
@@ -36,6 +51,15 @@
 		cursor: pointer;
 		margin-top: rem(5);
 		margin-bottom: rem(5);
+		@include r(1200) {
+			flex-direction: row;
+			margin-left: rem(5);
+			margin-right: rem(5);
+			top: auto !important;
+			bottom: rem(5) !important;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
 		&:hover {
 			opacity: 0.7;
 		}

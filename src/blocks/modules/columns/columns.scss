@@ -20,21 +20,39 @@
 		}
 		&--4 {
 			width: calc(100% / 12 * 4 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
 		}
 		&--5 {
 			width: calc(100% / 12 * 5 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
 		}
 		&--6 {
 			width: calc(50% - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
 		}
 		&--7 {
 			width: calc(100% / 12 * 7 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
 		}
 		&--8 {
 			width: calc(100% / 12 * 8 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
 		}
 		&--9 {
 			width: calc(100% / 12 * 9 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
 		}
 	}
 }

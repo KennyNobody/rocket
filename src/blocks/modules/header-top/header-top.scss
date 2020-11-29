@@ -20,4 +20,15 @@
 			font-weight: 700;
 		}
 	}
+	&__btn-menu {
+		padding: 4px;
+		border: none;
+		background: none;
+		svg {
+			display: block;
+			width: 20px;
+			height: 20px;
+			fill: $light;
+		}
+	}
 }

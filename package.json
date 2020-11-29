@@ -74,6 +74,7 @@
         "@fancyapps/fancybox": "^3.5.7",
         "isotope-layout": "^3.0.6",
         "jquery": "^3.5.1",
+        "mmenu-js": "^8.5.20",
         "smart-grid": "^2.1.2",
         "swiper": "^5.4.5"
     },

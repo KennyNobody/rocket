@@ -20,4 +20,26 @@
 	&__text {
 		font-weight: 500;
 	}
+	&__price {
+		background-color: $dark;
+		position: absolute;
+		bottom: rem(12);
+		color: $light;
+		font-weight: 700;
+		font-size: rem(18);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: rem(72);
+		border-radius: rem(52);
+		padding-left: rem(12);
+		padding-right: rem(12);
+		min-width: rem(72);
+		&--right {
+			right: 12px;
+		}
+		&--left {
+			left: 12px;
+		}
+	}
 }

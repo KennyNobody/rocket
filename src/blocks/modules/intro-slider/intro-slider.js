@@ -1,11 +1,29 @@
 import Swiper from 'swiper';
 
-window.addEventListener('load', function() {
+window.addEventListener('DOMContentLoaded', function() {
+	let sliderDirection;
+	let sliderTouch;
+	let sliderEffect;
+
+	(function() {
+		if (document.body.clientWidth > 1200) {
+			sliderDirection = 'vertical';
+			sliderTouch = false;
+			sliderEffect = 'fade';
+		} else {
+			sliderDirection = 'horizontal';
+			sliderTouch = true;
+			sliderEffect = null;
+		}
+ 	})();
+
 	let swiper = new Swiper('.intro-slider', {
-		direction: 'vertical',
-		// speed: 500,
-		effect: 'fade',
-		allowTouchMove: false,
+		direction: sliderDirection,
+		speed: 500,
+		effect: sliderEffect,
+		allowTouchMove: sliderTouch,
+		autoplay: true,
+		delay: 5000,
 		pagination: {
 			el: '.intro-slider__pagintaion',
 			clickable: true,

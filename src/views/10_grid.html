@@ -5,135 +5,140 @@
     @@include("../blocks/modules/head/head.html")
 </head>
 <body class="body">
-    @@include("../blocks/modules/header/header.html")
-    <main class="main">
-        <section class="section section--breadcrumbs">
-            <div class="container">
-                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
-            </div>
-        </section>
-        <section class="section section--top">
-            <div class="container">
-                <h2 class="title mb-80">
-                    Полиграфия
-                </h2>
-                <div class="articles isotope">
-                    <div class="articles__nav">
-                        <button data-filter=".type-1" class="btn btn--small btn--tab btn--tab-active">
-                            <span>
-                                Визитки
-                            </span>
-                        </button>
-                        <button data-filter=".type-2" class="btn btn--small btn--tab">
-                            <span>
-                                Конверты
-                            </span>
-                        </button>
-                        <button data-filter=".type-3" class="btn btn--small btn--tab">
-                            <span>
-                                Буклеты
-                            </span>
-                        </button>
-                        <button data-filter=".type-4" class="btn btn--small btn--tab">
-                            <span>
-                                Каталоги
-                            </span>
-                        </button>
-                        <button data-filter=".type-5" class="btn btn--small btn--tab">
-                            <span>
-                                Листовки
-                            </span>
-                        </button>
-                        <button data-filter=".type-6" class="btn btn--small btn--tab">
-                            <span>
-                                Меню
-                            </span>
-                        </button>
-                        <button data-filter=".type-7" class="btn btn--small btn--tab">
-                            <span>
-                                Пластиковые карты
-                            </span>
-                        </button>
-                        <button data-filter=".type-8" class="btn btn--small btn--tab">
-                            <span>
-                                Сертификаты
-                            </span>
-                        </button>
-                        <button data-filter=".type-9" class="btn btn--small btn--tab">
-                            <span>
-                                Шелкография
-                            </span>
-                        </button>
-                        <select class="select">
-                            <option value=".type-1">Визитки</option>
-                            <option value=".type-2">Конверты</option>
-                            <option value=".type-3">Буклеты</option>
-                            <option value=".type-4">Каталоги</option>
-                            <option value=".type-5">Листовки</option>
-                            <option value=".type-6">Меню</option>
-                            <option value=".type-7">Пластиковые карты</option>
-                            <option value=".type-8">Сертификаты</option>
-                            <option value=".type-9">Шелкография</option>
-                        </select>
-                    </div>
-                    <div class="articles__content articles__content--isotope">
-                        <div class="articles__item articles__item--isotope articles__item--25 type-1">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
+    <div id="page">
+        @@include("../blocks/modules/header/header.html")
+        <main class="main">
+            <section class="section section--breadcrumbs">
+                <div class="container">
+                    @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+                </div>
+            </section>
+            <section class="section section--top">
+                <div class="container">
+                    <h2 class="title mb-80">
+                        Полиграфия
+                    </h2>
+                    <div class="articles isotope">
+                        <div class="articles__nav">
+                            <button data-filter=".type-1" class="btn btn--small btn--tab btn--tab-active">
+                                <span>
+                                    Визитки
+                                </span>
+                            </button>
+                            <button data-filter=".type-2" class="btn btn--small btn--tab">
+                                <span>
+                                    Конверты
+                                </span>
+                            </button>
+                            <button data-filter=".type-3" class="btn btn--small btn--tab">
+                                <span>
+                                    Буклеты
+                                </span>
+                            </button>
+                            <button data-filter=".type-4" class="btn btn--small btn--tab">
+                                <span>
+                                    Каталоги
+                                </span>
+                            </button>
+                            <button data-filter=".type-5" class="btn btn--small btn--tab">
+                                <span>
+                                    Листовки
+                                </span>
+                            </button>
+                            <button data-filter=".type-6" class="btn btn--small btn--tab">
+                                <span>
+                                    Меню
+                                </span>
+                            </button>
+                            <button data-filter=".type-7" class="btn btn--small btn--tab">
+                                <span>
+                                    Пластиковые карты
+                                </span>
+                            </button>
+                            <button data-filter=".type-8" class="btn btn--small btn--tab">
+                                <span>
+                                    Сертификаты
+                                </span>
+                            </button>
+                            <button data-filter=".type-9" class="btn btn--small btn--tab">
+                                <span>
+                                    Шелкография
+                                </span>
+                            </button>
+                            <select class="select">
+                                <option value=".type-1">Визитки</option>
+                                <option value=".type-2">Конверты</option>
+                                <option value=".type-3">Буклеты</option>
+                                <option value=".type-4">Каталоги</option>
+                                <option value=".type-5">Листовки</option>
+                                <option value=".type-6">Меню</option>
+                                <option value=".type-7">Пластиковые карты</option>
+                                <option value=".type-8">Сертификаты</option>
+                                <option value=".type-9">Шелкография</option>
+                            </select>
                         </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-5">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
+                        <div class="articles__content articles__content--isotope">
+                            <div class="articles__item articles__item--isotope articles__item--25 type-1">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-5">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-6">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-9">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-1">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-5">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-7">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-3">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-4">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-9">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-5">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--isotope articles__item--25 type-1">
+                                @@include("../blocks/modules/preview-work/preview-work.html")
+                            </div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
                         </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-6">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
+                        <div class="articles__toolbar">
+                            <a href="" class="btn btn--orange">
+                                <span>
+                                    Больше фото
+                                </span>
+                                <svg class="btn__icon-load">
+                                    <use xlink:href="img/sprites/sprite.svg#icon-loading"></use>
+                                </svg>
+                            </a>
                         </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-9">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-1">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-5">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-7">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-3">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-4">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-9">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-5">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--isotope articles__item--25 type-1">
-                            @@include("../blocks/modules/preview-work/preview-work.html")
-                        </div>
-                        <div class="articles__item articles__item--25 articles__item--clear"></div>
-                        <div class="articles__item articles__item--25 articles__item--clear"></div>
-                        <div class="articles__item articles__item--25 articles__item--clear"></div>
-                    </div>
-                    <div class="articles__toolbar">
-                        <a href="" class="btn btn--orange">
-                            <span>
-                                Больше фото
-                            </span>
-                        </a>
                     </div>
                 </div>
+            </section>
+        </main>
+        <footer class="section section--footer">
+            <div class="container">
+                @@include("../blocks/modules/footer/footer.html")
             </div>
-        </section>
-    </main>
-    <footer class="section section--footer">
-        <div class="container">
-            @@include("../blocks/modules/footer/footer.html")
-        </div>
-    </footer>
-    @@include("../blocks/modules/demo/demo.html")
+        </footer>
+        @@include("../blocks/modules/demo/demo.html")
+    </div>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>
