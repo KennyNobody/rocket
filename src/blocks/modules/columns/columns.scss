@@ -14,9 +14,21 @@
 		}
 		&--2 {
 			width: calc(100% / 12 * 2 - 10px);
+			@include r(1200) {
+				width: calc(100% / 12 * 4 - 10px);
+			}
+			@include r(560) {
+				width: calc(100% / 12 * 6 - 10px);
+			}
+			@include r(360) {
+				width: 100%;
+			}
 		}
 		&--3 {
 			width: calc(100% / 12 * 3 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
 		}
 		&--4 {
 			width: calc(100% / 12 * 4 - 10px);

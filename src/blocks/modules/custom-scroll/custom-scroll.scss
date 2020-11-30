@@ -1,0 +1,20 @@
+.custom-scroll {
+	scrollbar-color: $orange;
+    scrollbar-width: rem(4);
+	&::-webkit-scrollbar {
+		width: rem(4);
+		height: rem(4);
+		background-color: inherit;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $orange;
+	}
+	&::-webkit-scrollbar-button:vertical:start:decrement {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-button:vertical:end:increment {
+		display: none;
+	}
+}

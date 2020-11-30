@@ -71,7 +71,7 @@
 			+7 981-475-01-55
 		</span>
 	</a>
-	<a href="" class="btn btn--head btn--orange mob-hidden">
+	<a href="#modal-write" class="btn btn--head btn--orange mob-hidden" data-fancybox>
 		<span>
 			Заказать звонок
 		</span>
@@ -88,7 +88,7 @@
 		<div class="container">
 			<div class="header-bottom mob-hidden">
 	<a href="/" class="header-bottom__logo">
-		<img src="img/logo-color.png" alt="Логотип">
+		<img src="img/logo-color.svg" alt="Логотип">
 	</a>
 	<nav class="header-bottom__nav">
 		<a href="" class="header-bottom__link header-bottom__link--active">
@@ -108,9 +108,6 @@
 			<span>
 				Наши работы
 			</span>
-			<!-- <svg>
-				<use xlink:href="img/sprites/sprite.svg#icon-menu-arrow"></use>
-			</svg> -->
 		</a>
 		<a href="" class="header-bottom__link">
 			<span>
@@ -173,10 +170,10 @@
                         Контакты ОТК
                     </h3>
                     <div class="columns">
-                        <div class="columns__column columns__column--4">
+                        <div class="columns__column columns__column--4 mb-35">
                             <div class="articles">
                                 <div class="articles__content">
-                                    <div class="articles__item">
+                                    <div class="articles__item mb-20">
                                         <div class="contact-card">
                                             <svg class="contact-card__icon">
                                                 <use xlink:href="img/sprites/sprite.svg#icon-contacts-clock"></use>
@@ -186,7 +183,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="articles__item">
+                                    <div class="articles__item mb-20">
                                         <a href="mailto:info@39rpk.ru" class="contact-card">
                                             <svg class="contact-card__icon">
                                                 <use xlink:href="img/sprites/sprite.svg#icon-contacts-mail"></use>
@@ -196,7 +193,7 @@
                                             </p>
                                         </a>
                                     </div>
-                                    <div class="articles__item">
+                                    <div class="articles__item mb-20">
                                         <div class="contact-card">
                                             <svg class="contact-card__icon">
                                                 <use xlink:href="img/sprites/sprite.svg#icon-contacts-adress"></use>
@@ -209,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="columns__column columns__column--8">
+                        <div class="columns__column columns__column--8 mb-35">
                             <div class="person-card">
 	<div class="person-card__thumb">
 		<img src="http://placehold.it/400x400" alt="">
@@ -246,7 +243,7 @@
                     </h2>
                     <div class="articles">
                         <div class="articles__content">
-                            <div class="articles__item articles__item--33">
+                            <div class="articles__item articles__item--33 mb-20">
                                 <a href="" class="news-card">
 	<div class="news-card__thumb">
 		<img src="https://placehold.it/378x282" alt="">
@@ -259,7 +256,7 @@
 	</p>
 </a>
                             </div>
-                            <div class="articles__item articles__item--33">
+                            <div class="articles__item articles__item--33 mb-20">
                                 <a href="" class="news-card">
 	<div class="news-card__thumb">
 		<img src="https://placehold.it/378x282" alt="">
@@ -272,7 +269,7 @@
 	</p>
 </a>
                             </div>
-                            <div class="articles__item articles__item--33">
+                            <div class="articles__item articles__item--33 mb-20">
                                 <a href="" class="news-card">
 	<div class="news-card__thumb">
 		<img src="https://placehold.it/378x282" alt="">
@@ -285,7 +282,7 @@
 	</p>
 </a>
                             </div>
-                            <div class="articles__item articles__item--33">
+                            <div class="articles__item articles__item--33 mb-20">
                                 <a href="" class="news-card">
 	<div class="news-card__thumb">
 		<img src="https://placehold.it/378x282" alt="">
@@ -298,7 +295,7 @@
 	</p>
 </a>
                             </div>
-                            <div class="articles__item articles__item--33">
+                            <div class="articles__item articles__item--33 mb-20">
                                 <a href="" class="news-card">
 	<div class="news-card__thumb">
 		<img src="https://placehold.it/378x282" alt="">
@@ -311,7 +308,7 @@
 	</p>
 </a>
                             </div>
-                            <div class="articles__item articles__item--33">
+                            <div class="articles__item articles__item--33 mb-20">
                                 <a href="" class="news-card">
 	<div class="news-card__thumb">
 		<img src="https://placehold.it/378x282" alt="">
@@ -442,7 +439,7 @@
 			</a>
 		</div>
 		<div class="columns__column columns__column--4 mb-25">
-			<a href="" class="btn btn--orange">
+			<a href="#modal-write" class="btn btn--orange" data-fancybox>
 				<span>
 					Заказать звонок
 				</span>
@@ -462,6 +459,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="hidden" style="display: none;">
 	<section class="modal-menu" id="modal-menu" style="display: none;">
 	<sidebar class="modal-menu__side">
@@ -1267,6 +1265,50 @@
         <li><a href="/">Контакты</a></li>
     </ul>
 </nav>
+	<div class="modal" id="modal-write">
+	<h2 class="modal__title mb-20">
+		Заказать звонок
+	</h2>
+	<div class="editor mb-35">
+		<p>
+			Оставьте контактные данные в форме<br> ниже и мы свяжемся с Вами
+		</p>
+	</div>
+	<form action="" class="modal__form">
+		<div class="input input--error mb-35">
+			<label>
+				<p>
+					Ваше имя
+				</p>
+				<input type="text" placeholder="Введите имя">
+			</label>
+		</div>
+		<div class="input mb-35">
+			<label>
+				<p>
+					Ваш телефон
+				</p>
+				<input type="text" placeholder="Введите телефон">
+			</label>
+		</div>
+		<div class="input mb-35 ">
+			<label>
+				<p>
+					Комментарий
+				</p>
+				<textarea placeholder="Введите комментарий (не обязательно)"></textarea>
+			</label>
+		</div>
+		<button class="btn btn--small btn--orange btn--full mb-20">
+			<span>
+				Заказать звонок
+			</span>
+		</button>
+		<p class="modal__discription">
+			Заполняя данную форму вы моглашаетесь с <a href="">Правилами обработки использования персональных данных</a>
+		</p>
+	</form>
+</div>
 </div>
             </div>
         </footer>

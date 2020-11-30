@@ -1,14 +1,25 @@
 .articles {
 	clear: both;
 	&__nav {
-		margin-bottom: rem(60);
+		@include r(1200) {
+			margin-bottom: rem(45);
+		}
 		.btn {
 			margin-right: rem(20);
 			margin-bottom: rem(20);
+			@include r(1200) {
+				display: none;
+				visibility: hidden;
+			}
 		}
 		.select {
 			display: none;
 			visibility: hidden;
+			width: 100%;
+			@include r(1200) {
+				display: block;
+				visibility: visible;
+			}
 		}
 	}
 	&__content {
@@ -33,33 +44,78 @@
 		margin-top: rem(40);
 		display: flex;
 		justify-content: center;
+		@include r(1200) {
+			margin-top: rem(30);
+		}
 	}
 	&__item {
-		margin-bottom: rem(20);
+		// margin-bottom: rem(20);
 		width: 100%;
 		&--isotope {
 			padding: rem(10);
 		}
 		&--15 {
 			width: calc(100% / 12 * 2 - 15px);
+			@include r(1200) {
+				width: calc(50% - 10px);
+			}
+			@include r(560) {
+				width: 100%;
+			}
 		}
 		&--20  {
 			width: calc(20% - 15px);
+			@include r(1200) {
+				width: calc(50% - 10px);
+			}
+			@include r(560) {
+				width: 100%;
+			}
 		}
 		&--25  {
 			width: calc(25% - 15px);
+			@include r(1200) {
+				width: calc(50% - 10px);
+			}
+			@include r(560) {
+				width: 100%;
+			}
 		}
 		&--33  {
 			width: calc(100% / 3 - 15px);
+			@include r(1200) {
+				width: 100%;
+			}
+			@include r(560) {
+				width: 100%;
+			}
 		}
 		&--50  {
 			width: calc(50% - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
+			@include r(560) {
+				width: 100%;
+			}
 		}
 		&--66 {
 			width: calc(100% / 12 * 8 - 7px);
+			@include r(1200) {
+				width: 100%;
+			}
+			@include r(560) {
+				width: 100%;
+			}
 		}
 		&--83 {
 			width: calc(100% / 12 * 10 - 15px);
+			@include r(1200) {
+				width: 100%;
+			}
+			@include r(560) {
+				width: 100%;
+			}
 		}
 		&--clear {
 			margin-bottom: 0;

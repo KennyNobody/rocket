@@ -1,10 +1,10 @@
 .section {
 	position: relative;
-	padding-bottom: 120px;
-	padding-top: 120px;
+	padding-bottom: rem(120);
+	padding-top: rem(120);
 	@include r(1200) {
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: rem(80);
+		padding-bottom: rem(80);
 	}
 	&--light {
 		background-color: $light;
@@ -25,11 +25,11 @@
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: top right, bottom left;
-		padding-top: 240px;
-		padding-bottom: 240px;
+		padding-top: rem(240);
+		padding-bottom: rem(240);
 		@include r(1200) {
-			padding-top: 160px;
-			padding-bottom: 160px;
+			padding-top: rem(160);
+			padding-bottom: rem(160);
 		}
 	}
 	&--decor-invert {
@@ -88,14 +88,14 @@
 		padding-top: rem(40);
 		padding-bottom: rem(40);
 		@include r(1200) {
-			padding-top: rem(30);
-			padding-bottom: rem(30);
+			padding-top: rem(15);
+			padding-bottom: rem(15);
 		}
 	}
 	&--top {
 		padding-top: rem(40);
 		@include r(1200) {
-			padding-bottom: rem(30);
+			padding-top: rem(30);
 		}
 	}
 	&--intro {

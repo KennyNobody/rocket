@@ -1,0 +1,20 @@
+.modal {
+	text-align: center;
+	width: 100%;
+	max-width: 574px;
+	padding: rem(60) rem(80);
+	@include r(1200) {
+		padding: rem(30) rem(15);
+	}
+	&__title {
+		text-transform: uppercase;
+		font-size: rem(36);
+		font-weight: 700;
+		@include r(1200) {
+			font-size: rem(22);
+		}
+	}
+	&__discription {
+		font-size: rem(14);
+	}
+}

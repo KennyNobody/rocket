@@ -15,6 +15,9 @@ a {
 	&-30 {
 		margin-bottom: rem(30);
 	}
+	&-35 {
+		margin-bottom: rem(35);
+	}
 	&-40 {
 		margin-bottom: rem(40);
 	}
@@ -26,9 +29,15 @@ a {
 	}
 	&-80 {
 		margin-bottom: rem(80);
+		@include r(1200) {
+			margin-bottom: rem(45);
+		}
 	}
 	&-115 {
 		margin-bottom: rem(115);
+		@include r(1200) {
+			margin-bottom: rem(45);
+		}
 	}
 	&-120 {
 		margin-bottom: rem(120);
@@ -37,6 +46,12 @@ a {
 
 .mob-hidden {
 	@include r(1200) {
+		display: none;
+	}
+}
+
+.bg-icon {
+	@include r(1800) {
 		display: none;
 	}
 }

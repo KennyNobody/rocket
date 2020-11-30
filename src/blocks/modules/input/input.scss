@@ -1,0 +1,57 @@
+.input {
+	text-align: left;
+	display: block;
+	width: 100%;
+	p {
+		font-size: rem(14);
+		@include r(1200) {
+			margin-bottom: rem(5);
+		}
+	}
+	input, textarea {
+		display: block;
+		width: 100%;
+		background: inherit;
+		border: none;
+		padding-top: rem(20);
+		padding-bottom: rem(20);
+		font-family: $font-main;
+		color: inherit;
+		border-bottom: 1px solid #BDBDBD;
+		@include r(1200) {
+			padding-top: rem(6);
+			padding-bottom: rem(6);
+		}
+		&:placeholder {
+			font-family: $font-main;
+			color: #828282;
+		}
+	}
+	textarea {
+		height: rem(80);
+		resize: none;
+		scrollbar-color: $orange;
+		scrollbar-width: rem(4);
+		&::-webkit-scrollbar {
+			width: rem(4);
+			background-color: inherit;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: $orange;
+		}
+		&::-webkit-scrollbar-button:vertical:start:decrement {
+			display: none;
+		}
+		&::-webkit-scrollbar-button:vertical:end:increment {
+			display: none;
+		}
+	}
+	&--error {
+		input {
+			border-bottom: 1px solid #FB1111;
+			background-image: url('../img/input-error.svg');
+			background-position: right center;
+			background-repeat: no-repeat; 
+		}
+	}
+}

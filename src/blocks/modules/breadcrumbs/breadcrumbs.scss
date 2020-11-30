@@ -4,6 +4,7 @@
 	&__link {
 		text-decoration: none;
 		flex-shrink: 0;
+		font-size: rem(14);
 		&:hover {
 			opacity: 0.7;
 		}

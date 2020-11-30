@@ -10,6 +10,7 @@
 	margin-bottom: rem(60);
 	border-collapse: separate; 
 	border-spacing: 10px;
+	// min-width: rem(1040);
 	&--left {
 		text-align: left;
 	}
@@ -47,11 +48,17 @@
 		flex-grow: 1;
 		// font-weight: 700;
 		font-weight: 500;
+		@include r(1200) {
+			padding: rem(5) rem(10);
+		}
 	}
 	td {
 		border: rem(2) solid #F2F2F2;
 		padding: rem(10) rem(20);
 		background-color: $light;
 		flex-grow: 1;
+		@include r(1200) {
+			padding: rem(5) rem(10);
+		}
 	}
 }
