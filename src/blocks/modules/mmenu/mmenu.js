@@ -1,6 +1,6 @@
 import Mmenu from 'mmenu-js';
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
 	let content = window.mmenuContent || null;
 
 	new Mmenu( "#mmenu", {
@@ -8,13 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		"pagedim-black",
 		"theme-dark"
 		],
-		"counters": true,
 		"navbar": {
-			"title": mmenuContent.title
+			"title": content.title
 		},
 		"navbars": [{
 			"position": "bottom",
-			"content": mmenuContent.links
+			"content": content.links
 		}]
 	});
 });

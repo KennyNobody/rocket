@@ -31,15 +31,31 @@
 			color: $orange;
 		}
 	}
+	&__head-link {
+		color: orange;
+		text-decoration: none;
+		font-size: rem(20);
+		text-transform: uppercase;
+		font-family: $font-title;
+		font-weight: 700;
+		display: block;
+		margin-bottom: 1rem;
+		color: $orange;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
 	&__content {
-		columns: 2;
-		columns-gap: rem(40);
 		display: none;
 		visibility: hidden;
 		&--active {
 			display: block;
 			visibility: visible;
 		}
+	}
+	&__content-body {
+		columns: 2;
+		columns-gap: rem(40);
 	}
 	&__link {
 		text-decoration: none;

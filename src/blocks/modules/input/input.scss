@@ -26,6 +26,12 @@
 			font-family: $font-main;
 			color: #828282;
 		}
+		&.wpcf7-not-valid {
+			border-bottom: 1px solid #FB1111;
+			background-image: url('../img/input-error.svg');
+			background-position: right center;
+			background-repeat: no-repeat; 
+		}
 	}
 	textarea {
 		height: rem(80);
@@ -46,12 +52,9 @@
 			display: none;
 		}
 	}
-	&--error {
-		input {
-			border-bottom: 1px solid #FB1111;
-			background-image: url('../img/input-error.svg');
-			background-position: right center;
-			background-repeat: no-repeat; 
-		}
-	}
+	// &--error {
+	// 	input {
+			
+	// 	}
+	// }
 }

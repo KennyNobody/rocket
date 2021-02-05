@@ -33,6 +33,9 @@
 	<section class="section section--header-top">
 		<div class="container">
 			<div class="header-top">
+	<a href="/" class="header-top__logo desc-hidden">
+		<img class="header-top__logo-img" src="img/logo-light.svg" alt="Ракета">
+	</a>
 	<div class="header-top__block mob-hidden">
 		<svg>
 			<use xlink:href="img/sprites/sprite.svg#icon-topline-clock"></use>
@@ -577,32 +580,60 @@
         <footer class="section section--footer">
             <div class="container">
                 <div class="footer mob-center">
-	<div class="footer__columns mb-40">
-		<div class="footer__column footer__column--4 mob-full">
-			<a href="" class="footer__link">
-				Главная
-			</a>
-			<a href="" class="footer__link">
-				Наши работы
-			</a>
-			<a href="" class="footer__link">
-				Отдел технического контроля
-			</a>
-			<a href="" class="footer__link">
-				Акции
-			</a>
-			<a href="" class="footer__link">
-				Контакты
-			</a>
-			<a href="/" class="footer__logo">
-				<img src="img/logo-light.svg" alt="Логотип">
-			</a>
+	<div class="columns">
+		<div class="columns__column columns__column--grow columns__column--4 mob-full mb-40">
+			<div class="footer-social mb-20">
+	<p class="footer-social__title">
+		Мы в соц. сетях:
+	</p>
+	<a href="" class="footer-social__link">
+		<svg class="footer-social__link-icon">
+			<use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+		</svg>
+	</a>
+	<a href="" class="footer-social__link">
+		<svg class="footer-social__link-icon">
+			<use xlink:href="img/sprites/sprite.svg#icon-instagram"></use>
+		</svg>
+	</a>
+</div>
+			<nav class="footer__main-nav mb-20">
+				<a href="" class="footer__link">
+					Главная
+				</a>
+				<a href="" class="footer__link">
+					Наши работы
+				</a>
+				<a href="" class="footer__link">
+					Отдел технического контроля
+				</a>
+				<a href="" class="footer__link">
+					Акции
+				</a>
+				<a href="" class="footer__link">
+					Контакты
+				</a>
+			</nav>
+			<div class="footer__logos">
+				<a href="/" class="footer__logo mb-20">
+					<img src="img/logo-light.svg" alt="Логотип">
+				</a>
+				<a href="https://mbkaliningrad.ru/" target="_blank" class="footer__logo mb-20">
+					<img src="img/logo-mb.svg" alt="МБ-Калининград">
+				</a>
+			</div>
+			
+			<p class="text text--small">
+				При содействии Центра поддержки 
+				предпринимательства Калининградской 
+				области <a href="https://mbkaliningrad.ru/" target="_blank">www.mbkaliningrad.ru</a>
+			</p>
 		</div>
-		<div class="footer__column footer__column--8">
+		<div class="columns__column columns__column--8 mob-full mb-40">
 			<p class="footer__title">
 				Услуги:
 			</p>
-			<div class="footer__nav">
+			<div class="footer__nav mb-30">
 				<a href="" class="footer__link footer__link--light">
 					Разработка дизайна
 				</a>
@@ -643,54 +674,37 @@
 					Аренда фотозон и выставочного оборудования
 				</a>
 			</div>
-		</div>
-	</div>
-	<div class="columns columns--center">
-		<div class="columns__column columns__column--4 mb-25">
-			<div class="footer-social">
-	<p class="footer-social__title">
-		Мы в соц. сетях:
-	</p>
-	<a href="" class="footer-social__link">
-		<svg class="footer-social__link-icon">
-			<use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
-		</svg>
-	</a>
-	<a href="" class="footer-social__link">
-		<svg class="footer-social__link-icon">
-			<use xlink:href="img/sprites/sprite.svg#icon-instagram"></use>
-		</svg>
-	</a>
-</div>
-		</div>
-		<div class="columns__column columns__column--4 mb-25">
-			<a href="" class="btn btn--tab">
-				<svg class="btn__icon">
-					<use xlink:href="img/sprites/sprite.svg#icon-btn-accent"></use>
-				</svg>
-				<span>
-					Требования к макетам
-				</span>
-			</a>
-		</div>
-		<div class="columns__column columns__column--4 mb-25">
-			<a href="#modal-write" class="btn btn--orange" data-fancybox>
-				<span>
-					Заказать звонок
-				</span>
-			</a>
-		</div>
-	</div>
-	<div class="columns">
-		<div class="columns__column columns__column--8">
-			<p class="text text--small">
-				© ООО "РАКЕТА" Все права защищены  2020
-			</p>
-		</div>
-		<div class="columns__column columns__column--4">
-			<p class="text text--small">
-				Разработано <a href="">#diez technologies</a>
-			</p>
+			<div class="columns columns--center">
+				<div class="columns__column columns__column--6 mb-25">
+					<a href="" class="btn btn--footer btn--tab">
+						<svg class="btn__icon">
+							<use xlink:href="img/sprites/sprite.svg#icon-btn-accent"></use>
+						</svg>
+						<span>
+							Требования к макетам
+						</span>
+					</a>
+				</div>
+				<div class="columns__column columns__column--6 mb-25">
+					<a href="#modal-write" class="btn btn--footer btn--orange" data-fancybox>
+						<span>
+							Заказать звонок
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="columns__column columns__column--6">
+					<p class="text text--small">
+						© ООО "РАКЕТА" Все права защищены  2020
+					</p>
+				</div>
+				<div class="columns__column columns__column--6">
+					<p class="text text--small">
+						Разработано <a href="">#diez technologies</a>
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -747,654 +761,719 @@
 	<main class="modal-menu__main">
 		<div class="modal-menu__head"></div>
 		<div class="modal-menu__content" id="menu-block-1">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-2">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-3">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-4">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-5">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-6">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-7">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-8">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-9">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-10">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-11">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-12">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 		<div class="modal-menu__content" id="menu-block-13">
-			<a href="" class="modal-menu__link">
-				Вывески по «Дизайн коду» города
+			<a href="" class="modal-menu__head-link">
+				Заглавная ссылка
 			</a>
-			<a href="" class="modal-menu__link">
-				Плоские вывески Световые короба (Лайтбокс, касетон)
-			</a>
-			<a href="" class="modal-menu__link">
-				Плоские буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Обьемные буквы
-			</a>
-			<a href="" class="modal-menu__link">
-				Торцевые касетоны
-			</a>
-			<a href="" class="modal-menu__link">
-				Входные группы и козырьки
-			</a>
-			<a href="" class="modal-menu__link">
-				Таблички
-			</a>
-			<a href="" class="modal-menu__link">
-				Штендеры
-			</a>
-			<a href="" class="modal-menu__link">
-				Уличные стенды
-			</a>
-			<a href="" class="modal-menu__link">
-				Металлоконструкции любой сложности
-			</a>
-			<a href="" class="modal-menu__link">
-				Ростовые фигуры
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Мойка вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Демонтаж/монтаж вывесок
-			</a>
-			<a href="" class="modal-menu__link">
-				Ремонт и постгарантийное обслуживание
-			</a>
-			<a href="" class="modal-menu__link">
-				Оформление помещений под ключ
-			</a>
+			<div class="modal-menu__content-body">
+				<a href="" class="modal-menu__link">
+					Вывески по «Дизайн коду» города
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские вывески Световые короба (Лайтбокс, касетон)
+				</a>
+				<a href="" class="modal-menu__link">
+					Плоские буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Обьемные буквы
+				</a>
+				<a href="" class="modal-menu__link">
+					Торцевые касетоны
+				</a>
+				<a href="" class="modal-menu__link">
+					Входные группы и козырьки
+				</a>
+				<a href="" class="modal-menu__link">
+					Таблички
+				</a>
+				<a href="" class="modal-menu__link">
+					Штендеры
+				</a>
+				<a href="" class="modal-menu__link">
+					Уличные стенды
+				</a>
+				<a href="" class="modal-menu__link">
+					Металлоконструкции любой сложности
+				</a>
+				<a href="" class="modal-menu__link">
+					Ростовые фигуры
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Мойка вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Демонтаж/монтаж вывесок
+				</a>
+				<a href="" class="modal-menu__link">
+					Ремонт и постгарантийное обслуживание
+				</a>
+				<a href="" class="modal-menu__link">
+					Оформление помещений под ключ
+				</a>
+			</div>
 		</div>
 	</main>
 </section>

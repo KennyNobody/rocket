@@ -1,0 +1,25 @@
+.none {
+	min-height: rem(430);
+	&__img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&__content {
+		position: absolute;
+		z-index: 2;
+		top: 55%;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	&__text {
+		font-size: rem(36);
+		font-weight: 400;
+		@include r(1200) {
+			font-size: rem(22);
+		}
+	}
+}

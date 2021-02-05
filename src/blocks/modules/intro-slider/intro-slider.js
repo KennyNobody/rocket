@@ -1,21 +1,19 @@
 import Swiper from 'swiper';
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', () => {
 	let sliderDirection;
 	let sliderTouch;
 	let sliderEffect;
 
-	(function() {
-		if (document.body.clientWidth > 1200) {
-			sliderDirection = 'vertical';
-			sliderTouch = false;
-			sliderEffect = 'fade';
-		} else {
-			sliderDirection = 'horizontal';
-			sliderTouch = true;
-			sliderEffect = null;
-		}
- 	})();
+	if (document.body.clientWidth > 1200) {
+		sliderDirection = 'vertical';
+		sliderTouch = false;
+		sliderEffect = 'fade';
+	} else {
+		sliderDirection = 'horizontal';
+		sliderTouch = true;
+		sliderEffect = null;
+	}
 
 	let swiper = new Swiper('.intro-slider', {
 		direction: sliderDirection,

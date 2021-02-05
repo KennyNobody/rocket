@@ -15,14 +15,33 @@
 		text-align: left;
 	}
 	&--dropdown {
-		max-height: 0px;
-		visibility: hidden;
 		margin-bottom: rem(0);
 	}
 	&--visible {
-		max-height: rem(2000);
-		visibility: visible;
-		margin-bottom: rem(60);
+		thead, tbody {
+			max-height: rem(2000) !important;
+			// margin-bottom: rem(30);
+		}
+	}
+	&__caption {
+		display: block;
+		width: 100%;
+		text-align: left;
+		margin-bottom: rem(30);
+		font-size: rem(16);
+		font-weight: 700;
+		text-decoration: underline;
+		cursor: pointer;
+		transition: 0.3s all;
+		border: none;
+		background: none;
+		display: none;
+		@include r(1200) {
+			display: block;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
 	}
 	&__col {
 		&--4 {
@@ -35,6 +54,9 @@
 	thead, tbody {
 		width: 100%;
 		display: block;
+		overflow: hidden;
+		max-height: 0px;
+		transition: 0.3s all;
 	}
 	tr {
 		display: flex;

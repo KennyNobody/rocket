@@ -5,8 +5,10 @@
 	align-items: center;
 	padding: 10px;
 	height: 100%;
-	&__ill {
+	&__img {
 		display: block;
+		max-width: 80%;
+		max-height: 128px;
 	}
 	&:hover {
 		opacity: 0.7;

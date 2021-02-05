@@ -6,6 +6,14 @@
 		padding-top: rem(80);
 		padding-bottom: rem(80);
 	}
+	&--none {
+		padding-top: rem(0);
+		padding-bottom: rem(0);
+		@include r(1200) {
+			padding-top: rem(0);
+			padding-bottom: rem(0);
+		}
+	}
 	&--light {
 		background-color: $light;
 	}
@@ -24,7 +32,7 @@
 		background-image: url('../img/decor-top.svg'), url('../img/decor-bottom.svg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		background-position: top right, bottom left;
+		background-position: top -1px right -1px, bottom -1px left -1px;
 		padding-top: rem(240);
 		padding-bottom: rem(240);
 		@include r(1200) {
@@ -36,7 +44,7 @@
 		background-image: url('../img/decor-top-invert.svg'), url('../img/decor-bottom.svg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		background-position: top right, bottom left;
+		background-position: top -1px right -1px, bottom -1px left -1px;
 		padding-top: 240px;
 		padding-bottom: 240px;
 		@include r(1200) {
@@ -48,7 +56,17 @@
 		background-image: url('../img/decor-top.svg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		background-position: top right;
+		background-position: top -1px right -1px;
+		padding-top: 240px;
+		@include r(1200) {
+			padding-top: 160px;
+		}
+	}
+	&--decor-front {
+		background-image: url('../img/decor-front.svg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top -1px right -1px;
 		padding-top: 240px;
 		@include r(1200) {
 			padding-top: 160px;
@@ -58,7 +76,7 @@
 		background-image: url('../img/decor-bottom.svg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		background-position: bottom left;
+		background-position: bottom -1px left -1px;
 		padding-bottom: 240px;
 		@include r(1200) {
 			padding-bottom: 160px;
@@ -123,6 +141,16 @@
 		@include r(1200) {
 			padding-top: rem(60);
 			padding-bottom: rem(60);
+		}
+	}
+	&--fixed {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 3;
+		@include r(1200) {
+			position: static;
 		}
 	}
 }

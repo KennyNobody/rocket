@@ -4,4 +4,10 @@
 	// @include r(1200) {
 	// 	padding-bottom: rem(70);
 	// }
+	&--fixed {
+		padding-top: rem(90);
+		@include r(1200) {
+			padding-top: rem(0);
+		}
+	}
 }

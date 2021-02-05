@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
 
 		if (links && blocks && links.length == blocks.length) {
 			for (let i = 0; i < links.length; i++) {
-				links[i].addEventListener('click', function(e){
+				links[i].addEventListener('click', (e) => {
 					e.preventDefault();
 					console.log(links[i]);
 					toggleBlocks(links[i]);

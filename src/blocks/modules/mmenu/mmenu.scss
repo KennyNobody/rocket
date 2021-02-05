@@ -19,3 +19,13 @@
 	}
 
 }
+
+.mmenu {
+	&__footer-link {
+		svg {
+			width: 26px;
+			height: 26px;
+			display: block;
+		}
+	}
+}

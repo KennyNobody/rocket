@@ -69,8 +69,8 @@ a {
 }
 
 .desc-hidden {
-	display: none;
+	display: none !important;
 	@include r(1200) {
-		display: block;
+		display: block !important;
 	}
 }

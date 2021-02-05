@@ -166,26 +166,12 @@
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var isotope_layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! isotope-layout */ "./node_modules/isotope-layout/js/isotope.js");
 /* harmony import */ var isotope_layout__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(isotope_layout__WEBPACK_IMPORTED_MODULE_0__);
-// import isotope from 'isotope-layout';
-// window.addEventListener('load', function() {
-// 	$('.articles__content').isotope({
-// 	  // options
-// 	  itemSelector: '.grid-item',
-// 	  layoutMode: 'fitRows'
-// 	});
-// });
 
 window.addEventListener('load', function () {
   var parentElem = document.querySelector('.isotope');
 
   if (parentElem) {
     (function () {
-      var removeActiveClasses = function removeActiveClasses() {
-        for (var n = 0; n < tabs.length; n++) {
-          tabs[n].classList.remove('btn--tab-active');
-        }
-      };
-
       var tabs = parentElem.querySelectorAll('.btn--tab');
       var elem = parentElem.querySelector('.articles__content');
       var iso = new isotope_layout__WEBPACK_IMPORTED_MODULE_0___default.a(elem, {
@@ -194,40 +180,76 @@ window.addEventListener('load', function () {
         filter: '.type-1'
       });
       $('.isotope').on('click', '.btn--tab', function () {
-        var filterValue = $(this).attr('data-filter');
+        var filterValue = this.getAttribute('data-filter');
         iso.arrange({
           filter: filterValue
         });
       });
       $('.isotope').on('change', '.select', function () {
-        console.log('Да');
-        var filterValue = $(this).val();
+        var filterValue = this.value;
         iso.arrange({
           filter: filterValue
         });
       });
 
-      for (var i = 0; i < tabs.length; i++) {
+      var _loop = function _loop(i) {
         tabs[i].addEventListener('click', function () {
           removeActiveClasses();
-          this.classList.add('btn--tab-active');
+          tabs[i].classList.add('btn--tab-active');
         });
+      };
+
+      for (var i = 0; i < tabs.length; i++) {
+        _loop(i);
       }
+
+      var removeActiveClasses = function removeActiveClasses() {
+        for (var n = 0; n < tabs.length; n++) {
+          tabs[n].classList.remove('btn--tab-active');
+        }
+      };
     })();
   }
+
+  $('.btn--load').on('click', function () {
+    var _this = $(this);
+
+    var data = {
+      'action': 'loadmore',
+      'query': _this.attr('data-param-posts'),
+      'page': _this.attr('data-page'),
+      'tpl': _this.attr('data-tpl')
+    };
+
+    _this.html("<span class=\"btn__text\">\n\t\t\t\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430...\n\t\t\t</span>");
+
+    var tempPage = _this.attr('data-page');
+
+    $.ajax({
+      url: '/wp-admin/admin-ajax.php',
+      data: data,
+      type: 'POST',
+      success: function success(data) {
+        if (data) {
+          _this.html("<span class=\"btn__text\">\n\t\t\t\t\t\t\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u0435\u0449\u0435\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<svg class=\"btn__icon-load\">\n\t\t\t\t\t\t<use xlink:href=\"" + _this.attr('data-icon') + "\"></use>\n\t\t\t\t\t\t</svg>");
+
+          _this.parent().parent().find('.articles__item--clear').first().before(data);
+
+          tempPage++;
+
+          _this.attr('data-page', tempPage++);
+
+          if (_this.attr('data-page') == _this.attr('data-max-pages')) {
+            _this.parent().remove();
+          }
+        } else {
+          _this.parent().remove();
+        }
+      }
+    });
+  });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./src/blocks/modules/footer/footer.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/modules/footer/footer.js ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 
@@ -238,7 +260,31 @@ window.addEventListener('load', function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+document.addEventListener('DOMContentLoaded', function () {
+  fixHeader();
+});
+document.addEventListener('scroll', function () {
+  fixHeader();
+});
 
+function fixHeader() {
+  var header = document.querySelector('.header');
+
+  if (header) {
+    var section = header.querySelector('.section--header-bottom');
+    var main = document.querySelector('.main');
+    var fixRange = header.querySelector('.section--header-top').clientHeight;
+    var marginTop = window.pageYOffset;
+
+    if (marginTop > 70 && section.classList.contains != 'section--fixed') {
+      section.classList.add('section--fixed');
+      main.classList.add('main--fixed');
+    } else {
+      section.classList.remove('section--fixed');
+      main.classList.remove('main--fixed');
+    }
+  }
+}
 
 /***/ }),
 
@@ -258,17 +304,15 @@ window.addEventListener('DOMContentLoaded', function () {
   var sliderTouch;
   var sliderEffect;
 
-  (function () {
-    if (document.body.clientWidth > 1200) {
-      sliderDirection = 'vertical';
-      sliderTouch = false;
-      sliderEffect = 'fade';
-    } else {
-      sliderDirection = 'horizontal';
-      sliderTouch = true;
-      sliderEffect = null;
-    }
-  })();
+  if (document.body.clientWidth > 1200) {
+    sliderDirection = 'vertical';
+    sliderTouch = false;
+    sliderEffect = 'fade';
+  } else {
+    sliderDirection = 'horizontal';
+    sliderTouch = true;
+    sliderEffect = null;
+  }
 
   var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.intro-slider', {
     direction: sliderDirection,
@@ -304,13 +348,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var content = window.mmenuContent || null;
   new mmenu_js__WEBPACK_IMPORTED_MODULE_0__["default"]("#mmenu", {
     "extensions": ["pagedim-black", "theme-dark"],
-    "counters": true,
     "navbar": {
-      "title": mmenuContent.title
+      "title": content.title
     },
     "navbars": [{
       "position": "bottom",
-      "content": mmenuContent.links
+      "content": content.links
     }]
   });
 });
@@ -406,6 +449,20 @@ window.addEventListener('DOMContentLoaded', function () {
       });
     }
   })();
+
+  (function toggleMobileTable() {
+    var caption = document.querySelectorAll('.table__caption');
+
+    for (var i = 0; i < caption.length; i++) {
+      toggle(caption[i]);
+    }
+
+    function toggle(block) {
+      block.addEventListener('click', function () {
+        block.parentNode.classList.toggle('table--visible');
+      });
+    }
+  })();
 });
 
 /***/ }),
@@ -422,15 +479,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_articles_articles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/articles/articles */ "./src/blocks/modules/articles/articles.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_table_table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/table/table */ "./src/blocks/modules/table/table.js");
-/* harmony import */ var _modules_table_table__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_table_table__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_intro_slider_intro_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/intro-slider/intro-slider */ "./src/blocks/modules/intro-slider/intro-slider.js");
-/* harmony import */ var _modules_preview_work_preview_work__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/preview-work/preview-work */ "./src/blocks/modules/preview-work/preview-work.js");
-/* harmony import */ var _modules_modal_menu_modal_menu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/modal-menu/modal-menu */ "./src/blocks/modules/modal-menu/modal-menu.js");
-/* harmony import */ var _modules_modal_menu_modal_menu__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_menu_modal_menu__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_mmenu_mmenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/mmenu/mmenu */ "./src/blocks/modules/mmenu/mmenu.js");
+/* harmony import */ var _modules_table_table__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/table/table */ "./src/blocks/modules/table/table.js");
+/* harmony import */ var _modules_table_table__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_table_table__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_intro_slider_intro_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/intro-slider/intro-slider */ "./src/blocks/modules/intro-slider/intro-slider.js");
+/* harmony import */ var _modules_preview_work_preview_work__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/preview-work/preview-work */ "./src/blocks/modules/preview-work/preview-work.js");
+/* harmony import */ var _modules_modal_menu_modal_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/modal-menu/modal-menu */ "./src/blocks/modules/modal-menu/modal-menu.js");
+/* harmony import */ var _modules_modal_menu_modal_menu__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_menu_modal_menu__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_mmenu_mmenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/mmenu/mmenu */ "./src/blocks/modules/mmenu/mmenu.js");
 
 
 
@@ -438,7 +493,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import $ from 'jquery';
 
 /***/ }),
 

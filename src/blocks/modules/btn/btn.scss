@@ -10,6 +10,7 @@
 	transition: 0.3s all;
 	border: none;
 	font-family: $font-main;
+	font-size: rem(16);
 	@include r(1200) {
 		height: rem(50);
 		padding: rem(15) rem(30);
@@ -79,6 +80,12 @@
 	&--full {
 		width: 100%;
 		justify-content: center;
+	}
+	&--footer {
+		@include r(1200) {
+			width: rem(280);
+			justify-content: center;
+		}
 	}
 	&__icon {
 		width: rem(24);

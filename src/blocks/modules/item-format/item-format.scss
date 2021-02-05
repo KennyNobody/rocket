@@ -1,6 +1,9 @@
 .item-format {
 	display: block;
 	min-width: rem(185);
+	@include r(1200) {
+		min-width: 0;
+	}
 	&__thumb {
 		margin-left: auto;
 		margin-right: auto;
